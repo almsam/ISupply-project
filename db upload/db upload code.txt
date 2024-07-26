@@ -32,3 +32,16 @@ def process_categories(df, cursor, con, start, end):
     print(len(listOfCollisions), len(listOfAllErrors)); return listOfCollisions, listOfAllErrors
 
     # this should give us some details on where our data is going
+
+listOfCollisions = []; listOfAllErrors = []
+
+# wipe the db from DBeaver
+
+con = psycopg2.connect(database="iSupply", host="38.180.117.52", user="postgres", password="deerRun", port="5432"); cursor = con.cursor() # open
+
+for i in range(46): # all 4600 for the sake of analysis
+    collisions, errors = process_categories(df, cursor, con, (100*i), ((100*i)+100))
+    listOfCollisions += collisions; listOfAllErrors += errors
+    print("100 number ", (i+1) ," done")
+
+cursor.close(); con.close() # close
