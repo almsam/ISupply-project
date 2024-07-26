@@ -1,0 +1,13 @@
+import pandas as pd
+import psycopg2
+
+df = pd.read_excel('map.xlsx')
+print(df.head())
+
+
+
+
+
+
+
+
