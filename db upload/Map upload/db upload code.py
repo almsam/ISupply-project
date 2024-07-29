@@ -1,7 +1,9 @@
 import pandas as pd
 import psycopg2
 
-df = pd.read_excel("map.xlsx")
+df = pd.read_excel(
+    "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx"
+)
 print(df.head())
 
 
