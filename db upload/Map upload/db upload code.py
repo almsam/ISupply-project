@@ -59,13 +59,16 @@ con = psycopg2.connect(
 )
 cursor = con.cursor()  # open
 
-for i in range(46):  # all 4600 for the sake of analysis
+for i in range(45):  # all 4600 for the sake of analysis
     collisions, errors = process_categories(
         df, cursor, con, (100 * i), ((100 * i) + 100)
     )
     listOfCollisions += collisions
     listOfAllErrors += errors
     print("100 number ", (i + 1), " done")
+
+collisions, errors = process_categories(df, cursor, con, (4500), (4596))
+print("100 number ", (46), " done")
 
 cursor.close()
 con.close()  # close
