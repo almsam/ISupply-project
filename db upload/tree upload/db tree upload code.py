@@ -11,14 +11,13 @@ con = psycopg2.connect(
 )
 cursor = con.cursor()
 cursor.execute("""select * from "Categories" c""")
-out = cursor.fetchall()
-print(out)
+out = cursor.fetchall()  # make a dictionary of what the db currently has
 cursor.close()
 con.close()
 
 df = pd.DataFrame(out, columns=["ser", "cat"])
 dfT = pd.read_excel(
-    "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/slimTree.xlsx"
+    "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/slimTree.xlsx"  # Read the existing tree
 )
 dfT.fillna("-1", inplace=True)
 dfT.head(15)
@@ -28,13 +27,19 @@ map_dic = df.set_index("cat")["ser"].to_dict()
 dfInt = pd.DataFrame(dfT)
 
 dfInt["category"] = dfInt["category"].map(map_dic).fillna(-1).astype(int)
-dfInt["subcategory"] = dfInt["subcategory"].map(map_dic).fillna(-1).astype(int)
+dfInt["subcategory"] = (
+    dfInt["subcategory"].map(map_dic).fillna(-1).astype(int)
+)  # fill -1 for targeted cells
 
-print("The dataframe has ", dfInt.size, "/ 27564 entries")
+print(
+    "The dataframe has ", dfInt.size, "/ 27564 entries"
+)  # confirm all entries got through
 
 dfIntUnique = pd.DataFrame(dfInt.drop_duplicates())
 
-print("Now the dataframe has ", dfIntUnique.size, "/ 15400 entries")
+print(
+    "Now the dataframe has ", dfIntUnique.size, "/ 15400 entries"
+)  # confirm all unique entries got through
 
 
 def get_category_subcategory(df, index):
@@ -48,7 +53,7 @@ def process_categories(df, cursor, con, start, end):
     listOfAllErrors = []
     j = 0
 
-    for i in range(start, end):  # O(n)
+    for i in range(start, end):  # for each entry in the data frame # O(n)
         parent, child = get_category_subcategory(df, i)
 
         try:
@@ -59,7 +64,7 @@ def process_categories(df, cursor, con, start, end):
                 + child
                 + """)"""
             )  # O(n)
-        except psycopg2.errors.UniqueViolation as e:
+        except psycopg2.errors.UniqueViolation as e:  # catch a unique exception
             listOfAllErrors.append(i)
             listOfCollisions.append(i)
         except Exception as e:
