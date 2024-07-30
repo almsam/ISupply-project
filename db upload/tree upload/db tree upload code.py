@@ -41,6 +41,9 @@ print(
     "Now the dataframe has ", dfIntUnique.size, "/ 15400 entries"
 )  # confirm all unique entries got through
 
+dfIntUnique.reset_index(drop=True, inplace=True)
+dfIntUnique.size
+
 
 def get_category_subcategory(df, index):
     parent = str(df.loc[index, "category"])  # O( log(n) )
