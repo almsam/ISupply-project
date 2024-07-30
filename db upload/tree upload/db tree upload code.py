@@ -17,7 +17,9 @@ cursor.close()
 con.close()
 
 df = pd.DataFrame(out, columns=["ser", "cat"])
-dfT = pd.read_excel("slimTree.xlsx")
+dfT = pd.read_excel(
+    "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/slimTree.xlsx"
+)
 dfT.fillna("-1", inplace=True)
 dfT.head(15)
 
