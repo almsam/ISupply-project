@@ -30,8 +30,48 @@ dfInt = pd.DataFrame(dfT)
 dfInt["category"] = dfInt["category"].map(map_dic).fillna(-1).astype(int)
 dfInt["subcategory"] = dfInt["subcategory"].map(map_dic).fillna(-1).astype(int)
 
-print("The dataframe has ", dfInt.size, "/27564 entries")
+print("The dataframe has ", dfInt.size, "/ 27564 entries")
 
 dfIntUnique = pd.DataFrame(dfInt.drop_duplicates())
 
-print("Now the dataframe has ", dfIntUnique.size, "/15400 entries")
+print("Now the dataframe has ", dfIntUnique.size, "/ 15400 entries")
+
+
+def get_category_subcategory(df, index):
+    parent = str(df.loc[index, "category"])  # O( log(n) )
+    child = str(df.loc[index, "subcategory"])
+    return parent, child
+
+
+def process_categories(df, cursor, con, start, end):
+    listOfCollisions = []
+    listOfAllErrors = []
+    j = 0
+
+    for i in range(start, end):  # O(n)
+        parent, child = get_category_subcategory(df, i)
+
+        try:
+            cursor.execute(
+                """INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ("""
+                + parent
+                + """, """
+                + child
+                + """)"""
+            )  # O(n)
+        except psycopg2.errors.UniqueViolation as e:
+            listOfAllErrors.append(i)
+            listOfCollisions.append(i)
+        except Exception as e:
+            print(f"Error occurred: {e}")
+            listOfAllErrors.append(i)
+
+        if j == 10:
+            con.commit()
+            j = 0  # this time we will commit for each 10th entry
+        j = j + 1
+
+    con.commit()
+
+    print(len(listOfCollisions), len(listOfAllErrors))
+    return listOfCollisions, listOfAllErrors
