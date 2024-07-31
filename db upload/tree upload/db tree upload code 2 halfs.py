@@ -107,8 +107,13 @@ cursor = con.cursor()  # open
 #     listOfAllErrors += errors
 #     print("100 number ", (i + 1), " done")
 
-for i in range(77):  # second 77 00
-    k = i + 77
+collisions, errors = process_categories(dfIntUnique, cursor, con, (7700), ((7800)))
+listOfCollisions += collisions
+listOfAllErrors += errors
+print("100 number ", 77, " done, this case was special")
+
+for i in range(76):  # second 77 00 - essentially skip the bad entry
+    k = i + 78
     collisions, errors = process_categories(
         dfIntUnique, cursor, con, (100 * k), ((100 * k) + 100)
     )
