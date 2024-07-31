@@ -123,3 +123,5 @@ for i in range(76):  # second 77 00 - essentially skip the bad entry
 
 cursor.close()
 con.close()  # close
+
+# it seems any possible number in front of 7700 will hurt the code, I will inspect in the notebook
