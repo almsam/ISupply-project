@@ -83,3 +83,38 @@ def process_categories(df, cursor, con, start, end):
 
     print(len(listOfCollisions), len(listOfAllErrors))
     return listOfCollisions, listOfAllErrors
+
+
+listOfCollisions = []
+listOfAllErrors = []
+
+# wipe db
+
+con = psycopg2.connect(
+    database="iSupply",
+    host="38.180.117.52",
+    user="postgres",
+    password="deerRun",
+    port="5432",
+)
+cursor = con.cursor()  # open
+
+# for i in range(77):  # first 77 00, this was already done
+#     collisions, errors = process_categories(
+#         dfIntUnique, cursor, con, (100 * i), ((100 * i) + 100)
+#     )
+#     listOfCollisions += collisions
+#     listOfAllErrors += errors
+#     print("100 number ", (i + 1), " done")
+
+for i in range(77):  # second 77 00
+    k = i + 77
+    collisions, errors = process_categories(
+        dfIntUnique, cursor, con, (100 * k), ((100 * k) + 100)
+    )
+    listOfCollisions += collisions
+    listOfAllErrors += errors
+    print("100 number ", (k + 1), " done, i =", i)
+
+cursor.close()
+con.close()  # close
