@@ -88,7 +88,43 @@ def process_categories(df, cursor, con, start, end):
 listOfCollisions = []
 listOfAllErrors = []
 
-# wipe db
+# con = psycopg2.connect(
+#     database="iSupply",
+#     host="38.180.117.52",
+#     user="postgres",
+#     password="deerRun",
+#     port="5432",
+# )
+# cursor = con.cursor()  # open
+
+# # for i in range(77):  # first 77 00, this was already done
+# #     collisions, errors = process_categories(
+# #         dfIntUnique, cursor, con, (100 * i), ((100 * i) + 100)
+# #     )
+# #     listOfCollisions += collisions
+# #     listOfAllErrors += errors
+# #     print("100 number ", (i + 1), " done")
+
+# # collisions, errors = process_categories(dfIntUnique, cursor, con, (7702), ((7800)))
+# # listOfCollisions += collisions
+# # listOfAllErrors += errors
+# # print("100 number ", 77, " done, this case was special")
+
+# # for i in range(76):  # second 77 00 - essentially skip the bad entry
+# #     k = i + 78
+# #     collisions, errors = process_categories(
+# #         dfIntUnique, cursor, con, (100 * k), ((100 * k) + 100)
+# #     )
+# #     listOfCollisions += collisions
+# #     listOfAllErrors += errors
+# #     print("100 number ", (k + 1), " done, i =", i)
+
+# # cursor.close()
+# # con.close()  # close
+
+# # it seems any possible number in front of 7700 will hurt the code, I will inspect in the notebook
+
+df2 = dfIntUnique.iloc[7700:15400].reset_index(drop=True)
 
 con = psycopg2.connect(
     database="iSupply",
@@ -99,29 +135,10 @@ con = psycopg2.connect(
 )
 cursor = con.cursor()  # open
 
-# for i in range(77):  # first 77 00, this was already done
-#     collisions, errors = process_categories(
-#         dfIntUnique, cursor, con, (100 * i), ((100 * i) + 100)
-#     )
-#     listOfCollisions += collisions
-#     listOfAllErrors += errors
-#     print("100 number ", (i + 1), " done")
-
-# collisions, errors = process_categories(dfIntUnique, cursor, con, (7702), ((7800)))
-# listOfCollisions += collisions
-# listOfAllErrors += errors
-# print("100 number ", 77, " done, this case was special")
-
-for i in range(76):  # second 77 00 - essentially skip the bad entry
-    k = i + 78
+for i in range(77):  # first 77 00, in df2 -> second 7700 in df1
     collisions, errors = process_categories(
-        dfIntUnique, cursor, con, (100 * k), ((100 * k) + 100)
+        df2, cursor, con, (100 * i), ((100 * i) + 100)
     )
     listOfCollisions += collisions
     listOfAllErrors += errors
-    print("100 number ", (k + 1), " done, i =", i)
-
-cursor.close()
-con.close()  # close
-
-# it seems any possible number in front of 7700 will hurt the code, I will inspect in the notebook
+    print("in second half, 100 number ", (i + 1), " done")
