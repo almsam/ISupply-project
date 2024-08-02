@@ -76,7 +76,7 @@ con = psycopg2.connect(
 )
 cursor = con.cursor()  # open
 
-for i in range(1):  # all 4600 for the sake of analysis
+for i in range(3):  # all 4600 for the sake of analysis
     # collisions, errors = process_categories(
     currentQL = process_categories(df, cursor, con, (100 * i), ((100 * i) + 100))
     # listOfCollisions += collisions listOfAllErrors += errors
@@ -92,4 +92,8 @@ con.close()  # close
 
 print(len(queryList))
 
-numpy.savetxt("errorLog.csv", queryList, delimiter=", \n")
+numpy.savetxt(
+    "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/errorLog.csv",
+    queryList,
+    delimiter=", \n",
+)
