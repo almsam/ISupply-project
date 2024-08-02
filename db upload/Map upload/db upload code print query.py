@@ -30,8 +30,11 @@ def process_categories(df, cursor, con, start, end):
         )
         # query = str(query)
         try:
-            # cursor.execute("""INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""", (num, name), )  # O(n)
-            cursor.execute(query)  # O(n)
+            cursor.execute(
+                """INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""",
+                (num, name),
+            )  # O(n)
+            # cursor.execute(query)  # O(n)
         except psycopg2.errors.UniqueViolation as e:
             # listOfAllErrors.append(i)
             # listOfCollisions.append(i)
