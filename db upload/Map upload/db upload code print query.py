@@ -98,3 +98,8 @@ print(queryList)
 #     queryList,
 #     delimiter=",",
 # )
+
+# for first 500, queryList had 3 entries:
+# (\'INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)\', (\'151\', nan))
+# (\'INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)\', (\'340\', nan))
+# (\'INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)\', (\'341\', \'Automobiles & Motorcycle s\'))
