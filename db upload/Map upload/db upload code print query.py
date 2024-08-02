@@ -91,9 +91,10 @@ cursor.close()
 con.close()  # close
 
 print(len(queryList))
+print(queryList)
 
 numpy.savetxt(
     "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/errorLog.csv",
     queryList,
-    delimiter=", \n",
+    delimiter=",",
 )
