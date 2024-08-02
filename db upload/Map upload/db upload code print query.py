@@ -14,25 +14,29 @@ def get_category_subcategory(df, index):
 
 
 def process_categories(df, cursor, con, start, end):
-    listOfCollisions = []
-    listOfAllErrors = []
+    # listOfCollisions = []
+    # listOfAllErrors = []
+    queryList = []
     j = 0
 
     for i in range(start, end):  # O(n)
         name, num = get_category_subcategory(df, i)
         num = str(num)
 
+        query = (
+            """INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""",
+            (num, name),
+        )
         try:
-            cursor.execute(
-                """INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""",
-                (num, name),
-            )  # O(n)
+            cursor.execute(query)  # O(n)
         except psycopg2.errors.UniqueViolation as e:
-            listOfAllErrors.append(i)
-            listOfCollisions.append(i)
+            # listOfAllErrors.append(i)
+            # listOfCollisions.append(i)
+            queryList.append(query)
         except Exception as e:
             print(f"Error occurred: {e}")
-            listOfAllErrors.append(i)
+            # listOfAllErrors.append(i)
+            queryList.append(query)
 
         if j == 10:
             con.commit()
@@ -41,14 +45,18 @@ def process_categories(df, cursor, con, start, end):
 
     con.commit()
 
-    print(len(listOfCollisions), len(listOfAllErrors))
-    return listOfCollisions, listOfAllErrors
+    # print(len(listOfCollisions), len(listOfAllErrors))
+    # return listOfCollisions, listOfAllErrors
+    print(len(queryList))
+    return queryList
 
     # this should give us some details on where our data is going
 
 
-listOfCollisions = []
-listOfAllErrors = []
+# listOfCollisions = []
+# listOfAllErrors = []
+queryList = []
+
 
 # wipe the db from DBeaver
 
@@ -62,15 +70,17 @@ con = psycopg2.connect(
 cursor = con.cursor()  # open
 
 for i in range(45):  # all 4600 for the sake of analysis
-    collisions, errors = process_categories(
-        df, cursor, con, (100 * i), ((100 * i) + 100)
-    )
-    listOfCollisions += collisions
-    listOfAllErrors += errors
+    # collisions, errors = process_categories(
+    currentQL = process_categories(df, cursor, con, (100 * i), ((100 * i) + 100))
+    # listOfCollisions += collisions listOfAllErrors += errors
+    queryList += currentQL
     print("100 number ", (i + 1), " done")
 
-collisions, errors = process_categories(df, cursor, con, (4500), (4596))
+currentQL = process_categories(df, cursor, con, (4500), (4596))
+queryList += currentQL
 print("100 number ", (46), " done")
 
 cursor.close()
 con.close()  # close
+
+print(queryList)
