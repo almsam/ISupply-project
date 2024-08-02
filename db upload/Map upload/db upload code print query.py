@@ -28,6 +28,7 @@ def process_categories(df, cursor, con, start, end):
             """INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""",
             (num, name),
         )
+        print(str(query))
         # query = str(query)
         try:
             cursor.execute(
@@ -89,6 +90,6 @@ for i in range(1):  # all 4600 for the sake of analysis
 cursor.close()
 con.close()  # close
 
-print(queryList)
+print(len(queryList))
 
 numpy.savetxt("errorLog.csv", queryList, delimiter=", \n")
