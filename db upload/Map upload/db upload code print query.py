@@ -25,8 +25,11 @@ def process_categories(df, cursor, con, start, end):
         num = str(num)
 
         query = (
-            """INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""",
-            (num, name),
+            """INSERT INTO "Categories" (category_id, category) VALUES ("""
+            + num
+            + """, """
+            + name
+            + """)"""
         )
         try:
             cursor.execute(query)  # O(n)
