@@ -25,23 +25,21 @@ def process_categories(df, cursor, con, start, end):
         num = str(num)
 
         query = (
-            """INSERT INTO "Categories" (category_id, category) VALUES ("""
-            + num
-            + """, """
-            + name
-            + """)"""
+            """INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""",
+            (num, name),
         )
-        query = str(query)
+        # query = str(query)
         try:
+            # cursor.execute("""INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""", (num, name), )  # O(n)
             cursor.execute(query)  # O(n)
         except psycopg2.errors.UniqueViolation as e:
             # listOfAllErrors.append(i)
             # listOfCollisions.append(i)
-            queryList.append(query)
+            queryList.append(str(query))
         except Exception as e:
             print(f"Error occurred: {e}")
             # listOfAllErrors.append(i)
-            queryList.append(query)
+            queryList.append(str(query))
 
         if j == 10:
             con.commit()
