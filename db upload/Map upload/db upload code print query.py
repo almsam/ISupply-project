@@ -31,6 +31,7 @@ def process_categories(df, cursor, con, start, end):
             + name
             + """)"""
         )
+        query = str(query)
         try:
             cursor.execute(query)  # O(n)
         except psycopg2.errors.UniqueViolation as e:
