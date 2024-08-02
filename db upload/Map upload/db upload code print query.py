@@ -76,7 +76,7 @@ con = psycopg2.connect(
 )
 cursor = con.cursor()  # open
 
-for i in range(3):  # all 4600 for the sake of analysis
+for i in range(5):  # all 4600 for the sake of analysis
     # collisions, errors = process_categories(
     currentQL = process_categories(df, cursor, con, (100 * i), ((100 * i) + 100))
     # listOfCollisions += collisions listOfAllErrors += errors
