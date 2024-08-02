@@ -28,7 +28,7 @@ def process_categories(df, cursor, con, start, end):
             """INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""",
             (num, name),
         )
-        print(str(query))
+        # print(str(query))
         # query = str(query)
         try:
             cursor.execute(
@@ -41,7 +41,7 @@ def process_categories(df, cursor, con, start, end):
             # listOfCollisions.append(i)
             queryList.append(str(query))
         except Exception as e:
-            print(f"Error occurred: {e}")
+            print(f"Error occurred: {e} q:", query)
             # listOfAllErrors.append(i)
             queryList.append(str(query))
 
