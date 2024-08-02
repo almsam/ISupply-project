@@ -1,5 +1,6 @@
 import pandas as pd
 import psycopg2
+import numpy
 
 df = pd.read_excel(
     "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx"
@@ -84,3 +85,5 @@ cursor.close()
 con.close()  # close
 
 print(queryList)
+
+numpy.savetxt("errorLog.csv", queryList, delimiter=", \n")
