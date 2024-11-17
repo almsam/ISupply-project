@@ -19,10 +19,12 @@ def process_categories(df, start, end):
 
     for i in range(start, end):  # O(n)
         name, num = get_category_subcategory(df, i)
+        # name = name.replace("'", "''")
         num = str(num)
         cat = """ "Categories" """
         # query = ("INSERT INTO " + cat + " (category_id, category) VALUES (" , num, name, ")")
-        query = f"""INSERT INTO "Categories" (category_id, category) VALUES ({num}, '{name}');"""
+        # query = f"""insert into "Categories" (category_id, category) values ({num}, '{name}');"""
+        query = f'insert into "Categories" (category_id, category) values ({num}, \'{name}\');'
         queryList.append(query)
 
 
