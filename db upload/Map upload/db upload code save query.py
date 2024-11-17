@@ -43,9 +43,20 @@ def process_categories(df, start, end):
 
 # listOfCollisions = []
 # listOfAllErrors = []
-# queryList = []
-queryList = process_categories(df, 0, 4600)
 
+queryList = []
+
+queryList = process_categories(df, 0, 4596)
+
+print(len(queryList))
+# print(queryList)
+
+# save as a CSV file
+output_path = "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/query_list.csv"
+query_df = pd.DataFrame({"Query": queryList})  # oop type shenanigans
+query_df.to_csv(output_path, index=False) 
+
+print(f"Query list saved to {output_path}")
 
 
 # for i in range(5):  # all 4600 for the sake of analysis
@@ -59,8 +70,7 @@ queryList = process_categories(df, 0, 4600)
 # queryList += currentQL
 # print("100 number ", (46), " done")
 
-print(len(queryList))
-print(queryList)
+
 
 
 
