@@ -20,12 +20,10 @@ def process_categories(df, start, end):
     for i in range(start, end):  # O(n)
         name, num = get_category_subcategory(df, i)
         num = str(num)
-
-        query = (
-            """INSERT INTO "Categories" (category_id, category) VALUES (%s, %s)""",
-            (num, name),
-        )
-        queryList.append(str(query))
+        cat = """ "Categories" """
+        # query = ("INSERT INTO " + cat + " (category_id, category) VALUES (" , num, name, ")")
+        query = f"""INSERT INTO "Categories" (category_id, category) VALUES ({num}, '{name}');"""
+        queryList.append(query)
 
 
 
@@ -53,7 +51,7 @@ print(len(queryList))
 
 # save as a CSV file
 output_path = "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/query_list.csv"
-query_df = pd.DataFrame({"Query": queryList})  # oop type shenanigans
+query_df = pd.DataFrame(queryList)  # oop type shenanigans
 query_df.to_csv(output_path, index=False) 
 
 print(f"Query list saved to {output_path}")
