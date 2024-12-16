@@ -12,7 +12,7 @@ def modify_csv(input_file, output_file):
                     # remove 1st, 14th, 26th, and -1st characters
                     modified = ''.join(
                         char for i, char in enumerate(cell) 
-                        if i not in {0, 13, 25, len(cell) - 1}
+                        if i not in {len(cell)}#, 12, 25, len(cell) - 1}
                     )
                 else:
                     modified = cell  # Keep short strings unchanged
