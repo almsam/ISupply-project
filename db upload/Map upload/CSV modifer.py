@@ -37,4 +37,6 @@ def modify_csv_lines(input_file, output_file):
 # run as a method for clean code reasons
 input_csv = "C:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/query_list.csv"
 output_csv = "C:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/query_list_clean.csv"
+output_sql = "C:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/query_list_clean.sql"
 modify_csv_lines(input_csv, output_csv)
+modify_csv_lines(input_csv, output_sql)
