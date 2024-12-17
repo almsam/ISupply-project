@@ -1,0 +1,83 @@
+select * from "Categories" c;
+
+insert into "Categories" (category) values ('food99');
+
+
+
+
+
+select * from "Category_Tree" ct;
+
+insert into "Category_Tree" (category_id, sub_category_id) values ('12', '13');
+
+
+select * from "Categories" c;
+
+insert into "Categories" (category_id, category) values (22, 'food999');
+
+
+
+
+
+
+
+delete from "Categories";
+
+
+
+
+
+
+
+
+
+
+
+
+
+select * from "Category_Tree" ct;
+
+insert into "Category_Tree" (category_id, sub_category_id) values ('12', '-1');
+
+delete from "Category_Tree";
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE "Categories" (
+    category_id SERIAL PRIMARY KEY,
+    category TEXT NOT null 
+);
+
+INSERT INTO "Categories" (category) VALUES ('food99');
+
+INSERT INTO "Categories" (category_id, category) VALUES (22, 'food999');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
