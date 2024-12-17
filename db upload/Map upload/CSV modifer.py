@@ -1,4 +1,5 @@
 import csv
+import re
 
 def modify_csv(input_file, output_file):
     with open(input_file, 'r') as infile, open(output_file, 'w', newline='') as outfile:
@@ -20,9 +21,26 @@ def modify_csv(input_file, output_file):
             writer.writerow(modified_row)
 
 
+def clean_line(line):
+    line = line.replace("\\", "") # remove all backslashes
+    
+    def fix_quotes(match):
+        value = match.group(1)
+        if value.count("'") == 3:  # Check if there are exactly three '
+            parts = value.split("'")  # split by single quotes
+            fixed_value = parts[0] + parts[1] + parts[2]  # omit the second quote
+            return f"'{fixed_value}'"  # return cleaned str w outer quotes
+        return match.group(0)  # else return original string
+
+    line = re.sub(r"'([^']*)'", fix_quotes, line) # regex to find string literals
+    
+    return line
+
+
 def modify_csv_lines(input_file, output_file):
     with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
         for line in infile:
+            line = clean_line(line)
             line = line.strip()  # remove head whitespace
             if len(line) > 1: #safety case
                     # remove 1st, 14th, 26th, and -1st characters
@@ -40,3 +58,5 @@ output_csv = "C:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map uplo
 output_sql = "C:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/query_list_clean.sql"
 modify_csv_lines(input_csv, output_csv)
 modify_csv_lines(input_csv, output_sql)
+
+
