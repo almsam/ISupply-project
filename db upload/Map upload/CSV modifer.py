@@ -24,17 +24,16 @@ def modify_csv(input_file, output_file):
 def clean_line(line):
     line = line.replace("\\", "") # remove all backslashes
     
-    def fix_quotes(match):
-        value = match.group(1)
-        if value.count("'") == 3:  # Check if there are exactly three '
+    def fix_quotes(value):
+        if value.count("'") == 3:  # check if there are exactly three '
             parts = value.split("'")  # split by single quotes
-            fixed_value = parts[0] + parts[1] + parts[2]  # omit the second quote
-            return f"'{fixed_value}'"  # return cleaned str w outer quotes
-        return match.group(0)  # else return original string
-
-    line = re.sub(r"'([^']*)'", fix_quotes, line) # regex to find string literals
+            fixed_value = parts[0] + "'" + parts[1] + parts[2] + "');" # omit the second quote
+            print(fixed_value)
+            return f"{fixed_value};"  # return cleaned str w outer quotes
+        return value
     
-    return line
+    return fix_quotes(line)
+
 
 
 def modify_csv_lines(input_file, output_file):
