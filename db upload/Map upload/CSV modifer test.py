@@ -21,8 +21,8 @@ def clean_line(line):
     def fix_quotes(value):
         if value.count("'") == 3:  # check if there are exactly three '
             parts = value.split("'")  # split by single quotes
-            fixed_value = parts[0] + parts[1] + parts[2]  # omit the second quote
-            return f"'{fixed_value}'"  # return cleaned str w outer quotes
+            fixed_value = parts[0] + "'" + parts[1] + parts[2] + "');" # omit the second quote
+            return f"{fixed_value}"  # return cleaned str w outer quotes
         return value
     
     
@@ -41,6 +41,6 @@ def clean_line(line):
 # test_clean_line()
 
 
-input_line = "(156, 'Children\'s Clothing');"
-expected_output = "(156, 'Children's Clothing');"
+input_line = "INSERT INTO Categories (category_id, category) VALUES (156, 'Children\'s Clothing');"
+expected_output = "INSERT INTO Categories (category_id, category) VALUES (156, 'Childrens Clothing');"
 print(clean_line(input_line))
