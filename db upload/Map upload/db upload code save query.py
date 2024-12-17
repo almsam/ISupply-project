@@ -24,7 +24,7 @@ def process_categories(df, start, end):
         cat = """ "Categories" """
         # query = ("INSERT INTO " + cat + " (category_id, category) VALUES (" , num, name, ")")
         # query = f"""insert into "Categories" (category_id, category) values ({num}, '{name}');"""
-        query = f'insert into "Categories" (category_id, category) values ({num}, \'{name}\');'
+        query = f'INSERT INTO "Categories" (category_id, category) VALUES ({num}, \'{name}\');'
         queryList.append(query)
 
 
