@@ -38,19 +38,17 @@ print(f"Query list saved to {output_path}")
 
 
 
+
 def modify_csv(input_file, output_file):
     with open(input_file, 'r') as infile, open(output_file, 'w', newline='') as outfile:
-        reader = csv.reader(infile)
-        writer = csv.writer(outfile)
-        
+        reader = csv.reader(infile); writer = csv.writer(outfile)
         for row in reader:
             modified_row = []
             for cell in row:
                 if len(cell) > 1: #safety case
                     # remove 1st, 14th, 26th, and -1st characters
                     modified = ''.join(
-                        char for i, char in enumerate(cell) 
-                        if i not in {len(cell)}#, 12, 25, len(cell) - 1}
+                        char for i, char in enumerate(cell); if i not in {len(cell)}#, 12, 25, len(cell) - 1}
                     )
                 else:
                     modified = cell  # keep short strings unchanged
@@ -60,13 +58,11 @@ def modify_csv(input_file, output_file):
 
 def clean_line(line):
     line = line.replace("\\", "") # remove all backslashes
-    
     def fix_quotes(value):
         if value.count("'") == 3:  # check if there are exactly three '
             parts = value.split("'")  # split by single quotes
             fixed_value = parts[0] + "'" + parts[1] + parts[2] + "');" # omit the second quote
-            print(fixed_value)
-            return f"{fixed_value};"  # return cleaned str w outer quotes
+            print(fixed_value); return f"{fixed_value};"  # return cleaned str w outer quotes
         return value
     
     return fix_quotes(line)
@@ -76,8 +72,7 @@ def clean_line(line):
 def modify_csv_lines(input_file, output_file):
     with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
         for line in infile:
-            line = clean_line(line)
-            line = line.strip()  # remove head whitespace
+            line = clean_line(line); line = line.strip()  # remove head whitespace
             if len(line) > 1: #safety case
                     # remove 1st, 14th, 26th, and -1st characters
                 modified_line = ''.join(
