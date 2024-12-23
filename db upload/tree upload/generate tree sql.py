@@ -23,16 +23,17 @@ def modify_csv(input_file, output_file):
         reader = csv.reader(infile); writer = csv.writer(outfile)
         for row in reader:
             modified_row = []
-            # for cell in row:
-            #     if len(cell) > 1: #safety case
-            #         # remove 1st, 14th, 26th, and -1st characters
-            #         modified = ''.join(
-            #             char for i, char in enumerate(cell); if i not in {len(cell)}#, 12, 25, len(cell) - 1}
-            #         )
-            #     else:
-            #         modified = cell  # keep short strings unchanged
-            #     modified_row.append(modified)
-            # writer.writerow(modified_row)
+            for cell in row:
+                if len(cell) > 1: #safety case
+                    # remove 1st, 14th, 26th, and -1st characters
+                    modified = ''.join(
+                        char for i, char in enumerate(cell)
+                        if i not in {len(cell)}#, 12, 25, len(cell) - 1}
+                    )
+                else:
+                    modified = cell  # keep short strings unchanged
+                modified_row.append(modified)
+            writer.writerow(modified_row)
 
 def clean_line(line):
     line = line.replace("\\", "") # remove all backslashes
@@ -66,3 +67,10 @@ queryList = []; queryList = process_categories(df, 0, 13782)# ; print(len(queryL
 # save as a CSV file
 output_path = "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/query_list.csv"
 query_df = pd.DataFrame(queryList); query_df.to_csv(output_path, index=False) # oop type shenanigans - to df & to csv
+
+# run as a method for clean code reasons
+input_csv = "C:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/query_list.csv"
+output_csv = "C:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/query_list_clean.csv"
+output_sql = "C:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/query_list_clean.sql"
+modify_csv_lines(input_csv, output_csv)
+modify_csv_lines(input_csv, output_sql)
