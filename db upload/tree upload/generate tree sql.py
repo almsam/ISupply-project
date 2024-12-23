@@ -4,15 +4,15 @@ import csv
 import re
 
 def get_category_subcategory(df, index):
-    num = df.loc[index, "category"]; name = df.loc[index, "subcategory"]  # O( log(n) )
-    return name, num
+    cat = df.loc[index, "category"]; subcat = df.loc[index, "subcategory"]  # O( log(n) )
+    return subcat, cat
 
 def process_categories(df, start, end):
     queryList = []
 
     for i in range(start, end):  # O(n)
-        name, num = get_category_subcategory(df, i); num = str(num); cat = """ "Categories" """
-        query = f'INSERT INTO "Categories" (category_id, category) VALUES ({num}, \'{name}\');'
+        subcat, cat = get_category_subcategory(df, i); #num = str(num); cat = """ "Categories" """
+        query = f'INSERT INTO "Categories" (category_id, category) VALUES ({cat}, \'{subcat}\');'
         queryList.append(query)
 
     print(len(queryList)); return queryList
@@ -23,16 +23,16 @@ def modify_csv(input_file, output_file):
         reader = csv.reader(infile); writer = csv.writer(outfile)
         for row in reader:
             modified_row = []
-            for cell in row:
-                if len(cell) > 1: #safety case
-                    # remove 1st, 14th, 26th, and -1st characters
-                    modified = ''.join(
-                        char for i, char in enumerate(cell); if i not in {len(cell)}#, 12, 25, len(cell) - 1}
-                    )
-                else:
-                    modified = cell  # keep short strings unchanged
-                modified_row.append(modified)
-            writer.writerow(modified_row)
+            # for cell in row:
+            #     if len(cell) > 1: #safety case
+            #         # remove 1st, 14th, 26th, and -1st characters
+            #         modified = ''.join(
+            #             char for i, char in enumerate(cell); if i not in {len(cell)}#, 12, 25, len(cell) - 1}
+            #         )
+            #     else:
+            #         modified = cell  # keep short strings unchanged
+            #     modified_row.append(modified)
+            # writer.writerow(modified_row)
 
 def clean_line(line):
     line = line.replace("\\", "") # remove all backslashes
@@ -62,3 +62,7 @@ def modify_csv_lines(input_file, output_file):
 df = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/slimTree.xlsx")# ; print(df.head())
 
 queryList = []; queryList = process_categories(df, 0, 13782)# ; print(len(queryList))
+
+# save as a CSV file
+output_path = "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/query_list.csv"
+query_df = pd.DataFrame(queryList); query_df.to_csv(output_path, index=False) # oop type shenanigans - to df & to csv
