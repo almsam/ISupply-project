@@ -4,7 +4,7 @@ import csv
 import re
 
 def get_category_subcategory(df, index):
-    num = df.loc[index, "Ser"]; name = df.loc[index, "combined"]  # O( log(n) )
+    num = df.loc[index, "category"]; name = df.loc[index, "subcategory"]  # O( log(n) )
     return name, num
 
 def process_categories(df, start, end):
@@ -16,8 +16,8 @@ def process_categories(df, start, end):
         queryList.append(query)
 
     print(len(queryList)); return queryList
-    
-    
+
+
 def modify_csv(input_file, output_file):
     with open(input_file, 'r') as infile, open(output_file, 'w', newline='') as outfile:
         reader = csv.reader(infile); writer = csv.writer(outfile)
@@ -58,3 +58,7 @@ def modify_csv_lines(input_file, output_file):
                 outfile.write(modified_line + '\n')
             else:
                 outfile.write(line + '\n')  # return unchanged if line is too short
+
+df = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/slimTree.xlsx")# ; print(df.head())
+
+queryList = []; queryList = process_categories(df, 0, 13782)# ; print(len(queryList))
