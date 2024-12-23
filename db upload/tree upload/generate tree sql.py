@@ -12,6 +12,7 @@ def process_categories(df, start, end):
 
     for i in range(start, end):  # O(n)
         subcat, cat = get_category_subcategory(df, i); #num = str(num); cat = """ "Categories" """
+        if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): subcat = -1
         query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, \'{subcat}\');'
         queryList.append(query)
 
@@ -25,7 +26,7 @@ def clean_line(line):
         if value.count("'") == 3:  # check if there are exactly three '
             parts = value.split("'")  # split by single quotes
             fixed_value = parts[0] + "'" + parts[1] + parts[2] + "');" # omit the second quote
-            print(fixed_value); return f"{fixed_value};"  # return cleaned str w outer quotes
+            return f"{fixed_value};"  # return cleaned str w outer quotes
         return value
     
     return fix_quotes(line)
