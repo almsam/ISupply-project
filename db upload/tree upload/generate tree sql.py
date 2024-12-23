@@ -12,6 +12,17 @@ def process_categories(df, start, end):
 
     for i in range(start, end):  # O(n)
         subcat, cat = get_category_subcategory(df, i); #num = str(num); cat = """ "Categories" """
+        
+        if(i % 100 == 0): print("map touched ", i)
+        
+        df_mapping = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx")  # load map
+        category_mapping = dict(zip(df_mapping['combined'], df_mapping['Ser']))  # make map dict(ionary)
+        
+        if cat in category_mapping:
+            cat = category_mapping[cat]
+        if subcat in category_mapping:
+            subcat = category_mapping[subcat]
+        
         if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): subcat = -1
         query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, \'{subcat}\');'
         queryList.append(query)
