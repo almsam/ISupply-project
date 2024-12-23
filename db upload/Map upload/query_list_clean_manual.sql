@@ -2,7 +2,7 @@ delete from "Categories";
 
 CREATE TABLE "Categories" (
     category_id SERIAL PRIMARY KEY,
-    category TEXT NOT null 
+    category VARCHAR (200) UNIQUE NOT NULL
 );
 
 INSERT INTO "Categories" (category_id, category) VALUES (1, 'Agriculture');
