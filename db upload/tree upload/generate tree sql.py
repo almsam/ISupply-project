@@ -15,16 +15,16 @@ def process_categories(df, start, end):
         
         if(i % 100 == 0): print("map touched ", i)
         
+        if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): subcat = '-1' # turn the nan into leafs before the mapping to prevent tree becoming a graph
+        
         df_mapping = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx")  # load map
         category_mapping = dict(zip(df_mapping['combined'], df_mapping['Ser']))  # make map dict(ionary)
         
-        if cat in category_mapping:
-            cat = category_mapping[cat]
-        if subcat in category_mapping:
-            subcat = category_mapping[subcat]
+        if cat in category_mapping: cat = category_mapping[cat]
+        if subcat in category_mapping: subcat = category_mapping[subcat]
         
-        if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): subcat = -1
-        query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, \'{subcat}\');'
+        if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, -1);' # leaf
+        else: query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES (\'{cat}\', \'{subcat}\');' # non leaf
         queryList.append(query)
 
     print(len(queryList)); return queryList
