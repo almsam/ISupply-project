@@ -12,7 +12,7 @@ def process_categories(df, start, end):
 
     for i in range(start, end):  # O(n)
         subcat, cat = get_category_subcategory(df, i); #num = str(num); cat = """ "Categories" """
-        query = f'INSERT INTO "Categories" (category_id, category) VALUES ({cat}, \'{subcat}\');'
+        query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, \'{subcat}\');'
         queryList.append(query)
 
     print(len(queryList)); return queryList
