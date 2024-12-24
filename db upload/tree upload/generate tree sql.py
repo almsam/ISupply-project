@@ -57,8 +57,9 @@ def modify_csv_lines(input_file, output_file):
                 outfile.write(line + '\n')  # return unchanged if line is too short
 
 df = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/slimTree.xlsx")# ; print(df.head())
+df = df.drop_duplicates().reset_index()
 
-queryList = []; queryList = process_categories(df, 0, 13782)# ; print(len(queryList))
+queryList = []; queryList = process_categories(df, 0, 8415)# ; print(len(queryList))
 
 # save as a CSV file
 output_path = "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/query_list.csv"
