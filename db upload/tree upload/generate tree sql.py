@@ -23,6 +23,13 @@ def process_categories(df, start, end):
         if cat in category_mapping: cat = category_mapping[cat]
         if subcat in category_mapping: subcat = category_mapping[subcat]
         
+                # print if n't strings
+        if isinstance(cat, str) and cat != "-1":
+            print(f"Non-string cat at index {i}: {cat} (type: {type(cat)})")
+        if isinstance(subcat, str) and subcat != "-1":
+            print(f"Non-string subcat at index {i}: {subcat} (type: {type(subcat)})")
+        
+        
         if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, -1);' # leaf
         else: query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES (\'{cat}\', \'{subcat}\');' # non leaf
         queryList.append(query)
