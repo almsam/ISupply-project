@@ -1,4 +1,4 @@
-delete from "Categories";
+drop table "Categories";
 
 CREATE TABLE "Categories" (
     category_id SERIAL PRIMARY KEY,
