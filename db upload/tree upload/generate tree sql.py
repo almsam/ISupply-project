@@ -30,11 +30,11 @@ def process_categories(df, start, end):
         if subcat_idx < len(category_mapping_keys) and category_mapping_keys[subcat_idx] == subcat:
             subcat = category_mapping[subcat_idx][1]
         
-                # print if n't strings
+                # print if strings &n't ints
         if isinstance(cat, str) and cat != "-1":
-            print(f"Non-string cat at index {i}: {cat} (type: {type(cat)})")
+            print(f"Non-int cat at index {i}: {cat} (type: {type(cat)})")
         if isinstance(subcat, str) and subcat != "-1":
-            print(f"Non-string subcat at index {i}: {subcat} (type: {type(subcat)})")
+            print(f"Non-int subcat at index {i}: {subcat} (type: {type(subcat)})")
         
         
         if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, -1);' # leaf
