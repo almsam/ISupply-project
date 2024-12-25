@@ -48,6 +48,10 @@ def process_categories(df, start, end):
     print("Non-integer subcat's:")
     for value in non_int_subcats: print(f"value: {value}")
     
+    #save
+    with open("non_int_cats.csv",    "w", newline="", encoding="utf-8") as file: writer = csv.writer(file); writer.writerows([[item] for item in non_int_cats   ])
+    with open("non_int_subcats.csv", "w", newline="", encoding="utf-8") as file: writer = csv.writer(file); writer.writerows([[item] for item in non_int_subcats])
+    
     print(len(queryList)); return queryList
 
 
