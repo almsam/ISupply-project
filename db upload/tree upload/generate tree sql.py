@@ -10,7 +10,7 @@ def get_category_subcategory(df, index):
 def process_categories(df, start, end):
     queryList = []
 
-    for i in range(start, end):  # O(n)
+    for i in range(start, end):  # O(n*n)
         subcat, cat = get_category_subcategory(df, i); #num = str(num); cat = """ "Categories" """
         
         if(i % 100 == 0): print("map touched ", i)
@@ -20,8 +20,8 @@ def process_categories(df, start, end):
         df_mapping = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx")  # load map
         category_mapping = dict(zip(df_mapping['combined'], df_mapping['Ser']))  # make map dict(ionary)
         
-        if cat in category_mapping: cat = category_mapping[cat]
-        if subcat in category_mapping: subcat = category_mapping[subcat]
+        if cat in category_mapping: cat = category_mapping[cat] # O(n)
+        if subcat in category_mapping: subcat = category_mapping[subcat] # O(n)
         
                 # print if n't strings
         if isinstance(cat, str) and cat != "-1":
