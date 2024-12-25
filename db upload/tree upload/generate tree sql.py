@@ -2,6 +2,7 @@ import pandas as pd
 import numpy
 import csv
 import re
+import bisect
 
 def get_category_subcategory(df, index):
     cat = df.loc[index, "category"]; subcat = df.loc[index, "subcategory"]  # O( log(n) )
@@ -10,15 +11,15 @@ def get_category_subcategory(df, index):
 def process_categories(df, start, end):
     queryList = []
 
+    df_mapping = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx")  # load map
+    category_mapping = dict(zip(df_mapping['combined'], df_mapping['Ser']))  # make map dict(ionary)
+    
     for i in range(start, end):  # O(n*n)
         subcat, cat = get_category_subcategory(df, i); #num = str(num); cat = """ "Categories" """
         
         if(i % 100 == 0): print("map touched ", i)
         
         if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): subcat = '-1' # turn the nan into leafs before the mapping to prevent tree becoming a graph
-        
-        df_mapping = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx")  # load map
-        category_mapping = dict(zip(df_mapping['combined'], df_mapping['Ser']))  # make map dict(ionary)
         
         if cat in category_mapping: cat = category_mapping[cat] # O(n)
         if subcat in category_mapping: subcat = category_mapping[subcat] # O(n)
