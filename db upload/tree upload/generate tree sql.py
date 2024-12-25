@@ -12,7 +12,7 @@ def process_categories(df, start, end):
     queryList = []
 
     df_mapping = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx")  # load map
-    category_mapping = sorted(df_mapping['combined'].items())  # make map dict(ionary) - sort it by key's
+    category_mapping = sorted([(str(k), v) for k, v in zip(df_mapping['combined'], df_mapping['Ser'])])  # make map dict(ionary) - sort it by key's
     category_mapping_keys = [k for k, v in category_mapping]  # extract keys
     
     for i in range(start, end):  # O(n*n)
@@ -23,10 +23,10 @@ def process_categories(df, start, end):
         if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): subcat = '-1' # turn the nan into leafs before the mapping to prevent tree becoming a graph
         
         # binary search for cat & subcat
-        cat_idx = bisect.bisect_left(category_mapping_keys, cat)
+        cat_idx = bisect.bisect_left(category_mapping_keys, str(cat))
         if cat_idx < len(category_mapping_keys) and category_mapping_keys[cat_idx] == cat:
             cat = category_mapping[cat_idx][1]
-        subcat_idx = bisect.bisect_left(category_mapping_keys, subcat)
+        subcat_idx = bisect.bisect_left(category_mapping_keys, str(subcat))
         if subcat_idx < len(category_mapping_keys) and category_mapping_keys[subcat_idx] == subcat:
             subcat = category_mapping[subcat_idx][1]
         
