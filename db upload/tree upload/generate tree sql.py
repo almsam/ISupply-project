@@ -9,7 +9,7 @@ def get_category_subcategory(df, index):
     return subcat, cat
 
 def process_categories(df, start, end):
-    queryList = []
+    queryList = []; non_int_cats = []; non_int_subcats = []
 
     df_mapping = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx")  # load map
     category_mapping = sorted([(str(k), v) for k, v in zip(df_mapping['combined'], df_mapping['Ser'])])  # make map dict(ionary) - sort it by key's
@@ -32,15 +32,22 @@ def process_categories(df, start, end):
         
                 # print if strings &n't ints
         if isinstance(cat, str) and cat != "-1":
-            print(f"Non-int cat at index {i}: {cat} (type: {type(cat)})")
+            non_int_cats.append((cat)) # print(f"Non-int cat at index {i}: {cat} (type: {type(cat)})")
         if isinstance(subcat, str) and subcat != "-1":
-            print(f"Non-int subcat at index {i}: {subcat} (type: {type(subcat)})")
+            non_int_subcats.append((subcat)) # print(f"Non-int subcat at index {i}: {subcat} (type: {type(subcat)})")
         
         
         if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, -1);' # leaf
         else: query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES (\'{cat}\', \'{subcat}\');' # non leaf
         queryList.append(query)
-
+    
+    print("\n\n\n\n\n ERROR LIST: \n\n\n")
+    non_int_cats = list(set(non_int_cats)); non_int_subcats = list(set(non_int_subcats))
+    print("Non-integer cat's:")
+    for value in non_int_cats: print(f"value: {value}")
+    print("Non-integer subcat's:")
+    for value in non_int_subcats: print(f"value: {value}")
+    
     print(len(queryList)); return queryList
 
 
