@@ -8,7 +8,7 @@ def get_category_subcategory(df, index):
     return name, num
 
 def process_categories(df, start, end):
-    queryList = []
+    queryList = []; nancount = 0
     
     num = 1; num = str((num)); name = "all"
     query = f'INSERT INTO "Categories" (category_id, category) VALUES ({num}, \'{name}\');'
@@ -16,8 +16,12 @@ def process_categories(df, start, end):
 
     for i in range(start, end):  # O(n)
         name, num = get_category_subcategory(df, i); num = str((num+1)); cat = """ "Categories" """
-        query = f'INSERT INTO "Categories" (category_id, category) VALUES ({num}, \'{name}\');'
-        queryList.append(query)
+        if(str(name) == "nan"):
+            nancount = nancount + 1; print("\t\tnan found:")
+            print(f'INSERT INTO "Categories" (category_id, category) VALUES ({num}, \'{name}\');{nancount}')
+        else:
+            query = f'INSERT INTO "Categories" (category_id, category) VALUES ({num}, \'{name}\');'
+            queryList.append(query)
 
     print(len(queryList)); return queryList
 
