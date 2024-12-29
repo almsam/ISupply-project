@@ -1,0 +1,98 @@
+
+1. sql UNIQUE (done)
+	automate removal of duplicates (.1)
+2. no nan should ever make it (done)
+	no missing no fake (done)
+3. all (done)
+4. (bonus) no sql category_ID // auto assign (.2)
+
+
+1. duplicate should be auto removed (#17)
+2. auto assign sql id (#18)
+3. merge all python into 1 file (#19)
+
+---------------------------------
+
+
+~~// cast out of all, 0,0,0,0~~
+
+
+no nan
+UNIQUE
+	sql unique
+no sql category_ID // auto assign
+
+
+---------------------------------
+
+
+All Agriculture 0 0, 0
+All Agriculture,Agricultural Equipment,0,0
+All Agriculture,Agricultural Equipment,Agricultural Greenhouses,0
+All Agriculture,Agricultural Equipment,Aquaculture Equipment,0
+
+--
+
+set of 5
+add agriculture since its unique
+dont add all as its already there
+dont add ag.. as its already there
+add ag equip
+...
+
+
+---------------------------------
+
+
+
+1 food
+
+2 coffee
+4 sugar
+
+5 1%milk
+6 2%milk
+7 3%milk
+
+--
+
+1 food
+	2 coffee
+	3 nan**
+		5 1%milk
+		6 2%milk
+		7 3%milk
+	4 sugar
+
+
+
+1food
+2coffee
+3sugar
+41%milk
+52%milk
+63%milk
+
+
+
+
+
+
+
+
+
+1 food
+2 coffee
+x
+4 sugar
+5 1%milk
+6 2%milk
+7 3%milk
+
+
+
+
+
+
+
+
