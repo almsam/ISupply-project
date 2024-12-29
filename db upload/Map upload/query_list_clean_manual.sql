@@ -1540,7 +1540,7 @@ INSERT INTO "Categories" (category_id, category) VALUES (1556, 'Sewer');
 INSERT INTO "Categories" (category_id, category) VALUES (1557, 'Waste Management');
 INSERT INTO "Categories" (category_id, category) VALUES (1558, 'Water Treatment');
 INSERT INTO "Categories" (category_id, category) VALUES (1561, 'Excess Inventory');
-INSERT INTO "Categories" (category_id, category) VALUES (1562, 'Agricultural Product Stock');
+
 INSERT INTO "Categories" (category_id, category) VALUES (1563, 'Home Appliances Stocks');
 INSERT INTO "Categories" (category_id, category) VALUES (1564, 'Measuring & Analysing Instrument Stoc ks');
 INSERT INTO "Categories" (category_id, category) VALUES (1567, 'Fashion Accessories');
@@ -2394,7 +2394,7 @@ INSERT INTO "Categories" (category_id, category) VALUES (2428, 'Water Filter Par
 INSERT INTO "Categories" (category_id, category) VALUES (2429, 'Water Softener Parts');
 INSERT INTO "Categories" (category_id, category) VALUES (2430, 'Wet Towel Dispenser Parts');
 INSERT INTO "Categories" (category_id, category) VALUES (2431, 'Wine Refrigerator Parts');
-INSERT INTO "Categories" (category_id, category) VALUES (2432, 'Home Appliances Stocks');
+
 INSERT INTO "Categories" (category_id, category) VALUES (2433, 'Home Heaters');
 INSERT INTO "Categories" (category_id, category) VALUES (2434, 'Electric Fireplaces');
 INSERT INTO "Categories" (category_id, category) VALUES (2435, 'Electric Heaters');
@@ -2619,7 +2619,7 @@ INSERT INTO "Categories" (category_id, category) VALUES (2659, 'Apparel Machiner
 INSERT INTO "Categories" (category_id, category) VALUES (2660, 'Aquaculture Machine Aerators');
 INSERT INTO "Categories" (category_id, category) VALUES (2661, 'Auxiliary Packaging Machinery');
 INSERT INTO "Categories" (category_id, category) VALUES (2662, 'Bag Making Machinery');
-INSERT INTO "Categories" (category_id, category) VALUES (2663, 'Bag Making Machinery Parts');
+
 INSERT INTO "Categories" (category_id, category) VALUES (2664, 'Belt Making Machinery');
 INSERT INTO "Categories" (category_id, category) VALUES (2665, 'Belt Making Machinery Parts');
 INSERT INTO "Categories" (category_id, category) VALUES (2666, 'Beverage Processing Machinery');
@@ -3012,7 +3012,7 @@ INSERT INTO "Categories" (category_id, category) VALUES (3054, 'Energy Meters');
 INSERT INTO "Categories" (category_id, category) VALUES (3055, 'Frequency Meters');
 INSERT INTO "Categories" (category_id, category) VALUES (3056, 'Multimeters');
 INSERT INTO "Categories" (category_id, category) VALUES (3057, 'Other Electrical Instruments');
-INSERT INTO "Categories" (category_id, category) VALUES (3058, 'Potentiometers');
+
 INSERT INTO "Categories" (category_id, category) VALUES (3059, 'Power Meters');
 INSERT INTO "Categories" (category_id, category) VALUES (3060, 'Resistance Meters');
 INSERT INTO "Categories" (category_id, category) VALUES (3061, 'Voltage Meters');
@@ -3032,7 +3032,7 @@ INSERT INTO "Categories" (category_id, category) VALUES (3074, 'Instrument Parts
 INSERT INTO "Categories" (category_id, category) VALUES (3075, 'Level Measuring Instruments');
 INSERT INTO "Categories" (category_id, category) VALUES (3076, 'Measuring & Analysing Instrument Desi gn Services');
 INSERT INTO "Categories" (category_id, category) VALUES (3077, 'Measuring & Analysing Instrument Proc essing Services');
-INSERT INTO "Categories" (category_id, category) VALUES (3078, 'Measuring & Analysing Instrument Stoc ks');
+
 INSERT INTO "Categories" (category_id, category) VALUES (3079, 'Measuring & Gauging Tools');
 INSERT INTO "Categories" (category_id, category) VALUES (3080, 'Dial Indicators');
 INSERT INTO "Categories" (category_id, category) VALUES (3081, 'Gauges');
@@ -3201,7 +3201,7 @@ INSERT INTO "Categories" (category_id, category) VALUES (3247, 'Fiberglass Mat')
 INSERT INTO "Categories" (category_id, category) VALUES (3248, 'Fiberglass Mesh');
 INSERT INTO "Categories" (category_id, category) VALUES (3249, 'Fiberglass Yarn');
 INSERT INTO "Categories" (category_id, category) VALUES (3250, 'Other Fiberglass Products');
-INSERT INTO "Categories" (category_id, category) VALUES (3251, 'Glass');
+
 INSERT INTO "Categories" (category_id, category) VALUES (3252, 'Graphite Products');
 INSERT INTO "Categories" (category_id, category) VALUES (3253, 'Graphite Crucible');
 INSERT INTO "Categories" (category_id, category) VALUES (3254, 'Graphite Electrodes');
@@ -3902,7 +3902,7 @@ INSERT INTO "Categories" (category_id, category) VALUES (3962, 'Outdoor Sports')
 INSERT INTO "Categories" (category_id, category) VALUES (3963, 'Bungee');
 INSERT INTO "Categories" (category_id, category) VALUES (3964, 'Camping & Hiking');
 INSERT INTO "Categories" (category_id, category) VALUES (3965, 'Camping Mat');
-INSERT INTO "Categories" (category_id, category) VALUES (3966, 'Compasses');
+
 INSERT INTO "Categories" (category_id, category) VALUES (3967, 'Other Camping & Hiking Products');
 INSERT INTO "Categories" (category_id, category) VALUES (3968, 'Sleeping Bags');
 INSERT INTO "Categories" (category_id, category) VALUES (3969, 'Sun Shelter');
@@ -4039,7 +4039,7 @@ INSERT INTO "Categories" (category_id, category) VALUES (4101, 'Telephone Cords'
 INSERT INTO "Categories" (category_id, category) VALUES (4102, 'Telephone Headsets');
 INSERT INTO "Categories" (category_id, category) VALUES (4103, 'Wireless Communication Terminals');
 INSERT INTO "Categories" (category_id, category) VALUES (4104, 'Mobile Phone Adapters');
-INSERT INTO "Categories" (category_id, category) VALUES (4105, 'Mobile Phone Batteries');
+
 INSERT INTO "Categories" (category_id, category) VALUES (4106, 'Mobile Phone Cables');
 INSERT INTO "Categories" (category_id, category) VALUES (4107, 'Mobile Phone Chargers');
 INSERT INTO "Categories" (category_id, category) VALUES (4108, 'Mobile Phone Flex Cables');
@@ -4051,7 +4051,7 @@ INSERT INTO "Categories" (category_id, category) VALUES (4113, 'Mobile Phone LCD
 INSERT INTO "Categories" (category_id, category) VALUES (4114, 'Mobile Phone SIM Cards');
 INSERT INTO "Categories" (category_id, category) VALUES (4115, 'Mobile Phone Stickers');
 INSERT INTO "Categories" (category_id, category) VALUES (4116, 'Mobile Phone Straps');
-INSERT INTO "Categories" (category_id, category) VALUES (4117, 'Mobile Phones');
+
 INSERT INTO "Categories" (category_id, category) VALUES (4118, 'Other Mobile Phone Accessories');
 INSERT INTO "Categories" (category_id, category) VALUES (4119, 'Pagers');
 INSERT INTO "Categories" (category_id, category) VALUES (4120, 'Walkie Talkie');
