@@ -9,9 +9,13 @@ def get_category_subcategory(df, index):
 
 def process_categories(df, start, end):
     queryList = []
+    
+    num = 1; num = str((num)); name = "all"
+    query = f'INSERT INTO "Categories" (category_id, category) VALUES ({num}, \'{name}\');'
+    queryList.append(query)
 
     for i in range(start, end):  # O(n)
-        name, num = get_category_subcategory(df, i); num = str(num); cat = """ "Categories" """
+        name, num = get_category_subcategory(df, i); num = str((num+1)); cat = """ "Categories" """
         query = f'INSERT INTO "Categories" (category_id, category) VALUES ({num}, \'{name}\');'
         queryList.append(query)
 
