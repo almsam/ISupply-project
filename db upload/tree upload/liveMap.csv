@@ -1,0 +1,4509 @@
+ser,cat
+1,all
+2,Agriculture
+3,Agricultural Equipment
+4,Agricultural Greenhouses
+5,Aquaculture Equipment
+6,Aquaculture Trap
+7,Fishing Float
+8,Fishing Net
+9,Fishing Rope
+10,Other Aquaculture Equipment
+11,Ear Tag
+12,Agricultural Growing Media
+13,Peat
+14,Agricultural Product Stock
+15,Agricultural Waste
+16,Animal Extract
+17,Animal Feed
+18,Animal Products
+19,Eggs
+20,Fowl & Livestock
+21,Bamboo Raw Materials
+22,Bean-Like Seeds
+23,Cacao
+24,Coffee Beans
+25,Vanilla Beans
+26,Beans
+27,Broad Beans
+28,Butter Beans
+29,Chickpeas
+30,Kidney Beans
+31,Lentils
+32,Lima Beans
+33,Other Beans
+34,Peas
+35,Soybeans
+36,Vigna Beans
+37,Cigarettes
+38,Cigars
+39,Fresh Fruit
+40,Fresh Apples
+41,Fresh Apricots
+42,Fresh Avocados
+43,Fresh Bananas
+44,Fresh Berries
+45,Fresh Cherries
+46,Fresh Citrus Fruit
+47,Fresh Coconuts
+48,Fresh Dragon Fruit
+49,Fresh Durians
+50,Fresh Grapes
+51,Fresh Guava
+52,Fresh Kiwi Fruit
+53,Fresh Mangos
+54,Fresh Melons
+55,Fresh Olives
+56,Fresh Papaya
+57,Fresh Peaches
+58,Fresh Pears
+59,Fresh Pineapples
+60,Fresh Plums
+61,Fresh Pomegranates
+62,Other Fresh Fruit
+63,Fresh Vegetables
+64,Fresh Asparagus
+65,Fresh Broccoli
+66,Fresh Burdock
+67,Fresh Cabbages
+68,Fresh Capsicum
+69,Fresh Carrots
+70,Fresh Cassava
+71,Fresh Cauliflower
+72,Fresh Celery Cabbage
+73,Fresh Cucumber
+74,Fresh Garlic
+75,Fresh Ginger
+76,Fresh Okra
+77,Fresh Onions
+78,Fresh Potatoes
+79,Fresh Pumpkins
+80,Fresh Radish
+81,Fresh Scallions
+82,Fresh Sweet Potatoes
+83,Fresh Taro
+84,Fresh Tomatoes
+85,Other Fresh Vegetables
+86,Grain
+87,Barley
+88,Buckwheat
+89,Corn
+90,Millet
+91,Oats
+92,Other Grain
+93,Quinoa
+94,Rice
+95,Rye
+96,Sorghum
+97,Wheat
+98,Logs
+99,Mushrooms & Truffles
+100,Mushrooms
+101,Truffles
+102,Nuts & Kernels
+103,Almond
+104,Apricot Kernels
+105,Betel Nuts
+106,Brazil Nuts
+107,Cashew Nuts
+108,Chestnuts
+109,Ginkgo Nuts
+110,Hazelnuts
+111,Macadamia Nuts
+112,Melon Seeds
+113,Other Nuts & Kernels
+114,Peanuts
+115,Pecan Nuts
+116,Pine Nuts
+117,Pistachio Nuts
+118,Pumpkin Kernels
+119,Sunflower Kernels
+120,Walnuts
+121,Ornamental Plants
+122,Bonsai
+123,Dried Flowers
+124,Fresh Cut Flowers
+125,Natural Plants
+126,Other Agriculture Products
+127,Plant & Animal Oil
+128,Animal Oil
+129,Blended Oil
+130,Camellia Oil
+131,Castor Oil
+132,Coconut Oil
+133,Corn Oil
+134,Ginger Oil
+135,Olive Oil
+136,Other Plant & Animal Oil
+137,Palm Oil
+138,Rapeseed Oil
+139,Sesame Oil
+140,Soybean Oil
+141,Sunflower Oil
+142,Plant Extract
+143,Plant Fiber
+144,Plant Seeds & Bulbs
+145,"Flower Bulbs, Seeds & Seedlings"
+146,Forage Seeds
+147,"Fruit Grafts, Seedlings & Rootstocks"
+148,Oil Seeds
+149,Vegetable Seeds
+150,Tobacco
+153,Apparel
+154,Apparel Design Services
+155,Apparel Processing Services
+156,Apparel Stock
+157,Childrens Clothing
+158,Childrens Clothing Sets
+159,Childrens Coats
+160,Childrens Hoodies & Sweatshirts
+161,Childrens Jackets
+162,Childrens Jeans
+163,Childrens Pants & Trousers
+164,Childrens Shirts & Tops
+165,Childrens Shorts
+166,Childrens Sweaters
+167,Childrens T-Shirts
+168,Childrens Underwear
+169,Childrens Vests & Waistcoats
+170,Girls Dresses
+171,Girls Skirts
+172,Other Childrens Clothing
+173,Coats
+174,Costumes
+175,Anime Costumes
+176,Mascot
+177,Other Costumes
+178,Reenactment Attire
+179,Sexy Costumes
+180,TV & Movie Costumes
+181,Zentai / catsuit
+182,Dresses
+183,Career Dresses
+184,Casual Dresses
+185,Cocktail Dresses
+186,Evening Dresses
+187,Other Dresses
+188,Prom Dresses
+189,Ethnic Clothing
+190,Africa Clothing
+191,Asia & Pacific Islands Clothing
+192,India & Pakistan Clothing
+193,Islamic Clothing
+194,Other Regional Clothing
+195,Traditional Chinese Clothing
+196,Garment Accessories
+197,Badges
+198,Buckles
+199,Buttons
+200,Cords
+201,Garment Beads
+202,Garment Clips
+203,Garment Eyelets
+204,Garment Hooks
+205,Garment Labels
+206,Garment Rivets
+207,Garment Tags
+208,Interlinings & Linings
+209,Lace
+210,Other Garment Accessories
+211,Patches
+212,Rhinestones
+213,Ribbons
+214,Sequins
+215,Shoulder Pads
+216,Stopper
+217,Trimming
+218,Underwear Accessories
+219,Velcro Tapes
+220,Webbing
+221,Zipper Sliders
+222,Zippers
+223,Hoodies & Sweatshirts
+224,Hosiery
+225,Body Stocking
+226,Leg Warmers
+227,Leggings
+228,Other Hosiery
+229,Pantyhose / Tights
+230,Socks
+231,Stockings
+232,Toe Socks
+233,Infant & Toddlers Clothing
+234,Baby Bibs
+235,Baby Clothing Sets
+236,Baby Coats
+237,Baby Dresses
+238,Baby Hoodies & Sweatshirts
+239,Baby Jackets
+240,Baby Pants & Shorts
+241,Baby Rompers
+242,Baby Shirts & Tops
+243,Baby Skirts
+244,Baby Sleeping Bags
+245,Baby Sweaters
+246,Baby T-Shirts
+247,Baby Underwear
+248,Baby Vests & Waistcoats
+249,Other Baby Clothing
+250,Jackets
+251,Jeans
+252,Ladies Blouses & Tops
+253,Mannequins
+254,Maternity Clothing
+255,Mens Shirts
+256,Other Apparel
+257,Pants & Trousers
+258,Sewing Supplies
+259,Other Sewing Supplies
+260,Sewing Needles
+261,Sewing Threads
+262,Tailors Scissors
+263,Shorts
+264,Skirts
+265,Sleepwear
+266,Babydoll
+267,Bathrobes
+268,Lounge Pants
+269,Nightgown
+270,Nightshirts
+271,Other Sleepwear
+272,Pajamas
+273,Sleep Shorts
+274,Sportswear
+275,American Football Wear
+276,Baseball & Softball Wear
+277,Basketball Wear
+278,Camping & Hiking Wear
+279,Cycling Wear
+280,Fishing Wear
+281,Fitness & Yoga Wear
+282,Ice Hockey Wear
+283,Martial Arts Wear
+284,Motorcycle & Auto Racing Wear
+285,Other Sportswear
+286,Rash Guard
+287,Rugby Football Wear
+288,Ski & Snow Wear
+289,Soccer Wear
+290,Swimwear & Beachwear
+291,Tennis Wear
+292,Training & Jogging Wear
+293,Wetsuits
+294,Stage & Dance Wear
+295,Performance Wear
+296,Training Dancewear
+297,Suits & Tuxedo
+298,Sweaters
+299,T-Shirts
+300,In-Stock Items
+301,OEM Service
+302,Tag Guns
+303,Tank Tops
+304,Underwear
+305,Bra & Brief Sets
+306,Bras
+307,Camisoles
+308,Garters Belt
+309,Long Johns
+310,Mens Briefs & Boxers
+311,Other Underwear
+312,Sexy Underwear
+313,Shapers
+314,Womens Panties
+315,Uniforms
+316,Airline Uniforms
+317,Bank Uniforms
+318,Fireman Uniforms
+319,Guard Uniforms
+320,Hospital Uniforms
+321,Hotel Uniforms
+322,Military Uniforms
+323,Other Uniforms
+324,Promotion Uniforms
+325,Restaurant & Bar Uniforms
+326,School Uniforms
+327,Used Clothes
+328,Vests & Waistcoats
+329,Wedding Apparel & Accessories
+330,Bridesmaid Dresses
+331,Flower Girls Dresses
+332,Other Wedding Apparel
+333,Wedding Accessories
+334,Bridal Gloves
+335,Bridal Veils
+336,Petticoats
+337,Wedding Dresses
+338,Wedding Jackets / Wrap
+339,Workwear
+342,Automobiles & Motorcycle s
+343,ATV
+344,ATV Parts
+345,Auto Drivetrain
+346,Auto Clutch
+347,Axles
+348,Brake System
+349,Car Tires
+350,Car Wheels
+351,Drive Shafts
+352,Other Auto Drivetrain
+353,Suspension System
+354,Transmission
+355,Wheel Parts
+356,Auto Electrical System
+357,Auto Batteries
+358,Auto Lighting System
+359,Auto Meter
+360,Auto Motor
+361,Auto Relays
+362,Auto Sensors
+363,Auto Starter
+364,Auto Switches
+365,Car Alternator
+366,Other Auto Electrical Systems
+367,Speaker & Horn
+368,Auto Electronics
+369,Bluetooth Car Kit
+370,Car Alarms
+371,Car Amplifiers
+372,Car Black Box
+373,Car Cassette Player
+374,Car CD Player
+375,Car Charger
+376,Car DVD Player
+377,Car Fridges
+378,Car Holder
+379,Car Monitor
+380,Car MP3 Player
+381,Car PC
+382,Car Radio
+383,Car Reversing Aid
+384,Central Locking System
+385,Navigation & GPS
+386,Other Auto Electronics
+387,Subwoofers
+388,Auto Engine
+389,Air Intakes
+390,Auto Ignition System
+391,Cooling System
+392,Crank Mechanism
+393,Engine Assembly
+394,Engine Mounts
+395,Exhaust System
+396,Fuel Systems
+397,Lubrication System
+398,Other Auto Engine Parts
+399,Valve Train
+400,Automobiles
+401,New Cars
+402,Used Cars
+403,Body Parts
+404,Air Conditioning System
+405,Car Bumpers
+406,Car Doors
+407,Car Fenders
+408,Car Grills
+409,Car Mirrors
+410,Car Windows
+411,Door Locks
+412,Engine Hoods
+413,Other Body Parts
+414,Car Care Equipment
+415,Car Polishers
+416,Other Car Care Equipment
+417,Spray Booths
+418,Car Care Products
+419,Car Polish
+420,Cleaner & Wash
+421,Coolant
+422,Fuel Additives
+423,Lubricants
+424,Other Car Care Products
+425,Wax
+426,Car Cleaning Tools
+427,Car Wash Brushes
+428,Car Wash Towel
+429,Car Washer
+430,Cloth
+431,Glove
+432,Ice Scraper
+433,Other Car Cleaning Tools
+434,Pad
+435,Sponge
+436,Vacuum Cleaner
+437,Washing Tool kit
+438,Exterior Accessories
+439,Car Antenna
+440,Car Covers
+441,Car Roof Boxes
+442,Car Roof Racks
+443,Car Spoilers
+444,Car Stickers
+445,License Frame
+446,License Plate
+447,Other Exterior Accessories
+448,Ratchet Buckle
+449,Ratchet Tie Down
+450,Tank Cover
+451,Tire Covers
+452,Wheel Cover
+453,Windshield Wipers
+454,Interior Accessories
+455,Car Fans
+456,Car Freshener
+457,Car Gear Knob
+458,Car Mats
+459,Car Organizers
+460,Car Safety Belts
+461,Car Seat Covers
+462,Car Seats
+463,Car Steering Wheel
+464,Car Sunshade
+465,Other Interior Accessories
+466,Seat Cushions
+467,Steering Wheel Covers
+468,Steering Wheel Locks
+469,Motorcycle Accessories
+470,Motorcycle Bags
+471,Motorcycle Cover
+472,Motorcycle Helmets
+473,Motorcycle Ramps
+474,Motorcycle Stickers
+475,Motorcycle Tail Boxes
+476,Other Motorcycle Accessories
+477,Motorcycle Parts
+478,Motorcycle Body Kits
+479,Motorcycle Brakes
+480,Motorcycle Electrical System
+481,Motorcycle Battery
+482,Motorcycle Lighting System
+483,Motorcycle Meter
+484,Motorcycle Motor
+485,Motorcycle Starter
+486,Motorcycle Switches
+487,Other Motorcycle Electrical Systems
+488,Motorcycle Engines
+489,Motorcycle Air Intakes
+490,Motorcycle Cooling System
+491,Motorcycle Crank Mechanism
+492,Motorcycle Engine Assembly
+493,Motorcycle Exhaust System
+494,Motorcycle Fuel System
+495,Motorcycle Ignition System
+496,Motorcycle Lubrication System
+497,Motorcycle Valve Train
+498,Other Motorcycle Engines
+499,Motorcycle Steering
+500,Motorcycle Tires
+501,Motorcycle Transmissions
+502,Motorcycle Wheels
+503,Other Motorcycle Parts
+504,Motorcycles
+505,Other Auto Parts
+506,Steering System
+507,Tricycles
+508,Universal Parts
+509,Auto Bearing
+510,Auto Fastener & Clip
+511,Hose Clamps
+512,Other Universal Parts
+513,Tube Assembly
+514,Wire Assembly
+515,UTV
+516,Vehicle Equipment
+517,Auto Production Line Equipment
+518,Body Repair Equipment
+519,Car Lifts
+520,Other Vehicle Equipment
+521,Parking Equipment
+522,Tire Changers
+523,Wheel Alignment
+524,Vehicle Tools
+525,Car Jacks
+526,Diagnostic Tools
+527,Emergency Tools
+528,Grease Guns
+529,Other Vehicle Tools
+530,Tire Gauges
+531,Tire Inflators
+532,Tire Repair Tools
+533,Transmission Jacks
+536,Beauty & Personal Care
+537,Artificial Hair
+538,Chignon
+539,Fringes
+540,Hair Extension
+541,Other Artificial Hair
+542,Toupee
+543,Wigs
+544,Bath Supplies
+545,Bath Beads
+546,Bath Fizzies
+547,Bath Powder
+548,Bath Salt
+549,Bath Set
+550,Bubble Bath
+551,Hand Wash
+552,Other Bath Supplies
+553,Shower Gel
+554,Soap
+555,Beauty Equipment
+556,Derma Rolling System
+557,Derma Wand
+558,Facial Steamer
+559,Facial Tanner
+560,IPL Machine
+561,Laser Beauty Equipment
+562,Magnifying Lamp
+563,Mesotherapy Gun
+564,Microdermabrasion Machine
+565,Multi-Functional Beauty Equipment
+566,No-Needle Mesotherapy Device
+567,Other Beauty Equipment
+568,Oxygen Jet
+569,PDT Machine
+570,RF Equipment
+571,Skin Analyzer
+572,Skin Scrubber
+573,Spa Capsule
+574,Tanning Bed
+575,UV Meter
+576,Vacuum Cavitation System
+577,Wax Heater
+578,Body Art
+579,Airbrush
+580,Body Painting Supplies
+581,Other Body Art
+582,Tattoo Grip
+583,Tattoo Gun
+584,Tattoo Ink
+585,Tattoo Kits
+586,Tattoo Needle
+587,Tattoo Stencil
+588,Tattoo Sticker
+589,Tattoo Tip
+590,Breast Care
+591,Breast Enhancement Cream
+592,Breast Form
+593,Breast Mask
+594,Breast Massager
+595,Nursing Pad
+596,Other Breast Care Products
+597,Feminine Hygiene
+598,Menstrual Cups
+599,Other Feminine Hygiene Products
+600,Panty Liner
+601,Sanitary Napkin
+602,Tampon
+603,Fragrance & Deodorant
+604,Deodorant & Antiperspirant
+605,Other Fragrances & Deodorants
+606,Perfume
+607,Hair Care
+608,Hair Conditioner
+609,Hair Dye
+610,Hair Styling Products
+611,Hair Treatment
+612,Other Hair Care Products
+613,Perm Lotion
+614,Shampoo
+615,Hair Salon Equipment
+616,Comb
+617,Hair Curler
+618,Hair Dryer
+619,Hair Extension Tools
+620,Hair Perm Machine
+621,Hair Roller
+622,Hair Scissors
+623,Hair Steamer
+624,Hair Straightener
+625,Hair Trimmer
+626,Hairbrush
+627,Hairdressing Cape
+628,Hairdressing Foil
+629,Other Hair Salon Equipment
+630,Makeup
+631,Blush
+632,Body Glitter
+633,Concealer
+634,Eye Shadow
+635,Eyebrow Pencil
+636,Eyeliner
+637,Foundation
+638,Lip Balm
+639,Lip Gloss
+640,Lip Liner
+641,Lipstick
+642,Makeup Base
+643,Makeup Remover
+644,Makeup Sets
+645,Mascara
+646,Other Makeup Products
+647,Makeup Tools
+648,Cosmetic Puff
+649,Cotton Bud
+650,Eye Shadow Applicator
+651,Eyebrow Trimmer
+652,Eyebrow Tweezers
+653,Eyelash Curler
+654,Eyelash Glue
+655,False Eyelashes
+656,Makeup Brushes
+657,Makeup Mirror
+658,Makeup Scissors
+659,Makeup Tool Kits
+660,Other Makeup Tools
+661,Manicure & Pedicure Supplies
+662,Acrylic Powder
+663,Artificial Fingernails
+664,Callus Remover
+665,Cuticle Oil
+666,Manicure & Pedicure Set
+667,Manicure Scissors
+668,Manicure Tweezers
+669,Nail Brush
+670,Nail Buffer
+671,Nail Clipper
+672,Nail Drill
+673,Nail Dryer
+674,Nail File
+675,Nail Form
+676,Nail Glue
+677,Nail Paint
+678,Nail Polish
+679,Nail Polish Remover
+680,Nail Polisher
+681,Nail Printer
+682,Nail Sticker
+683,Other Manicure & Pedicure Supplies
+684,Pedicure Chair
+685,Toe Separator
+686,UV Gel
+687,UV Lamp
+688,Oral Hygiene
+689,Dental Flosser
+690,Interdental brush
+691,Mouthwash
+692,Other Oral Hygiene Products
+693,Teeth Whitening
+694,Toothbrush
+695,Toothbrush Sanitizer
+696,Toothbrushes Head
+697,Toothpaste
+698,Other Beauty & Personal Care Products
+699,Sanitary Paper
+700,Diapers/Nappies
+701,Facial Tissue
+702,Other Sanitary Paper
+703,Paper Napkins & Serviettes
+704,Toilet Tissue
+705,Wet Wipes
+706,Shaving & Hair Removal
+707,Aftershave
+708,Electric Shavers
+709,Epilator
+710,Hair Removal Cream
+711,Nose & Ear Trimmer
+712,Other Shaving & Hair Removal Produ cts
+713,Razor
+714,Razor Blade
+715,Shaving Brush
+716,Shaving Cream
+717,Shaving Foam
+718,Skin Care
+719,Baby Oil
+720,Body Lotion
+721,Body Scrub
+722,Body Spray
+723,Carrier Oil
+724,Depilatory Wax
+725,Essential Oil
+726,Eye Cream
+727,Eye Mask
+728,Face & Body Mask
+729,Face Cream & Lotion
+730,Facial Cleanser
+731,Foot Scrub
+732,Hand Cream & Lotion
+733,Hydrosol
+734,Massage Cream
+735,Other Skin Care Products
+736,Pearl Powder
+737,Perfume Oil
+738,Skin Care Serum
+739,Skin Care Set
+740,Skin Toner
+741,Slimming Cream
+742,Sunscreen
+743,Tanning Lotion
+744,Skin Care Tool
+745,Cotton Pad
+746,Other Skin Care Tool
+747,Wax Strip
+750,Business Services
+751,Advertising
+752,Advertising Design
+753,Internet Advertising
+754,Magazines Advertising
+755,Newspaper Advertising
+756,Other Advertising Services
+757,Outdoor Advertising
+758,Radio Advertising
+759,Trade Show Advertising
+760,TV Advertising
+761,Agency Services
+762,Advertisement Agents
+763,Agriculture & By-product Agents
+764,Apparel Agents
+765,Automotive & Motorcycle Parts Agen t
+766,Bag & Luggage Agents
+767,Beauty Products Agents
+768,Chemical Product Agents
+769,Clock Agents
+770,Computer & Software Agents
+771,Construction Materials Agents
+772,Consumer Electronics Agents
+773,Electrical Product Agents
+774,Electronics Agents
+775,Energy Agents
+776,Entertainment Product Agents
+777,Environment Product Agents
+778,Eyewear Agents
+779,Fashion Accessories Agents
+780,Food Agents
+781,Furniture Agents
+782,General Mechanical Components Age nts
+783,General Trade Agents
+784,Gifts & Crafts Agents
+785,Hardware Agents
+786,Health Product Agents
+787,Home Appliances Agents
+788,Home Supplies Agents
+789,Jewelry Agents
+790,Lighting Agents
+791,Machinery Agents
+792,Machinery Parts Agents
+793,Measuring & Analysing Instrument A gents
+794,Mineral & Metals Agents
+795,Office & School Supplies Agents
+796,Other Agency Services
+797,Packaging Products Agents
+798,Photography & Optic Product Agents
+799,Plastic Agents
+800,Printing Product Agents
+801,Pulp & Paper Agent
+802,Real Estate Agents
+803,Rubber Agents
+804,Security Product Agents
+805,Shoes Agents
+806,Sport Product Agents
+807,Textile Agents
+808,Tool Agents
+809,Transportation Product Agents
+810,Watch Agents
+811,Assurance Services
+812,Auction
+813,"Brokerage, Intermediary Service"
+814,Business Travel Services
+815,Business Travel Packages
+816,Corporate Travel
+817,Hotels Services
+818,Other Business Travel Services
+819,Tickets
+820,"Certification, Inspection & Credit Manag ement"
+821,Credit Investigation & Management
+822,Inspection & Quality Control Services
+823,Management System Certification
+824,"Other Certification, Inspection & Cred it Management"
+825,Product Certification
+826,Computer & Information Technology Se rvices
+827,Data Processing
+828,Other Computer & Information Techn ology Services
+829,Software Development
+830,Software Outsourcing
+831,Construction Services
+832,Consulting
+833,Computer & Information Technology Consulting
+834,Management Consulting
+835,Marketing Consulting
+836,Other Consulting
+837,Technology Consulting
+838,Trading Consulting
+839,Corporate Register & Transfer
+840,Design Services
+841,Architecture Design
+842,Decorating Design
+843,General Industrial Equipment Process ing Services
+844,Graphic Design
+845,Industrial Design
+846,Other Design Services
+847,Packaging Design
+848,Website Design
+849,Education & Training
+850,Internet Service
+851,Labour & Employment
+852,Law Services
+853,Leasing Services
+854,Logistics Services
+855,Air Freight
+856,Customs Clearance Services
+857,Express
+858,Freight Agents
+859,Other Logistics Services
+860,Railway Freight
+861,Road Freight
+862,Sea Freight
+863,Warehouse Services
+864,Waterway Freight
+865,Other Business Services
+866,Passport & Visa
+867,Processing Services
+868,Agriculture Products Processing
+869,Construction Materials Processing
+870,Electronic Products & Components Pr ocessing
+871,Fashion Accessories Processing
+872,Food Processing
+873,Gifts & Crafts Processing
+874,Hardware Processing
+875,Home Appliances Processing
+876,Home Supplies Products Processing
+877,Measuring & Analysing Instrument Pr ocessing Services
+878,Mechanical Accessory & Parts Proces sing
+879,Metal Processing Service
+880,Other Processing Services
+881,Packaging Product Processing
+882,Plating Services
+883,Shoe Processing
+884,Telecommunication Processing
+885,Project Cooperation
+886,Agriculture Projects
+887,Apparel Projects
+888,Chemical Projects
+889,Computer Related Projects
+890,Construction Projects
+891,Electronics Projects
+892,Energy Projects
+893,Entertainment Projects
+894,Environment Projects
+895,Food Projects
+896,Health Projects
+897,Home Appliances Projects
+898,Home Supplies Projects
+899,Industrial Supplies Projects
+900,Mining and Metallurgy Projects
+901,Other Project Cooperation
+902,Real Estate Projects
+903,Regional Investment
+904,Service Projects
+905,Textile Projects
+906,Tourism Projects
+907,Transportation Projects
+908,Public Relations Services
+909,Repairs & Maintenance
+910,Research & Development Services
+911,Royalties & License Services
+912,Copyrights
+913,Other Royalties & License Services
+914,Patents
+915,Trademarks
+916,Supply Chain Management
+917,Telecommunication Services
+918,Trade Show Services
+919,Booths Design & Executing
+920,Exhibiting Services
+921,Exhibition Invitation
+922,Other Trade Show Services
+923,Trade Show Planning
+924,Trade Show Training
+925,Translation Services
+928,Chemicals
+929,Adhesives & Sealants
+930,Agrochemicals
+931,Agrochemicals & Pesticides
+932,Fertilizer
+933,Biological Fertilizer
+934,Compound Fertilizer
+935,Nitrogen Fertilizer
+936,Organic Fertilizer
+937,Other Fertilizers
+938,Phosphate Fertilizer
+939,Plant Food
+940,Potassium Fertilizer
+941,Basic Organic Chemicals
+942,Alcohol & Hydroxybenzene & Ether
+943,Aldehyde & Ketone & Chinone
+944,Amine
+945,Benzene & Derivatives
+946,Carbohydrate
+947,Ester & Derivatives
+948,Hydrocarbon & Derivatives
+949,Organic Acid
+950,Organic Salt
+951,Other Organic Chemical
+952,catalysts & Chemical Auxiliary Agents
+953,catalyst
+954,Chemical Auxiliary Agent
+955,Chemical Reagents
+956,Custom Chemical Services
+957,Daily Chemicals
+958,Explosive
+959,Flavour & Fragrance
+960,Food & Feed Additives
+961,Feed Additives
+962,Food Additives
+963,Inorganic Chemicals
+964,Alkali
+965,Elementary Substances
+966,Inorganic Acids
+967,Inorganic Salts
+968,Borate
+969,Carbonate
+970,Chlorate
+971,Chloride
+972,Cyanide & Cyanate
+973,Halide ( Except Chloride
+974,Nitrate
+975,Other Inorganic Salts
+976,Permanganate
+977,Phosphate
+978,Silicate
+979,Sulfide
+980,Sulphate
+981,Other Inorganic Chemicals
+982,Oxide
+983,Lab Supplies
+984,Beaker
+985,Buret
+986,Centrifuge Tubes
+987,Flask
+988,Funnel
+989,Lab Balance
+990,Lab Drying Equipment
+991,Laboratory Bottle
+992,Laboratory Centrifuge
+993,Laboratory Clamp
+994,Laboratory Cylinder
+995,Laboratory Heating Equipments
+996,Laboratory Refrigeration Equipments
+997,Laboratory Thermostatic Devices
+998,Other Lab Supplies
+999,Petri Dish
+1000,Pipette
+1001,Test Tube
+1002,Organic Intermediate
+1003,Other Chemicals
+1004,Paint & Coating
+1005,Pharmaceutical
+1006,Pigment & Dyestuff
+1007,Dyestuffs
+1008,Pigment
+1009,Polymer
+1012,Computer Hardware & So ftware
+1013,Blank Disks
+1014,Computer Cables & Connectors
+1015,Computer Cases & Towers
+1016,Computer Cleaners
+1017,CPUs
+1018,Desktops
+1019,Fans & Cooling
+1020,Firewall & VPN
+1021,Floppy Drives
+1022,Graphics Cards
+1023,Hard Drives
+1024,HDD Enclosure
+1025,Industrial Computer & Accessories
+1026,Keyboard Covers
+1027,Keyboard Mouse Combos
+1028,Keyboards
+1029,KVM Switches
+1030,Laptop Batteries
+1031,Laptop Cooling Pads
+1032,Laptop Skins
+1033,Laptops
+1034,Modems
+1035,Monitors
+1036,CRT Monitors
+1037,LCD Monitors
+1038,Other Monitors
+1039,Touch Screen Monitors
+1040,Motherboards
+1041,Mouse
+1042,Mouse Pads
+1043,Network Cabinets
+1044,Network Cards
+1045,Network Hubs
+1046,Network Switches
+1047,Networking Storage
+1048,Optical Drives
+1049,Other Computer Accessories
+1050,Other Computer Parts
+1051,Other Computer Products
+1052,Other Drive & Storage Devices
+1053,Other Networking Devices
+1054,PC Power Supplies
+1055,PC Stations
+1056,PDAs
+1057,Printers
+1058,RAMs
+1059,Routers
+1060,Scanners
+1061,Servers
+1062,Software
+1063,Sound Cards
+1064,USB Flash Drives
+1065,USB Gadgets
+1066,USB Hubs
+1067,Webcams
+1068,Workstations
+1071,Construction & Real Estat e
+1072,Aluminum Composite Panels
+1073,Balustrades & Handrails
+1074,Bathroom
+1075,Bathroom Accessories
+1076,Bath Hardware Sets
+1077,Bath Mirrors
+1078,Bathroom Shelves
+1079,Cup & Tumbler Holders
+1080,Grab Bars
+1081,Liquid Soap Dispensers
+1082,Paper Holders
+1083,Robe Hooks
+1084,Soap Dishes
+1085,Toilet Brush Holders
+1086,Towel Bars
+1087,Towel Racks
+1088,Towel Rings
+1089,Bathroom Sinks
+1090,Bathroom Vanities
+1091,Bathtubs & Whirlpools
+1092,Bidets
+1093,Other Bathroom Parts & Accessories
+1094,Bathtub Handrails
+1095,Bathtub Pillows
+1096,Drains
+1097,Filling Valves
+1098,Flappers & Tank Balls
+1099,Flush Valves
+1100,Other Accessories
+1101,Plumbing Hoses
+1102,Plumbing Nozzles
+1103,Plumbing Traps
+1104,Tank Levers
+1105,Toilet Push Buttons
+1106,Sanitary Ware Suite
+1107,Shower Rooms & Accessories
+1108,Bath Screens
+1109,Other Shower Room Accessories
+1110,Shower Doors
+1111,Shower Rooms
+1112,Shower Trays
+1113,Spa Tubs & Sauna Rooms
+1114,Sauna Rooms
+1115,Spa Tubs
+1116,Squat Pans
+1117,Toilet Bowls
+1118,Toilet Seats
+1119,Toilet Tanks
+1120,Toilets
+1121,Urinals
+1122,Boards
+1123,Cement Boards
+1124,Other Boards
+1125,Plasterboards
+1126,Sandwich Panels
+1127,Building Glass
+1128,Ceilings
+1129,Ceiling Grid Components
+1130,Ceiling Tiles
+1131,Corner Guards
+1132,"Countertops,Vanity Tops & Table Tops"
+1133,Curtain Walls & Accessories
+1134,Curtain Wall Profiles
+1135,Curtain Walls
+1136,Other Curtain Wall Accessories
+1137,Spiders
+1138,Decorative Films
+1139,Doors & Windows
+1140,Doors
+1141,Windows
+1142,Doors & Windows Accessories
+1143,Automatic Door Operators
+1144,Door & Window Bolts
+1145,Door & Window Frames
+1146,Door & Window Grates
+1147,Door & Window Handles
+1148,Door & Window Hinges
+1149,Door & Window Rollers
+1150,Door & Window Screens
+1151,Door & Window Sills
+1152,Door Closers
+1153,Door Plates
+1154,Door Stops
+1155,Door Viewers
+1156,Doorbells
+1157,Garage Door Openers
+1158,Gate Operators
+1159,Other Door & Window Accessories
+1160,Shutters
+1161,Earthwork Products
+1162,Geocells
+1163,Geogrids
+1164,Geomembranes
+1165,Geotextiles
+1166,Other Earthwork Products
+1167,Elevators & Elevator Parts
+1168,Elevator Parts
+1169,Elevators
+1170,Escalators & Escalator Parts
+1171,Escalator Parts
+1172,Escalators
+1173,Moving Walks
+1174,"Faucets,Mixers & Taps"
+1175,Bathroom Faucets
+1176,Basin Faucets
+1177,Bath & Shower Faucets
+1178,Bidet Faucets
+1179,Bibcocks
+1180,Faucet Accessories
+1181,Aerators
+1182,Bathroom Faucet Accessories
+1183,Faucet Cartridges
+1184,Kitchen Faucet Accessories
+1185,Other Faucet Accessories
+1186,Kitchen Faucets
+1187,"Fireplaces,Stoves"
+1188,Fireplace Parts
+1189,Fireplaces
+1190,Stoves
+1191,Fireproofing Materials
+1192,Calcium Silicate Boards
+1193,Magnesium Oxide Boards
+1194,Other Fireproofing Materials
+1195,Floor Heating Systems & Parts
+1196,Flooring & Accessories
+1197,Anti-Static Flooring
+1198,Bamboo Flooring
+1199,Cork Flooring
+1200,Engineered Flooring
+1201,Flooring Accessories
+1202,Other Flooring
+1203,Plastic Flooring
+1204,Rubber Flooring
+1205,Wood Flooring
+1206,Formwork
+1207,Gates
+1208,Heat Insulation Materials
+1209,EPS Foam Boards
+1210,Other Heat Insulation Materials
+1211,XPS Boards
+1212,HVAC Systems & Parts
+1213,Kitchen
+1214,Kitchen Cabinets & Accessories
+1215,Kitchen Cabinet Parts & Accessories
+1216,Kitchen Cabinets
+1217,Kitchen Sinks
+1218,Kitchen Storage
+1219,Ladders & Scaffoldings
+1220,Ladder & Scaffolding Parts
+1221,Ladders
+1222,Other Ladders & Scaffoldings
+1223,Scaffoldings
+1224,Work Platforms
+1225,Landscaping Stone
+1226,Cobbles & Pebbles
+1227,Curbstones
+1228,Mushroom Stone
+1229,Other Landscaping Stone
+1230,Paving Stone
+1231,Tactile Paving
+1232,Masonry Materials
+1233,Aggregate
+1234,Gravel & Crushed Stone
+1235,Other Aggregate
+1236,Sand
+1237,Slag
+1238,Bricks
+1239,Building Blocks
+1240,Cement
+1241,Concrete Admixtures & Mortar Admixt ures
+1242,Gypsum Powder
+1243,Mortar
+1244,Other Masonry Materials
+1245,Roof Tiles
+1246,Metal Building Materials
+1247,Mosaics
+1248,Mouldings
+1249,Multifunctional Materials
+1250,Other Construction & Real Estate
+1251,Plastic Building Materials
+1252,Architecture Membrane
+1253,Other Plastic Building Materials
+1254,Plastic Profiles
+1255,Sun Sheets & PC Embossed Sheets
+1256,Quarry Stone & Slabs
+1257,Artificial Stone
+1258,Natural Stone
+1259,Basalt
+1260,Granite
+1261,Limestone
+1262,Marble
+1263,Other Natural Stone
+1264,Sandstone
+1265,Slate
+1266,Real Estate
+1267,Apartments
+1268,Farms
+1269,Forest
+1270,Hotels
+1271,Land
+1272,Office Buildings
+1273,Other Real Estate
+1274,Prefab Houses
+1275,Shops
+1276,Villas
+1277,Warehouses
+1278,Workshops & Plants
+1279,Soundproofing Materials
+1280,Acoustic Panels
+1281,Other Soundproofing Materials
+1282,Sound Barriers
+1283,Stairs & Stair Parts
+1284,Stair Parts
+1285,Stairs
+1286,Stone Carvings and Sculptures
+1287,Arches
+1288,Other Stone Carvings & Sculptures
+1289,Pillars
+1290,Statues
+1291,Stone Garden Products
+1292,Stone Reliefs
+1293,Sunrooms & Glass Houses
+1294,Tiles & Accessories
+1295,Tile Accessories
+1296,Tiles
+1297,Timber
+1298,Anticorrosive Woods
+1299,Decorative High-Pressure Laminates / HPL
+1300,Fibreboards
+1301,Finger Jointed Boards
+1302,Flakeboards
+1303,Laminated Wood Boards / Blockboar ds
+1304,Melamine Boards
+1305,Other Timber
+1306,Plywoods
+1307,Solid Wood Boards
+1308,Veneers
+1309,Tombstones and Monuments
+1310,Wallpapers
+1311,Waterproofing Materials
+1312,Other Waterproofing Materials
+1313,Roofing Felts
+1314,Waterproof Membrane
+1317,Consumer Electronics
+1318,Accessories & Parts
+1319,Blank Records & Tapes
+1320,Cables
+1321,Card Readers
+1322,Chargers
+1323,Digital Batteries
+1324,Earphones & Headphones
+1325,Memory Cards
+1326,Microphones
+1327,Other Accessories & Parts
+1328,Remote Control
+1329,Screen Cleaners
+1330,Screen Protectors
+1331,Speakers
+1332,TV Mounts
+1333,Video Glasses
+1334,Cameras & Accessories
+1335,Backgrounds
+1336,Camera Filters
+1337,Camera Lens Hoods
+1338,Camera Lenses
+1339,Camera Lights
+1340,Digital Cameras
+1341,Digital Photo Banks
+1342,Digital Photo Frames
+1343,Film Cameras
+1344,Films
+1345,Other Camera Accessories
+1346,Tripods
+1347,Video Cameras
+1348,Electronic Publications
+1349,Electronic Books
+1350,Movie
+1351,Music
+1352,TV Series
+1353,Gaming & Accessories
+1354,3D Glasses
+1355,Dance Pads
+1356,Fire Cards
+1357,Game Softwares
+1358,Handheld Game Players
+1359,Joysticks & Game Controllers
+1360,Light Guns
+1361,Other Game Accessories
+1362,Video Game Consoles
+1363,Home Audio & Video Equipments
+1364,Amplifiers
+1365,Baby Monitors
+1366,Blu-ray Players
+1367,Cassette Recorders & Players
+1368,Digital Voice Recorders
+1369,"DVD, VCD Players"
+1370,HDD Players
+1371,Home Theatre System
+1372,Karaoke Players
+1373,Other Audio & Video Equipments
+1374,Radio
+1375,Televisions
+1376,Mobile Phones
+1377,Other Consumer Electronics
+1378,Portable Media
+1379,CD Players
+1380,MP3 Players
+1381,MP4 Players
+1382,Quran Players
+1385,Electrical Equipment & Su pplies
+1386,Batteries
+1387,Battery Packs
+1388,Button Cell Batteries
+1389,Fuel Cells
+1390,Mobile Phone Batteries
+1391,Other Batteries
+1392,Primary & Dry Batteries
+1393,Rechargeable Batteries
+1394,"Solar Cells, Solar Panel"
+1395,Storage Batteries
+1396,Circuit Breakers
+1397,Connectors & Terminals
+1398,Alligator Clips
+1399,Connectors
+1400,Other Connectors & Terminals
+1401,Terminal Blocks
+1402,Terminals
+1403,Contactors
+1404,Electrical Plugs & Sockets
+1405,Electronic & Instrument Enclosures
+1406,Fuse Components
+1407,Fuses
+1408,Generators
+1409,Alternative Energy Generators
+1410,Diesel Generators
+1411,Gas Turbine Generators
+1412,Gasoline Generators
+1413,Generator Parts & Accessories
+1414,Other Generators
+1415,Other Electrical Equipment
+1416,Power Accessories
+1417,Power Distribution Equipment
+1418,Power Supplies
+1419,AC/DC Adapters
+1420,Inductors
+1421,Industrial Power Supply
+1422,Inverters & Converters
+1423,Laptop Adapter
+1424,Other Power Supplies
+1425,Switching Power Supply
+1426,Uninterrupted Power Supply (UPS
+1427,Voltage Regulators/Stabilizers
+1428,"Professional Audio, Video & Lighting"
+1429,Relays
+1430,Switches
+1431,DIP Switches
+1432,Flow Switches
+1433,Limit Switches
+1434,Other Switches
+1435,Pressure Switches
+1436,Push Button Switches
+1437,Remote Control Switches
+1438,Rocker Switches
+1439,Rotary Switches
+1440,Slide Switches
+1441,Time Switches
+1442,Toggle Switches
+1443,Wall Switches
+1444,Transformers
+1445,"Wires, Cables & Cable Assemblies"
+1446,Audio & Video Cables
+1447,Cable Manufacturing Equipment
+1448,Control Cables
+1449,Electrical Wires
+1450,Instrumentation Cables
+1451,"Other Wires, Cables & Cable Assemb lies"
+1452,Power Cables
+1453,Power Cords & Extension Cords
+1454,Wiring Harness
+1455,Wiring Accessories
+1456,Cable Clips
+1457,Cable Conduits
+1458,Cable End Caps
+1459,Cable Glands
+1460,Cable Sleeves
+1461,Cable Ties
+1462,Cable Trays
+1463,Other Wiring Accessories
+1464,Tie Mounts
+1465,Wiring Ducts
+1468,Electronic Components & Supplies
+1469,Active Components
+1470,Diodes
+1471,Filters
+1472,Integrated Circuits
+1473,Oscillators
+1474,Other Active Components
+1475,Rectifiers
+1476,Resonators
+1477,Sensors
+1478,Thyristors
+1479,Transistors
+1480,EL Products
+1481,Electronic Accessories & Supplies
+1482,Electrical Ceramics
+1483,Electrical Contacts and Contact Mate rials
+1484,Insulation Materials & Elements
+1485,Keypads & Keyboards
+1486,Other Electronic Accessories
+1487,Semiconductors
+1488,Electronic Data Systems
+1489,Electronic Signs
+1490,Electronics Production Machinery
+1491,Electronics Stocks
+1492,Optoelectronic Displays
+1493,LCD Modules
+1494,LED Displays
+1495,Other Optoelectronic Displays
+1496,Other Electronic Components
+1497,Passive Components
+1498,Acoustic Components
+1499,Capacitors
+1500,Other Passive Components
+1501,PCB & PCBA
+1502,Double-Sided PCB
+1503,FPC
+1504,Multilayer PCB
+1505,Other PCB & PCBA
+1506,Rigid PCB
+1507,Single-Sided PCB
+1508,Potentiometers
+1509,Resistors
+1512,Energy
+1513,Biodiesel
+1514,Biogas
+1515,Charcoal
+1516,Coal
+1517,Coal Gas
+1518,Coke Fuel
+1519,Crude Oil
+1520,Electricity Generation
+1521,Industrial Fuel
+1522,Diesel Fuel
+1523,Gasoline
+1524,Jet Fuel
+1525,Kerosene
+1526,Other Industrial Fuel
+1527,Natural Gas
+1528,Other Energy Related Products
+1529,Petrochemical Products
+1530,Bitumen
+1531,Lubricant
+1532,Mazut
+1533,Other Petrochemical Related Product s
+1534,Paraffin
+1535,Petroleum Gas
+1536,Vaseline
+1537,Solar Energy Products
+1538,Other Solar Energy Related Products
+1539,Solar Chargers
+1540,Solar Collectors
+1541,Solar Controllers
+1542,Solar Energy Systems
+1543,Wood Pellets
+1546,Environment
+1547,Gas Disposal
+1548,Noise Reduction Device
+1549,Other Environmental Products
+1550,Other Excess Inventory
+1551,Recycling
+1552,Chemical Waste
+1553,Other Recycling Products
+1554,Textile Waste
+1555,Waste Paper
+1556,Sewer
+1557,Waste Management
+1558,Water Treatment
+1561,Excess Inventory
+1563,Home Appliances Stocks
+1564,Measuring & Analysing Instrument Stoc ks
+1567,Fashion Accessories
+1568,Belt Accessories
+1569,Belt Buckles
+1570,Belt Chains
+1571,Other Belt Accessories
+1572,Belts
+1573,Beaded Belts
+1574,Chain Belts
+1575,Fabric Belts
+1576,Genuine Leather Belts
+1577,Knitted Belts
+1578,Metal Belts
+1579,Other Belts
+1580,Plastic Belts
+1581,PU Belts
+1582,PVC Belts
+1583,Shell Belts
+1584,Suspenders
+1585,Fashion Accessories Design Services
+1586,Fashion Accessories Processing Service s
+1587,Fashion Accessories Stock
+1588,Gloves & Mittens
+1589,Acrylic Gloves & Mittens
+1590,Cashmere Gloves & Mittens
+1591,Cotton Gloves & Mittens
+1592,Feather Gloves & Mittens
+1593,Hand Muffs
+1594,Leather Gloves & Mittens
+1595,Nylon Gloves & Mittens
+1596,Other Gloves & Mittens
+1597,Woolen Gloves & Mittens
+1598,Headwear
+1599,Ear Muffs
+1600,Hair Accessories
+1601,Bandanas
+1602,Barrettes
+1603,Elastic Hair Bands
+1604,Hair Claws
+1605,Hair Combs
+1606,Hair Forks
+1607,Hair Ribbons
+1608,Hair Sticks
+1609,Hairbands
+1610,Hairgrips
+1611,Hairpins
+1612,Other Hair Accessories
+1613,Tiaras
+1614,Hats & Caps
+1615,Baby Hats & Caps
+1616,Berets
+1617,Bucket Hats
+1618,Camouflage Caps
+1619,Children Hats & Caps
+1620,Cowboy Hats
+1621,Other Hats & Caps
+1622,Party Hats
+1623,Sports Caps
+1624,Visors
+1625,Winter Hats
+1626,Other Headwear
+1627,Neckwear
+1628,Scarves & Shawls
+1629,Fur Scarves
+1630,Fur Shawls
+1631,Knitted Scarves
+1632,Knitted Shawls
+1633,Other Scarves & Shawls
+1634,Silk Scarves
+1635,Silk Shawls
+1636,Ties & Accessories
+1637,Bow Ties
+1638,Cravats
+1639,Other Ties & Accessories
+1640,Polyester Ties
+1641,Silk Ties
+1642,"Tie Clips, Tie Bars, Tie Pins"
+1643,"Scarf, Hat & Glove Sets"
+1646,Food & Beverage
+1647,Alcoholic Beverage
+1648,Beer
+1649,Brandy
+1650,Cocktails
+1651,Fruit Wine
+1652,Gin
+1653,Liqueurs
+1654,Other Alcoholic Beverages
+1655,Rice Wine
+1656,Rum
+1657,Tequila
+1658,Vodka
+1659,Whisky
+1660,Wine
+1661,Baby Food
+1662,Baked Goods
+1663,Biscuits
+1664,Bread
+1665,Cakes
+1666,Mooncake
+1667,Other Baked Goods
+1668,Pastry
+1669,Pastry Mixes
+1670,Pizza
+1671,Bean Products
+1672,Bean Sprouts
+1673,Other Bean Products
+1674,Soy Milk
+1675,Tofu
+1676,Canned Food
+1677,Canned Beans
+1678,Canned Crustacean
+1679,Canned Fish
+1680,Canned Fruit
+1681,Canned Meat
+1682,Canned Mushrooms & Truffles
+1683,Canned Nuts & Kernals
+1684,Canned Vegetables
+1685,Other Canned Food
+1686,Capsicum Products
+1687,Canned Capsicum
+1688,Dried Capsicum
+1689,Frozen Capsicum
+1690,Preserved Capsicum
+1691,Coffee
+1692,Confectionery
+1693,Chocolate
+1694,Chocolate Candy
+1695,Gum
+1696,Hard Candy
+1697,Jam
+1698,Jelly
+1699,Lollipops
+1700,Marshmallow
+1701,Other Confectioneries
+1702,Soft Candy
+1703,Toffee
+1704,Dairy Products
+1705,Butter
+1706,Casein
+1707,Cheese
+1708,Condensed Milk
+1709,Cream
+1710,Ice Cream
+1711,Lactose
+1712,Milk
+1713,Milk Powder
+1714,Other Dairy Products
+1715,Whey Powder
+1716,Yogurt
+1717,Drinking Water
+1718,Egg Products
+1719,Food Ingredients
+1720,Almond Flour
+1721,Bakery Ingredients
+1722,Bubble Tea Ingredients
+1723,Chocolate Ingredients
+1724,Cocoa Butter
+1725,Cocoa Liquor
+1726,Cocoa Powder
+1727,Other Chocolate Ingredients
+1728,Flavor Enhancers
+1729,Non Dairy Creamer
+1730,Nutrient Additives
+1731,Starch
+1732,Yeast
+1733,Fruit Products
+1734,Dried Fruit
+1735,Frozen Fruit
+1736,Preserved Fruit
+1737,Grain Products
+1738,Breakfast Cereal
+1739,Dumpling
+1740,Flour
+1741,Noodles
+1742,Other Grain Products
+1743,Pasta
+1744,Health Food
+1745,Honey & Honey Products
+1746,Instant Food
+1747,Hot Chocolate Mix
+1748,Instant Noodles
+1749,Instant Powder Drinks
+1750,Instant Rice
+1751,Instant Soup
+1752,Other Instant Food
+1753,Meat & Poultry
+1754,Beef Jerky
+1755,Meat & Poultry Sausage
+1756,Meat Products
+1757,Offals
+1758,Poultry
+1759,Red Meat
+1760,Other Food & Beverage
+1761,Seafood
+1762,Crustaceans
+1763,Crab
+1764,Lobster
+1765,Shrimp
+1766,Echinoderm
+1767,Fish
+1768,Fish Sausage
+1769,Mollusks
+1770,Other Seafood
+1771,Roe
+1772,Seafood Snacks
+1773,Seaweed
+1774,Shellfish
+1775,Surimi
+1776,Seasonings & Condiments
+1777,Hot Pot Condiments
+1778,Ketchup
+1779,Monosodium Glutamate
+1780,Other Seasonings & Condiments
+1781,Puree
+1782,Salt
+1783,Sauce
+1784,Spices & Herbs
+1785,Sugar
+1786,Vinegar
+1787,Snacks
+1788,Soft Drinks
+1789,Bubble Tea Drinks
+1790,Carbonated Drinks
+1791,Coconut Milk
+1792,Coffee Drinks
+1793,Energy Drinks
+1794,Fruit & Vegetable Juice
+1795,Other Soft Drinks
+1796,Slimming Coffee
+1797,Tea Drinks
+1798,Tea
+1799,Black Tea
+1800,Flavor Tea
+1801,Green Tea
+1802,Oolong Tea
+1803,Other Teas
+1804,PuEr Tea
+1805,Rooibos Tea
+1806,Slimming Tea
+1807,White Tea
+1808,Yellow Tea
+1809,Yerba Mate Tea
+1810,Vegetable Products
+1811,Dried Vegetables
+1812,Frozen Vegetables
+1813,Preserved Vegetables
+1816,Furniture
+1817,Baby Furniture
+1818,Baby Chairs
+1819,Baby Cribs
+1820,Baby Playpens
+1821,Other Baby Furniture
+1822,Children Furniture
+1823,Children Beds
+1824,Children Cabinets
+1825,Children Chairs
+1826,Children Furniture Sets
+1827,Children Tables
+1828,Other Children Furniture
+1829,Commercial Furniture
+1830,Bar Furniture
+1831,Bar Chairs
+1832,Bar Furniture Sets
+1833,Bar Stools
+1834,Bar Tables
+1835,Other Bar Furniture
+1836,Hospital Furniture
+1837,Hospital Beds
+1838,Hospital Cabinets
+1839,Hospital Chairs
+1840,Hospital Tables
+1841,Hospital Trolley
+1842,Other Hospital Furniture
+1843,Hotel Furniture
+1844,Hotel Bedroom Sets
+1845,Hotel Beds
+1846,Hotel Chairs
+1847,Hotel Sofas
+1848,Hotel Trolley
+1849,Luggage Racks
+1850,Other Hotel Furniture
+1851,Laboratory Furniture
+1852,Library Furniture
+1853,Office Furniture
+1854,Computer Desks
+1855,Conference Chairs
+1856,Conference Tables
+1857,Filing Cabinets
+1858,Magazine Racks
+1859,Office Chairs
+1860,Office Desks
+1861,Office Partitions
+1862,Office Sofas
+1863,Other Office Furniture
+1864,Reception Desks
+1865,Other Commercial Furniture
+1866,Restaurant Furniture
+1867,Other Restaurant Furniture
+1868,Restaurant Chairs
+1869,Restaurant Sets
+1870,Restaurant Tables
+1871,Salon Furniture
+1872,Barber Chairs
+1873,Massage Tables & Beds
+1874,Nail Tables
+1875,Other Salon Furniture
+1876,Salon Trolley
+1877,Shampoo Chairs
+1878,School Furniture
+1879,Dormitory Beds
+1880,Other School Furniture
+1881,School Chairs
+1882,School Desks
+1883,School Sets
+1884,Theater Furniture
+1885,Waiting Chairs
+1886,Furniture Accessories
+1887,Furniture Hardware
+1888,Door catches & Door Closers
+1889,Draw Slides
+1890,Furniture Bolts
+1891,Furniture Casters
+1892,Furniture Handles & Knobs
+1893,Furniture Hinges
+1894,Furniture Locks
+1895,Other Furniture Hardware
+1896,Furniture Parts
+1897,Chair Mechanisms
+1898,Furniture Frames
+1899,Furniture Legs
+1900,Other Furniture Parts
+1901,Swivel Plates
+1902,Home Furniture
+1903,Bathroom Furniture
+1904,Other Bathroom Furniture
+1905,Bedroom Furniture
+1906,Bedroom Sets
+1907,Beds
+1908,Dressers
+1909,Mattresses
+1910,Nightstands
+1911,Other Bedroom Furniture
+1912,Wardrobes
+1913,Dining Room Furniture
+1914,Dining Chairs
+1915,Dining Room Sets
+1916,Dining Tables
+1917,Other Dining Room Furniture
+1918,Sideboards
+1919,Kitchen Furniture
+1920,Living Room Furniture
+1921,Bookcases
+1922,CD Racks
+1923,Chaise Lounge
+1924,Coat Racks
+1925,Coffee Tables
+1926,Console Tables
+1927,Living Room Cabinets
+1928,Living Room Chairs
+1929,Living Room Sets
+1930,Living Room Sofas
+1931,Other Living Room Furniture
+1932,Shoe Racks
+1933,Stools & Ottomans
+1934,TV Stands
+1935,Other Home Furniture
+1936,Other Furniture
+1937,Outdoor Furniture
+1938,Beach Chairs
+1939,Garden Chairs
+1940,Garden Sets
+1941,Garden Sofas
+1942,Hammocks
+1943,Other Outdoor Furniture
+1944,Outdoor Tables
+1945,Patio Benches
+1946,Patio Swings
+1947,Patio Umbrellas & Bases
+1948,Sun Loungers
+1951,Gifts & Crafts
+1952,Arts & Crafts Stocks
+1953,Candle Holders
+1954,Candles
+1955,Crafts
+1956,Bamboo Crafts
+1957,Clay Crafts
+1958,Crystal Crafts
+1959,Glass Crafts
+1960,Lacquerware
+1961,Leather Crafts
+1962,Metal Crafts
+1963,Natural Crafts
+1964,Paper Crafts
+1965,Plastic Crafts
+1966,Pottery & Enamel
+1967,Resin Crafts
+1968,Semi-Precious Stone Crafts
+1969,Stone Crafts
+1970,Textile & Fabric Crafts
+1971,Wicker Crafts
+1972,Wood Crafts
+1973,Festive & Party Supplies
+1974,Christmas Decoration Supplies
+1975,Decorative Flowers & Wreaths
+1976,Event & Party Supplies
+1977,Fireworks & Firecrackers
+1978,Other Holiday Supplies
+1979,Party Masks
+1980,"Flags, Banners & Accessories"
+1981,Frame
+1982,Gift Sets
+1983,Incense
+1984,Incense Burners
+1985,Key Chains
+1986,Lanyard
+1987,Money Boxes
+1988,Music Boxes
+1989,Other Gifts & Crafts
+1990,Painting & Calligraphy
+1991,Photo Albums
+1992,Stickers
+1995,Hardware
+1996,Abrasive Tools
+1997,Abrasives
+1998,Brackets
+1999,Chains
+2000,Clamps
+2001,Fasteners
+2002,Anchors
+2003,Bolts
+2004,Nails
+2005,Nuts
+2006,Other Fasteners
+2007,Rivets
+2008,Screws
+2009,Washers
+2010,Hardware Stock
+2011,Hooks
+2012,Mould Design & Processing Services
+2013,Other Hardware
+2014,Springs
+2015,Used Hardware
+2018,Health & Medical
+2019,Animal & Veterinary
+2020,Veterinary Instrument
+2021,Veterinary Medicine
+2022,Drugs
+2023,Anti-Infective Drugs
+2024,Antiallergic Drugs
+2025,Antineoplastic Drugs
+2026,Antiparasitic Drugs
+2027,Cardiovascular System Drugs
+2028,Central Nervous System Drugs
+2029,Dermatological Drugs
+2030,Disinfection & Corrosion
+2031,Endocrinium Drugs
+2032,Gastrointestinal Drugs
+2033,Gynecological Drugs
+2034,Haematological Systemic Drugs
+2035,Hepato-Biliary-Pancreatic Drugs
+2036,Immunomodulator Drugs
+2037,Interofective System Drugs
+2038,"Mouth, Ear, Nose and Throat Drugs"
+2039,Narcotic & Adjuvant Drugs
+2040,Nutraceuticals
+2041,Ophthalmic Remedy
+2042,Orthopedics Drugs
+2043,Other Drugs
+2044,Respiratory System Drugs
+2045,Urinary System Drugs
+2046,Vitamin & Trace Elements
+2047,Health Care Products
+2048,Healthcare Supplement
+2049,Healthcare Supplies
+2050,Massager
+2051,Massage Belt
+2052,Medical Devices
+2053,Body Fluid-Processing & Circulation D evices
+2054,Clinical Analytical Instruments
+2055,Dental Equipments
+2056,"Ears, Eyes, Nose and Throat Surgical Instruments"
+2057,Emergency & Clinics Apparatus
+2058,Equipments of Traditional Chinese M edicine
+2059,General Assay & Diagnostic Apparatu s
+2060,Implants & Interventional Materials
+2061,Medical Consumables
+2062,Medical Cryogenic Equipments
+2063,Medical Software
+2064,Obstetrics & Gynecology Equipments
+2065,Physical Therapy Equipments
+2066,Radiology Equipments & Accessories
+2067,Sterilization Equipments
+2068,Surgical Instruments
+2069,"Ultrasonic, Optical, Electronic Equipm ents"
+2070,Ward Nursing Equipments
+2071,Pharmacy Stocks
+2072,Sliced Herbal Medicine
+2075,Home & Garden
+2076,Bakeware
+2077,Bakeware Sets
+2078,Baking & Pastry Tools
+2079,Baking Dishes & Pans
+2080,Cake Tools
+2081,Cookie Tools
+2082,Other Bakeware
+2083,Pie Tools
+2084,Pizza Tools
+2085,Rolling Pins & Pastry Boards
+2086,Barware
+2087,Bar Accessories
+2088,Bar Sets
+2089,Bar Tools
+2090,"Buckets, Coolers & Holders"
+2091,Bathroom Products
+2092,Basins
+2093,"Bath Brushes, Sponges & Scrubbers"
+2094,Bath Mats
+2095,Bath Pillows
+2096,Bathroom Sets
+2097,Other Bath & Toilet Supplies
+2098,Shower Caps
+2099,Shower Curtain Poles
+2100,Shower Curtains
+2101,Toilet Plungers
+2102,Toilet Seat Cover
+2103,Tubs
+2104,Cooking Tools
+2105,Cheese Tools
+2106,Coffee & Tea Tools
+2107,Colanders & Strainers
+2108,Cooking Tool Sets
+2109,Dessert Tools
+2110,Egg Tools
+2111,Fruit & Vegetable Tools
+2112,Herb & Spice Tools
+2113,Ice Cream Tools
+2114,Kitchen Lighters
+2115,Kitchen Timers
+2116,Measuring Tools
+2117,Meat & Poultry Tools
+2118,Mills
+2119,Openers
+2120,Other Cooking Tools
+2121,Pasta Tools
+2122,Salad Tools
+2123,Seafood Tools
+2124,Specialty Tools
+2125,Spoon Rests & Pot Clips
+2126,Sushi Tools
+2127,Utensils
+2128,Cookware
+2129,Casseroles
+2130,Cookware Parts
+2131,Cookware Sets
+2132,Double Boilers
+2133,Dutch Ovens
+2134,Other Cookware
+2135,Pans
+2136,Pressure Cookers
+2137,Soup & Stock Pots
+2138,Steamers
+2139,Thermal Cooker
+2140,Water Kettles
+2141,Woks
+2142,Garden Supplies
+2143,BBQ
+2144,BBQ Accessories
+2145,BBQ Grills
+2146,BBQ Tools
+2147,Garden Buildings
+2148,"Arches, Arbours, Pergolas & Bridge"
+2149,Cabins & Garden Rooms
+2150,"Fencing, Trellis & Gates"
+2151,"Garages, Canopies & Carports"
+2152,Garden Greenhouses
+2153,Other Garden Buildings
+2154,Playhouses
+2155,Sheds & Storage
+2156,Summerhouses
+2157,Garden Landscaping & Decking
+2158,Garden Ornaments
+2159,Other Landscaping & Decking
+2160,Garden Pots & Planters
+2161,Basket Liners
+2162,Flower Pots & Planters
+2163,Grow Bags
+2164,Hanging Baskets
+2165,Nursery Pots
+2166,Nursery Trays & Lids
+2167,Pot Trays
+2168,Other Garden Supplies
+2169,Outdoor Heaters
+2170,Chimeneas
+2171,Fire Pits
+2172,Patio Heaters
+2173,Shade
+2174,Awnings
+2175,Gazebos
+2176,Shade Accessories
+2177,Shade Sails & Nets
+2178,Watering & Irrigation
+2179,Garden Hoses & Reels
+2180,Garden Sprinklers
+2181,Garden Water Connectors
+2182,Garden Water Guns
+2183,Garden Water Timers
+2184,Other Watering & Irrigation
+2185,Sprayers
+2186,Water Cans
+2187,Watering Kits
+2188,Home Decor
+2189,"Blinds, Shades & Shutters"
+2190,Clocks
+2191,Antique Style Clocks
+2192,Clock Parts & Accessories
+2193,Desk & Table Clocks
+2194,Digital & Analog-Digital Clocks
+2195,Floor Clocks
+2196,Hourglasses
+2197,Mechanical Clocks
+2198,Other Clocks
+2199,Specialty Clocks
+2200,Wall Clocks
+2201,Crystal Soil
+2202,"Curtain Poles, Tracks & Accessories"
+2203,Fridge Magnets
+2204,Mirrors
+2205,Other Home Decor
+2206,Plaques
+2207,Screens & Room Dividers
+2208,Vases
+2209,Bamboo & Wooden Vases
+2210,Ceramic & Porcelain Vases
+2211,Glass & Crystal Vases
+2212,Metal Vases
+2213,Other Vases
+2214,Plastic Vases
+2215,Resin Vases
+2216,Stone Vases
+2217,Home Storage & Organization
+2218,Bag Clips
+2219,Hooks & Rails
+2220,Other Home Storage & Organization
+2221,Storage Bags
+2222,Storage Baskets
+2223,Storage Bottles & Jars
+2224,Storage Boxes & Bins
+2225,Storage Drawers
+2226,Storage Holders & Racks
+2227,Storage Trays
+2228,Household Chemicals
+2229,Air Fresheners
+2230,Detergent
+2231,Drain Cleaners
+2232,Other Household Chemicals
+2233,Wax & Polishes
+2234,Household Cleaning Tools & Accessorie s
+2235,Brooms & Dustpans
+2236,Buckets
+2237,Cleaning Brushes
+2238,Cleaning Cloths
+2239,Dusters
+2240,Household Gloves
+2241,Lint Remover
+2242,Lint Rollers & Brushes
+2243,Mops
+2244,Other Household Cleaning Tools & Ac cessories
+2245,Sponges & Scouring Pads
+2246,Squeegees
+2247,Waste Bins
+2248,Household Sundries
+2249,Aprons
+2250,Baby Supplies & Products
+2251,Feeding Supplies
+2252,Other Baby Supplies & Products
+2253,"Strollers, Walkers & Carriers"
+2254,Fireplace Sets & Accessories
+2255,Hot Water Bottles
+2256,Household Scales
+2257,Household Thermometers
+2258,Lighters & Smoking Accessories
+2259,Ashtrays
+2260,Cigar Accessories
+2261,Cigar Cases/Humidors
+2262,Cigarette Cases
+2263,Hookahs
+2264,Lighters
+2265,Matches
+2266,Other Lighters & Smoking Accessories
+2267,Smoking Pipes
+2268,Mailboxes
+2269,Needlework
+2270,Other Household Sundries
+2271,Oven Mitts
+2272,Oversleeves
+2273,Pest Control
+2274,Rain Gear
+2275,Other Rain Gear
+2276,Raincoats
+2277,Umbrella Stands
+2278,Umbrellas
+2279,Kitchen Knives & Accessories
+2280,Blocks & Roll Bags
+2281,Chopping Blocks
+2282,Kitchen Knives
+2283,Knife Sets
+2284,Other Knife Accessories
+2285,Sharpeners
+2286,Laundry Products
+2287,Clothes Pegs
+2288,Hangers & Racks
+2289,Ironing Boards
+2290,Laundry Bags & Baskets
+2291,Laundry Balls & Discs
+2292,Other Laundry Products
+2293,Scrub Brushes
+2294,Scrubboards
+2295,Pet Products
+2296,Aquariums & Accessories
+2297,Other Pet Products
+2298,Pet Apparel & Accessories
+2299,Pet Beds & Accessories
+2300,Pet Bowls & Feeders
+2301,"Pet Cages, Carriers & Houses"
+2302,Pet Caskets & Urns
+2303,Pet Cleaning & Grooming Products
+2304,Pet Collars & Leashes
+2305,Pet Food
+2306,Pet Health Care & Supplements
+2307,Pet Toys
+2308,Pet Training Products
+2309,Pet Travel & Outdoors
+2310,Tableware
+2311,Dinnerware
+2312,Bowls
+2313,Dinnerware Sets
+2314,Dishes & Plates
+2315,Gravy Boats
+2316,Other Dinnerware
+2317,Sugar & Creamer Pots
+2318,Tureens
+2319,Drinkware
+2320,Coffee & Tea Sets
+2321,Cups & Saucers
+2322,Glass
+2323,Hip Flasks
+2324,Mugs
+2325,Other Drinkware
+2326,Vacuum Flasks & Thermoses
+2327,Water Bottles
+2328,Water Pots & Kettles
+2329,Flatware
+2330,Chopsticks
+2331,Dinner Knives
+2332,Flatware Sets
+2333,Forks
+2334,Spoons
+2335,Other Tableware
+2336,Table Decoration & Accessories
+2337,Mats & Pads
+2338,Napkin Rings
+2339,Other Table Decoration & Accessories
+2340,Tissue Boxes
+2341,Toothpick Holders
+2342,Toothpicks
+2345,Home Appliances
+2346,Air Conditioning Appliances
+2347,Air Conditioners
+2348,Air Purifiers
+2349,Dehumidifiers
+2350,Fans
+2351,Humidifiers
+2352,Other Air Conditioning Appliances
+2353,Cleaning Appliances
+2354,Other Cleaning Appliances
+2355,Steam Cleaners
+2356,Ultrasonic Cleaners
+2357,Vacuum Cleaners
+2358,Hand Dryers
+2359,Home Appliance Parts
+2360,Air Conditioner Parts
+2361,Air Purifier Parts
+2362,Clothes Dryer Parts
+2363,Dehumidifier Parts
+2364,Electric Heater Parts
+2365,Electric Iron Parts
+2366,Electric Water Heater Parts
+2367,Fan Parts
+2368,Freezer Parts
+2369,Garment Steamer Parts
+2370,Gas Heater Parts
+2371,Gas Water Heater Parts
+2372,Hand Dryer Parts
+2373,Heat Pump Water Heater Parts
+2374,Humidifier Parts
+2375,Ice Maker Parts
+2376,Kerosene Heater Parts
+2377,Kitchen Appliance Parts
+2378,3 in 1 Breakfast Maker Parts
+2379,Blender Parts
+2380,Bread Maker Parts
+2381,Chocolate Fountain Parts
+2382,Coffee Grinder Parts
+2383,Coffee Maker Parts
+2384,Coffee Roaster Parts
+2385,Cooktop Parts
+2386,Crepe Maker Parts
+2387,Dish Washer Parts
+2388,Disinfecting Cabinet Parts
+2389,Egg Boiler Parts
+2390,Electric Air Pot Parts
+2391,Electric Deep Fryer Parts
+2392,Electric Kettle Parts
+2393,Electric Pressure Cooker Parts
+2394,Electric Skillet Parts
+2395,Food Mixer Parts
+2396,Food Processor Parts
+2397,Food Steamer Parts
+2398,Food Waste Disposer Parts
+2399,Hot Plate Parts
+2400,Ice Cream Maker Parts
+2401,Induction Cooker Parts
+2402,Juicer Parts
+2403,Meat Grinder Parts
+2404,Microwave Oven Parts
+2405,Oven Parts
+2406,Pancake Maker Parts
+2407,Popcorn Maker Parts
+2408,Range Hood Parts
+2409,Range Parts
+2410,Rice Cooker Parts
+2411,Rotisserie Parts
+2412,Sandwich Maker Parts
+2413,Slow Cooker Parts
+2414,Toaster Oven Parts
+2415,Toaster Parts
+2416,Vegetable Washer Parts
+2417,Waffle Maker Parts
+2418,Yogurt Maker Parts
+2419,Other Home Appliance Parts
+2420,Refrigerator Parts
+2421,Solar Water Heater Parts
+2422,Steam Cleaner Parts
+2423,Steam Press Parts
+2424,Ultrasonic Cleaner Parts
+2425,Vacuum Cleaner Parts
+2426,Washing Machine Parts
+2427,Water Dispenser Parts
+2428,Water Filter Parts
+2429,Water Softener Parts
+2430,Wet Towel Dispenser Parts
+2431,Wine Refrigerator Parts
+2433,Home Heaters
+2434,Electric Fireplaces
+2435,Electric Heaters
+2436,Gas Heaters
+2437,Kerosene Heaters
+2438,Other Home Heaters
+2439,Kitchen Appliances
+2440,Blenders
+2441,Coffee Grinders
+2442,Coffee Makers
+2443,Coffee Roasters
+2444,Cooking Appliances
+2445,3 in 1 Breakfast Makers
+2446,Bread Makers
+2447,Chocolate Fountains
+2448,Cooktops
+2449,Crepe Makers
+2450,Egg Boilers
+2451,Electric Deep Fryers
+2452,Electric Food Steamers
+2453,Electric Grills & Electric Griddles
+2454,Electric Pressure Cookers
+2455,Electric Skillets
+2456,Hot Plates
+2457,Induction Cookers
+2458,Microwave Ovens
+2459,Ovens
+2460,Pancake Makers
+2461,Range Hoods
+2462,Ranges
+2463,Rice Cookers
+2464,Rotisseries
+2465,Sandwich Makers
+2466,Slow Cookers
+2467,Toaster Ovens
+2468,Toasters
+2469,Waffle Makers
+2470,Dish Washers
+2471,Disinfecting Cabinets
+2472,Electric Air Pots
+2473,Electric Kettles
+2474,Food Mixers
+2475,Food Processors
+2476,Food Waste Disposers
+2477,Ice Cream Makers
+2478,Ice Crushers & Shavers
+2479,Juicers
+2480,Meat Grinders
+2481,Other Kitchen Appliances
+2482,Popcorn Makers
+2483,Vacuum Food Sealers
+2484,Vegetable Washers
+2485,Yogurt Makers
+2486,Laundry Appliances
+2487,Clothes Dryers
+2488,Electric Irons
+2489,Garment Steamers
+2490,Other Laundry Appliances
+2491,Steam Presses
+2492,Washing Machines
+2493,Other Home Appliances
+2494,Refrigerators & Freezers
+2495,Freezers
+2496,Ice Makers
+2497,Other Refrigerators & Freezers
+2498,Refrigerators
+2499,Wine Refrigerators
+2500,Water Heaters
+2501,Electric Water Heaters
+2502,Gas Water Heaters
+2503,Heat Pump Water Heaters
+2504,Other Water Heaters
+2505,Solar Water Heaters
+2506,Water Treatment Appliances
+2507,Other Water Treatment Appliances
+2508,Water Dispensers
+2509,Water Filters
+2510,Water Softeners
+2511,Wet Towel Dispensers
+2514,Lights & Lighting
+2515,Commercial Lighting Projects
+2516,Lighting Accessories
+2517,Ballasts
+2518,Dimmers
+2519,Lamp Covers & Shades
+2520,Lamp Holders & Lamp Bases
+2521,Lighting Transformers
+2522,Other Lighting Accessories
+2523,Starters
+2524,Lighting Bulbs & Tubes
+2525,Energy Saving & Fluorescent
+2526,Halogen Bulbs
+2527,High Pressure Sodium Lamps
+2528,Incandescent Bulbs
+2529,LED Bulbs & Tubes
+2530,Mercury Lamps
+2531,Metal Halide Lamps
+2532,Neon Bulbs & Tubes
+2533,Other Lighting Bulbs & Tubes
+2534,Ultraviolet Lamps
+2535,Xenon Lamps
+2536,Lighting Fixtures
+2537,Emergency Lights
+2538,Holiday Lighting
+2539,Industrial Lighting
+2540,LED Lighting
+2541,LED Backlights
+2542,LED Flashlights
+2543,LED Headlamps
+2544,LED Lamps
+2545,Other LED Lighting
+2546,Other Lighting Fixtures
+2547,Outdoor Lighting
+2548,Camping Lights
+2549,Floodlights
+2550,Garden Lights
+2551,Lamp Poles
+2552,Lawn Lamps
+2553,Other Outdoor Lighting
+2554,Outdoor Wall Lamps
+2555,Solar Lamps
+2556,Street Lights
+2557,Underground Lamps
+2558,Underwater Lights
+2559,Portable Lighting
+2560,Flashlights & Torches
+2561,Headlamps
+2562,Hurricane Lanterns
+2563,Other Portable Lighting
+2564,Portable Spotlights
+2565,Professional Lighting
+2566,Residential Lighting
+2567,Book Lights
+2568,Ceiling Lights
+2569,Ceiling Spotlights
+2570,Chandeliers & Pendant Lights
+2571,Downlights
+2572,Floor Lamps
+2573,Grille Lamps
+2574,Night Lights
+2575,Other Residential Lighting
+2576,Table Lamps & Reading Lamps
+2577,Wall Lamps
+2578,Other Lights & Lighting Products
+2581,"Luggage, Bags & Cases"
+2582,Bag & Luggage Making Materials
+2583,Bag Making Machinery Parts
+2584,Bag Parts & Accessories
+2585,Business Bags & Cases
+2586,Briefcases
+2587,Laptop Bags
+2588,Other Business Bags & Cases
+2589,Digital Gear & Camera Bags
+2590,Camera/Video Bags
+2591,CD/DVD Player Bags & Cases
+2592,Mobile Phone Bags & Cases
+2593,MP3 Bags & Cases
+2594,Other Digital Gear & Camera Bags
+2595,PDA Bags & Cases
+2596,Video Game Player Cases
+2597,Handbags & Messenger Bags
+2598,Evening Bags
+2599,Handbags
+2600,Messenger Bags
+2601,Other Handbags & Messenger Bags
+2602,Luggage & Travel Bags
+2603,Garment Bags
+2604,Luggage
+2605,Other Luggage & Travel Bags
+2606,Travel Bags
+2607,Luggage Cart
+2608,"Other Luggage, Bags & Cases"
+2609,Special Purpose Bags & Cases
+2610,CD Bags & Cases
+2611,Chip Cases
+2612,Cosmetic Bags & Cases
+2613,Diaper Bags
+2614,Instrument Bags & Cases
+2615,Other Special Purpose Bags & Cases
+2616,Promotional Bags
+2617,School Bags
+2618,Shopping Bags
+2619,Sports & Leisure Bags
+2620,Backpacks
+2621,Cooler Bags
+2622,Duffel Bags
+2623,Other Sports & Leisure Bags
+2624,Picnic Bags
+2625,Waist Bags
+2626,Wallets & Holders
+2627,Card Holders
+2628,Coin Purses
+2629,Key Wallets
+2630,Other Wallets & Holders
+2631,Wallets
+2634,Machinery
+2635,Air Cleaning Equipment
+2636,Air Shower
+2637,Industrial Dehumidifier
+2638,Industrial Humidifier
+2639,Other Air Cleaning Equipment
+2640,Air Cleaning Equipment Parts
+2641,Air-Compressor Parts
+2642,Air-Compressors
+2643,Animal Husbandry Equipment
+2644,Animal Cages
+2645,Animal Drinkers
+2646,Animal Feeders
+2647,Egg Incubators
+2648,Other Animal Husbandry Equipment
+2649,Apparel Machinery
+2650,Button Making Machinery
+2651,Buttonhole Machinery
+2652,Embroidery Machines
+2653,Industrial Garment Steamers
+2654,Lace Machines
+2655,Other Apparel Machinery
+2656,Overlockers
+2657,Sewing Machines
+2658,Zipper Making Machines
+2659,Apparel Machinery Parts
+2660,Aquaculture Machine Aerators
+2661,Auxiliary Packaging Machinery
+2662,Bag Making Machinery
+2664,Belt Making Machinery
+2665,Belt Making Machinery Parts
+2666,Beverage Processing Machinery
+2667,Beverage Processing Machinery Parts
+2668,Boiler Parts
+2669,Boilers
+2670,Building Material Making Machinery
+2671,Brick Making Machinery
+2672,Cement Making Machinery
+2673,Curb & Paving Stone Forming Machin ery
+2674,Floorboard Making Machinery
+2675,Other Construction Material Making M achinery
+2676,Pipe Making Machinery
+2677,Sand Making Machinery
+2678,Tile Making Machinery
+2679,Building Material Making Machinery Par ts
+2680,Cap Making Machinery
+2681,Cap Making Machinery Parts
+2682,Chemical Process Equipment
+2683,Chemical Storage Equipment
+2684,Chemical Transportation Equipment
+2685,Drying Equipment
+2686,Grinding Equipment
+2687,Heat Transfer Equipment
+2688,Mixing Equipment
+2689,Other Chemical Equipment
+2690,Pressure Vessels
+2691,Reactors
+2692,Separation Equipment
+2693,Chemical Process Equipment Parts
+2694,Chemical Product Machinery
+2695,Chemical Product Machinery Parts
+2696,Cleaning Equipment
+2697,Cleaning Equipment Parts
+2698,Construction Machinery
+2699,Asphalt Mixers
+2700,Bulldozers
+2701,Compactors
+2702,Concrete Batching Plant
+2703,Concrete Mixers
+2704,Concrete Pumps
+2705,Concrete Saw
+2706,Concrete Truck
+2707,Concrete Vibrator
+2708,Construction Lifter
+2709,Excavators
+2710,Loaders
+2711,Motor Graders
+2712,Other Construction Machinery
+2713,Pavers
+2714,Pile Driver
+2715,Power Trowel
+2716,Rammers
+2717,Road Roller
+2718,Construction Machinery Parts
+2719,Consumer Electronics Production Lines
+2720,Energy Saving Equipment
+2721,Energy Saving Equipment Parts
+2722,Engine Parts
+2723,Engines
+2724,Evaporator
+2725,Farm Machinery
+2726,Balers
+2727,Cultivators
+2728,Harvesters
+2729,Milking Machines
+2730,Oil Pressers
+2731,Other Farm Machinery
+2732,Seeders
+2733,Shellers
+2734,Tractors
+2735,Farm Machinery Parts
+2736,Feed Processing Machinery
+2737,Filter Supplies
+2738,Filter Aids
+2739,Filter Bags
+2740,Filter Cloth
+2741,Filter Films
+2742,Filter Meshes
+2743,Filter Papers
+2744,Other Filter Supplies
+2745,Food Processing Machineries
+2746,Bean Product Processing Machinery
+2747,Cooking Equipment
+2748,Baking Equipment
+2749,Fryer
+2750,Dairy Processing Machinery
+2751,Food Sterilizer
+2752,Fruit & Vegetable Processing Machin ery
+2753,Grain Processing Machinery
+2754,Flour Mill
+2755,Noodle Machine
+2756,Rice Mill
+2757,Meat Processing Machinery
+2758,Meat Mincer
+2759,Meat Mixer
+2760,Meat Slicer
+2761,Other Food Processing Machinery
+2762,Pasteurizer
+2763,Pet Food Processing Machinery
+2764,Slaughtering Equipment
+2765,Snack Machinery
+2766,Sugar & Salt Processing Machine
+2767,Food Processing Machinery Parts
+2768,Forestry Machinery
+2769,Gas Generation Equipment
+2770,Gas Generation Equipment Parts
+2771,Glass Processing Machinery
+2772,Glass Processing Machinery Parts
+2773,Glass Product Making Machinery
+2774,Glass Product Making Machinery Parts
+2775,Glove Making Machinery
+2776,Glove Making Machinery Parts
+2777,Home Product Making Machinery
+2778,Furniture Making Machinery
+2779,Match Making Machinery
+2780,Other Home Product Making Machine ry
+2781,Straw Making Machinery
+2782,Toothpick Making Machinery
+2783,Wet Wipe Making Machinery
+2784,Home Product Making Machinery Parts
+2785,Home Textile Product Machinery
+2786,Felting Machinery
+2787,Other Home Textile Product Machine ry
+2788,Quilting Machinery
+2789,Towel Making Machinery
+2790,Home Textile Product Machinery Parts
+2791,Industrial Air Conditioners
+2792,Industrial Brakes
+2793,Industrial Filtration Equipment
+2794,Air Filter
+2795,Dust Collector
+2796,Oil Filter
+2797,Other Industrial Filtration Equipment
+2798,Water Filter
+2799,Laser Equipment
+2800,Laser Equipment Parts
+2801,Leather Production Machinery
+2802,Leather Production Machinery Parts
+2803,Machine Tools
+2804,Bending Machinery
+2805,Boring Machine
+2806,Drilling Machine
+2807,Gear Cutting Machine
+2808,Grinding Machine
+2809,Lathe
+2810,Machine Centre
+2811,Milling Machine
+2812,Other Machine Tools
+2813,Planer & Slotting Machine
+2814,Punching Machine
+2815,Wire EDM Machine
+2816,Machine Tools Accessories
+2817,Chuck
+2818,CNC Controller
+2819,Cutting and Forming Tools
+2820,Boring Tool
+2821,Broach
+2822,Hob
+2823,Milling Cutter
+2824,Other Cutting & Forming Tools
+2825,Reamer
+2826,Turning Tool
+2827,Handwheel
+2828,Machine Tool Spindle
+2829,Other Machine Tools Accessories
+2830,Tool Holder
+2831,Vise
+2832,Machinery Design Services
+2833,Machinery Parts Design Services
+2834,Machinery Parts Processing Services
+2835,Machinery Parts Stock
+2836,Machinery Processing Services
+2837,Machinery Stock
+2838,Material Handling Equipment
+2839,Conveyors
+2840,Cranes
+2841,Forklifts
+2842,Hand Carts & Trolleys
+2843,Hoists
+2844,Lift Tables
+2845,Manipulator
+2846,Other Material Handling Equipment
+2847,Pallet Jack
+2848,Stacking Containers
+2849,Stacking Racks & Shelves
+2850,Wheelbarrows
+2851,Winches
+2852,Material Handling Equipment Parts
+2853,Metal Processing Machinery
+2854,Metal Casting Machinery
+2855,Metal Coating Machinery
+2856,Metal Electroplating Machinery
+2857,Metal Engraving Machinery
+2858,Metal Forging Machinery
+2859,Metal Straightening Machinery
+2860,Other Metal Processing Machinery
+2861,Metal Processing Machinery Parts
+2862,Metallurgy Machinery
+2863,Industrial Furnace
+2864,Other Metallurgy Machinery
+2865,Rolling Mill
+2866,Metallurgy Machinery Parts
+2867,Mining Machinery
+2868,Crusher
+2869,Dredger
+2870,Drilling Rig
+2871,Mine Mill
+2872,Mineral Separator
+2873,Mining Feeder
+2874,Other Mining Machinery
+2875,Sand Washer
+2876,Vibrating Screen
+2877,Mining Machinery Parts
+2878,Motor
+2879,AC Motor
+2880,DC Motor
+2881,Other Motor
+2882,Stepper Motor
+2883,Motor Accessories
+2884,Motor Controller
+2885,Motor Driver
+2886,Other Motor Accessories
+2887,Oil Purifier
+2888,Other Machinery
+2889,Packaging Forming Machine
+2890,Packaging Machinery
+2891,Packaging Machinery Parts
+2892,Paper Processing Machinery
+2893,Paper Processing Machinery Parts
+2894,Paper Product Making Machinery
+2895,Paper Product Making Machinery Parts
+2896,Pharmaceutical Machineries
+2897,Capsule Filling Machine
+2898,Capsule Polisher
+2899,Film Coating Machine
+2900,Other Pharmaceutical Machinery
+2901,Pharmaceutical Packaging Machine
+2902,Tablet Counter
+2903,Tablet Press
+2904,Pharmaceutical Machinery Parts
+2905,Plastic Processing Machinery
+2906,Other Plastic Processing Machinery
+2907,Plastic Blowing Machinery
+2908,Plastic Crushing Machinery
+2909,Plastic Cutting Machinery
+2910,Plastic Drying Machinery
+2911,Plastic Extruders
+2912,Plastic Granulators
+2913,Plastic Injection Machinery
+2914,Plastic Laminating Machinery
+2915,Plastic Recycling Machinery
+2916,Plastic Rolling Machinery
+2917,Plastic Vacuum Forming Machinery
+2918,Plastic Processing Machinery Parts
+2919,Plastic Product Making Machinery
+2920,Plastic Product Making Machinery Parts
+2921,Post-Press Equipment
+2922,Pre-Press Equipment
+2923,Printing Machinery
+2924,Printing Machinery Parts
+2925,Refrigeration & Heat Exchange Equipm ent
+2926,Cold Room
+2927,Cooling Tower
+2928,Heat Exchanger
+2929,Ice Machine
+2930,Industrial Chiller
+2931,Industrial Freezer
+2932,Industrial Heater
+2933,Other Refrigeration & Heat Exchange Equipment
+2934,Refrigeration & Heat Exchange Parts
+2935,Rubber Processing Machinery
+2936,Rubber Processing Machinery Parts
+2937,Rubber Product Making Machinery
+2938,Rubber Product Making Machinery Part s
+2939,Shoemaking Machinery
+2940,Other Shoemaking Machinery
+2941,Shoe Cementing Machines
+2942,Shoe Eyeleting Machines
+2943,Shoe Moulding Machines
+2944,Shoemaking Machinery Parts
+2945,Silos
+2946,Sock Knitting Machinery
+2947,Sock Knitting Machinery Parts
+2948,Textile Machinery
+2949,Bleaching Machinery
+2950,Knitting Machinery
+2951,Nonwoven Machinery
+2952,Other Textile Machinery
+2953,Spinning Machinery
+2954,Textile Dyeing Machinery
+2955,Textile Finishing Machinery
+2956,Textile Raw Materials Processing Mac hinery
+2957,Weaving Machinery
+2958,Textile Machinery Parts
+2959,Used Machinery & Equipment
+2960,Machinery Leasing Service
+2961,Other Used Machinery
+2962,Other Used Textile Machinery
+2963,Used Air Conditioners
+2964,Used Balers
+2965,Used Bulldozers
+2966,Used Cargo Truck
+2967,Used Compactors
+2968,Used Concrete Mixers
+2969,Used Concrete Truck
+2970,Used Cranes
+2971,Used Dump Truck
+2972,Used Embroidery Machines
+2973,Used Excavators
+2974,Used Forklift
+2975,Used Knitting Machinery
+2976,Used Lathe
+2977,Used Loaders
+2978,Used Machinery & Equipment Auctio n Service
+2979,Used Milling Machine
+2980,Used Mining Machinery
+2981,Used Motor Graders
+2982,Used Packaging Machinery
+2983,Used Pavers
+2984,Used Pile Driver
+2985,Used Plastic Blowing Machinery
+2986,Used Plastic Extruders
+2987,Used Plastic Injection Machinery
+2988,Used Plastic Product Making Machine ry
+2989,Used Printing Machinery
+2990,Used Refrigerator
+2991,Used Refrigerator Truck
+2992,Used Road Roller
+2993,Used Sewing Machines
+2994,Used Spinning Machinery
+2995,Used Tractors
+2996,Used Washing Machines
+2997,Used Weaving Machinery
+2998,Used Machinery Parts
+2999,Ventilation Fan Parts
+3000,Ventilation Fans
+3001,Welding & Soldering Supplies
+3002,Electrode Holders
+3003,Other Welding & Soldering Supplies
+3004,Weld Holders
+3005,Welding Fluxes
+3006,Welding Helmets
+3007,Welding Rods
+3008,Welding Tips
+3009,Welding Torches
+3010,Welding Wires
+3011,Welding Equipment
+3012,Arc Welders
+3013,Butt Welders
+3014,Electric Soldering Irons
+3015,Laser Welders
+3016,MIG Welders
+3017,Other Welding Equipment
+3018,Plasma Welders
+3019,Plastic Welders
+3020,Press Welders
+3021,Resistance Welders
+3022,Seam Welders
+3023,Spot Welders
+3024,Tube Welders
+3025,Woodworking Machinery
+3026,Finger Jointer
+3027,Other Woodworking Machinery
+3028,Press
+3029,Saw Machinery
+3030,Wood Based Panels Machinery
+3031,Wood Boring Machine
+3032,Wood Lathe
+3033,Wood Pellet Mill
+3034,Wood Planer
+3035,Wood Router
+3036,Woodworking Benches
+3037,Woodworking Machinery Parts
+3040,Measurement & Analysis I nstruments
+3041,Analyzers
+3042,Carbon Analyzers
+3043,Concentration Meters
+3044,Densitometers
+3045,Gas Analyzers
+3046,Moisture Meters
+3047,Other Analysis Instruments
+3048,PH Meters
+3049,Counters
+3050,Electrical Instruments
+3051,Battery Testers
+3052,Clamp Meters
+3053,Current Meters
+3054,Energy Meters
+3055,Frequency Meters
+3056,Multimeters
+3057,Other Electrical Instruments
+3059,Power Meters
+3060,Resistance Meters
+3061,Voltage Meters
+3062,Electronic Measuring Instruments
+3063,Industrial Metal Detectors
+3064,Oscilloscopes
+3065,Other Electronic Measuring Instrume nts
+3066,Signal Generators
+3067,Spectrum Analyzers
+3068,Flow Measuring Instruments
+3069,Flow Meters
+3070,Flow Sensors
+3071,Gas Meters
+3072,Other Flow Measuring Instruments
+3073,Water Meters
+3074,Instrument Parts & Accessories
+3075,Level Measuring Instruments
+3076,Measuring & Analysing Instrument Desi gn Services
+3077,Measuring & Analysing Instrument Proc essing Services
+3079,Measuring & Gauging Tools
+3080,Dial Indicators
+3081,Gauges
+3082,Micrometers
+3083,Other Measuring & Gauging Tools
+3084,Tape Measures
+3085,Vernier Calipers
+3086,Optical Instruments
+3087,Laser Levels
+3088,Laser Rangefinders
+3089,Lenses
+3090,Magnifiers
+3091,Microscopes
+3092,Night Vision
+3093,Optical Filters
+3094,Other Optics Instruments
+3095,Prisms
+3096,Refractometers
+3097,Spectrometers
+3098,Telescope & Binoculars
+3099,Theodolites
+3100,Other Measuring & Analysing Instrumen ts
+3101,Physical Measuring Instruments
+3102,Force Measuring Instruments
+3103,Hardness Testers
+3104,Height Measuring Instruments
+3105,Other Physical Measuring Instrument s
+3106,Speed Measuring Instruments
+3107,Width Measuring Instruments
+3108,Pressure Measuring Instruments
+3109,Other Pressure Measuring Instrumen ts
+3110,Pressure Gauges
+3111,Pressure Monitors
+3112,Pressure Regulators
+3113,Pressure Sensors
+3114,Pressure Transmitters
+3115,Temperature Instruments
+3116,Testing Equipment
+3117,Timers
+3118,Used Measuring & Analysing Instrumen ts
+3119,Weighing Scales
+3122,Mechanical Parts & Fabric ation Services
+3123,Ball Screws
+3124,Bearing Accessories
+3125,Bearing Balls
+3126,Bearing Rollers
+3127,Bushings
+3128,Cages
+3129,Housings
+3130,Other Bearing Accessories
+3131,Bearings
+3132,Ball Bearings
+3133,Angular Contact Ball Bearings
+3134,Ceramic Ball Bearing
+3135,Deep Groove Ball Bearings
+3136,Other Ball Bearings
+3137,Self-aligning Ball Bearings
+3138,Thrust Ball Bearings
+3139,Linear Bearings
+3140,Needle Bearings
+3141,Other Bearings
+3142,Pillow Block Bearings
+3143,Rod End Bearings
+3144,Roller Bearings
+3145,Cylindrical Roller Bearings
+3146,Other Roller Bearings
+3147,Spherical Roller Bearings
+3148,Spherical Thrust Roller Bearings
+3149,Taper Roller Bearings
+3150,Slewing Bearings
+3151,Sliding Bearings
+3152,Special Bearings
+3153,Custom Fabrication Services
+3154,Casting Services
+3155,Coating Services
+3156,Finishing
+3157,Forging Services
+3158,Heat Treatment
+3159,Machining Services
+3160,Other Fabrication Services
+3161,Sheet Metal Fabrication
+3162,Welding Services
+3163,Cylinders
+3164,Flanges
+3165,Gaskets
+3166,General Mechanical Components Desig n Services
+3167,General Mechanical Components Stock
+3168,Hydraulic Parts
+3169,Linear Guides
+3170,Moulds
+3171,Other Mechanical Parts
+3172,Pipe Fittings
+3173,Pneumatic Parts
+3174,Power Transmission Parts
+3175,Gearboxes
+3176,Gears
+3177,Bevel Gears
+3178,Cylindrical Gears
+3179,Other Gears
+3180,Pinion Gears
+3181,Rack Gears
+3182,Ring Gears
+3183,Spur Gears
+3184,Worm Gears
+3185,Other Power Transmission Parts
+3186,Pulleys
+3187,Shaft Couplings
+3188,Speed Reducers
+3189,Sprockets
+3190,Transmission Belts
+3191,Transmission Chains
+3192,Universal Joints
+3193,Worms
+3194,Pumps
+3195,Seals
+3196,Shafts
+3197,Used General Mechanical Components
+3198,Valve Parts
+3199,Other Valve Parts
+3200,Valve Balls
+3201,Valve Bodies
+3202,Valve Caps
+3203,Valve Needles
+3204,Valve Stems
+3205,Valves
+3208,Minerals & Metallurgy
+3209,Aluminum
+3210,Aluminum Bars
+3211,Aluminum Pipes
+3212,Aluminum Powder
+3213,Aluminum Profiles
+3214,Aluminum Sheets
+3215,Aluminum Strips
+3216,Aluminum Wire
+3217,Other Aluminum
+3218,Asbestos Products
+3219,Barbed Wire
+3220,Billets
+3221,Aluminum Billets
+3222,Other Billets
+3223,Steel Billets
+3224,Carbon
+3225,Cast & Forged
+3226,Ceramic Fiber Products
+3227,Ceramic Fiber Blankets
+3228,Ceramic Fiber Boards
+3229,Ceramic Fiber Cloth
+3230,Ceramic Fiber Paper
+3231,Ceramic Fiber Rope
+3232,Ceramic Fiber Yarn
+3233,Ceramic Tape
+3234,Other Ceramic Fiber Products
+3235,Ceramics
+3236,Copper
+3237,Copper Bars
+3238,Copper cathode
+3239,Copper Pipes
+3240,Copper Powder
+3241,Copper Sheets
+3242,Copper Strips
+3243,Copper Wire
+3244,Other Copper
+3245,Fiberglass Products
+3246,Fiberglass Cloth
+3247,Fiberglass Mat
+3248,Fiberglass Mesh
+3249,Fiberglass Yarn
+3250,Other Fiberglass Products
+3252,Graphite Products
+3253,Graphite Crucible
+3254,Graphite Electrodes
+3255,Graphite Mold
+3256,Graphite Powder
+3257,Graphite Rod
+3258,Graphite Sheets
+3259,Other Graphite Products
+3260,Ingots
+3261,Aluminum Ingots
+3262,Antimony Ingots
+3263,Bismuth Ingots
+3264,Copper Ingots
+3265,Indium Ingots
+3266,Lead Ingots
+3267,Magnesium Ingots
+3268,Manganese Ingots
+3269,Other Ingots
+3270,Silicon Ingots
+3271,Steel Ingots
+3272,Tin Ingots
+3273,Titanium Ingots
+3274,Zinc Ingots
+3275,Iron
+3276,Iron Pipes
+3277,Iron Wire
+3278,Other Iron
+3279,Lead
+3280,Lime
+3281,Magnetic Materials
+3282,Metal Scrap
+3283,Aluminum Scrap
+3284,Copper Scrap
+3285,Iron Scrap
+3286,Lead Scrap
+3287,Other Metal Scrap
+3288,Stainless Steel Scrap
+3289,Steel Scrap
+3290,Titanium Scrap
+3291,Metal Slabs
+3292,Mineral Wool
+3293,Nickel
+3294,Non-Metallic Mineral Deposit
+3295,Barite
+3296,Bentonite
+3297,Dolomite
+3298,Kaolin
+3299,Mica
+3300,Other Non-Metallic Mineral Deposit
+3301,Perlite
+3302,Sepiolite
+3303,Silica
+3304,Talc
+3305,Vermiculite
+3306,Wollastonite
+3307,Ore
+3308,Bauxite Ore
+3309,Chrome Ore
+3310,Copper Ore
+3311,Iron Ore
+3312,Lead Ore
+3313,Manganese Ore
+3314,Nickel Ore
+3315,Other Ore
+3316,Titanium Ore
+3317,Tungsten Ore
+3318,Zinc Ore
+3319,Other Metals & Metal Products
+3320,Other Non-Metallic Minerals & Products
+3321,Pig Iron
+3322,Quartz Products
+3323,Other Quartz Products
+3324,Quartz Crucible
+3325,Quartz Plate
+3326,Quartz Rods
+3327,Quartz Stone
+3328,Quartz Tubes
+3329,Rare Earth & Products
+3330,Refractory
+3331,Steel
+3332,Bearing Steel
+3333,Other Steel Products
+3334,Spring Steel
+3335,Stainless Steel
+3336,Other Stainless Steel
+3337,Stainless Steel Angles
+3338,Stainless Steel Balls
+3339,Stainless Steel Bars
+3340,Stainless Steel Channels
+3341,Stainless Steel Flats
+3342,Stainless Steel Pipes
+3343,Stainless Steel Sheets
+3344,Stainless Steel Strips
+3345,Stainless Steel Wire
+3346,Steel Pipes
+3347,Steel Profiles
+3348,Flat Steel
+3349,Other Steel Profiles
+3350,Square Steel
+3351,Steel Angles
+3352,Steel Channels
+3353,Steel H-Beams
+3354,Steel I-Beams
+3355,Steel Rails
+3356,Steel Rebars
+3357,Steel Round Bars
+3358,Steel Sheets
+3359,Steel Strips
+3360,Steel Structures
+3361,Steel Wire
+3362,Structural Steel
+3363,Tinplate
+3364,Titanium
+3365,Other Titanium
+3366,Titanium Bars
+3367,Titanium Foil
+3368,Titanium Pipes
+3369,Titanium Powder
+3370,Titanium Sheets
+3371,Titanium Wire
+3372,Tungsten
+3373,Tungsten Bars
+3374,Tungsten Crucibles
+3375,Tungsten Foil
+3376,Tungsten Pipes
+3377,Tungsten Powder
+3378,Tungsten Sheets
+3379,Tungsten Wire
+3380,Wire Mesh
+3381,Aluminum Wire Mesh
+3382,Copper Wire Mesh
+3383,Iron Wire Mesh
+3384,Other Wire Mesh
+3385,Steel Wire Mesh
+3386,Zinc
+3389,Office & School Supplies
+3390,Art Supplies
+3391,Art Sets
+3392,Calligraphy Brushes
+3393,Crayons
+3394,Other Art Supplies
+3395,Paint Brushes
+3396,Painting Medium
+3397,Painting Canvas
+3398,Painting Paper
+3399,Paints
+3400,Acrylic Paints
+3401,Oil Paints
+3402,Other Art Paints
+3403,Water Color
+3404,Palette
+3405,Badge Holder & Accessories
+3406,Board
+3407,Blackboard
+3408,Bulletin Board
+3409,Flip Chart
+3410,Other Boards for Office & School
+3411,Whiteboard
+3412,Board Eraser
+3413,Blackboard Eraser
+3414,Other Board Eraser
+3415,Whiteboard Eraser
+3416,Book Cover
+3417,Books
+3418,Calculator
+3419,Calendar
+3420,Clipboard
+3421,Correction Supplies
+3422,Correction Fluid
+3423,Correction Tape
+3424,Eraser
+3425,Desk Organizer
+3426,Bookends
+3427,Card Holder & Note Holder
+3428,Clip Holder & Clip Dispenser
+3429,Desk Set
+3430,File Tray
+3431,Letter Holder
+3432,Magazine Organizer
+3433,Other Desk Organizer
+3434,Pen Holders
+3435,Stationery Holder
+3436,Drafting Supplies
+3437,Compasses
+3438,Math Sets
+3439,Other Drafting Supplies
+3440,Protractor
+3441,Rulers
+3442,Easels
+3443,Education Supplies
+3444,Chalk
+3445,Educational Equipment
+3446,Other Educational Supplies
+3447,Teaching Resources
+3448,Chemistry
+3449,Geography
+3450,Language Learning
+3451,Mathematics
+3452,Medical Science
+3453,Other Teaching Resources
+3454,Physics
+3455,Electronic Dictionary
+3456,File Folder Accessories
+3457,Filing Products
+3458,Letter Pad / Paper
+3459,Magazines
+3460,Map
+3461,Markers & Highlighters
+3462,Art Markers
+3463,Highlighters
+3464,Marker Pens
+3465,Other Markers & Highlighters
+3466,Whiteboard Marker
+3467,Notebooks & Writing Pads
+3468,Memo Pad
+3469,Notebook
+3470,Office Adhesives & Tapes
+3471,Glue Stick
+3472,Liquid Glue
+3473,Office Adhesive Tape
+3474,Other Glue
+3475,Tape Dispenser
+3476,Office Binding Supplies
+3477,Clips
+3478,Hole Punch
+3479,Pin
+3480,Staple Remover
+3481,Stapler
+3482,Staples
+3483,Office Cutting Supplies
+3484,Letter Opener
+3485,Paper Scissors
+3486,Utility Knife
+3487,Office Equipment
+3488,All-in-One Printers
+3489,Binding Machine
+3490,Conference System
+3491,Copiers
+3492,Digital Duplicator
+3493,Fax Machines
+3494,Graph Plotter
+3495,Laminator
+3496,Other Office Equipment
+3497,Paper Trimmer
+3498,Presentation Equipment
+3499,Laser Pointers
+3500,Other Presentation Equipment
+3501,Projection Screens
+3502,Projectors
+3503,Visual Presenter
+3504,Shredder
+3505,Time Recording
+3506,Office Paper
+3507,Carbon Paper
+3508,Carbonless Paper
+3509,Cash Register Paper
+3510,Copy Paper
+3511,Other Office Paper
+3512,Photo Paper
+3513,Thermal Fax Paper
+3514,Other Office & School Supplies
+3515,Paper Envelopes
+3516,Pencil Cases & Bags
+3517,Pencil Bags
+3518,Pencil Cases
+3519,Pencil Sharpeners
+3520,Pencils
+3521,Colored Pencils
+3522,Mechanical Pencils
+3523,Other Pencils
+3524,Standard Pencils
+3525,Pens
+3526,Ballpoint Pens
+3527,Fountain Pens
+3528,Gel Pens
+3529,Multi Function Pen
+3530,Other Pens
+3531,Printer Supplies
+3532,Cartridge Chip
+3533,Continuous Ink Supply System
+3534,Fuser Film Sleeves
+3535,Fuser Roller
+3536,Ink Cartridges
+3537,Ink Refill Kits
+3538,OPC Drum
+3539,Other Printer Supplies
+3540,Printer Ribbons
+3541,Toner Cartridges
+3542,Toner Powder
+3543,Stamps
+3544,Stationery Set
+3545,Stencils
+3546,Writing Accessories
+3547,Yellow Page
+3550,Packaging & Printing
+3551,"Adhesive Tape, Film, Paper"
+3552,Air Dunnage Bag
+3553,Aluminum Foil
+3554,Bottles
+3555,Cans
+3556,Crates
+3557,"Drums, Pails & Barrels"
+3558,Empty Capsules
+3559,FIBC Bag
+3560,FlexiTank
+3561,Flower Sleeve
+3562,Foil Containers
+3563,Gas Cylinders
+3564,Gift Ribbon
+3565,Handles
+3566,Hot Stamping Foil
+3567,Jar
+3568,"Lids, Bottle Caps, Closures"
+3569,Mailing Bags
+3570,Media Packaging
+3571,Other Packaging Materials
+3572,Packaging Bags
+3573,Packaging Boxes
+3574,"Packaging Cup, Bowl"
+3575,Packaging Label
+3576,Packaging Organza Material
+3577,Packaging Product Stocks
+3578,Packaging Rope
+3579,Packaging Tray
+3580,Packaging Tube
+3581,Pallets
+3582,Paper & Paperboard
+3583,Pill Storage Cases
+3584,Plastic Film
+3585,Preforms
+3586,Printing Materials
+3587,Other Printing Materials
+3588,Printing Inks
+3589,Printing Mesh
+3590,Printing Plate
+3591,Transfer Film
+3592,Transfer Paper
+3593,Printing Services
+3594,Disk Replication & Printing
+3595,Metal Printing
+3596,Other Printing Services
+3597,Paper & Paperboard Printing
+3598,Plastic Printing
+3599,Transfer Printing
+3600,Protective & Cushioning Material
+3601,Pulp
+3602,Strapping
+3605,Rubber & Plastics
+3606,Plastic Processing Service
+3607,Plastic Products
+3608,Agricultural Plastic Products
+3609,Automotive Plastic Products
+3610,Composite Pipes
+3611,Electronic Plastic
+3612,Home Appliance Plastic
+3613,Medical Plastic
+3614,Other Plastic Products
+3615,Plastic Cards
+3616,Plastic Nets
+3617,Plastic Rods
+3618,Plastic Sheets
+3619,Plastic Tubes
+3620,Plastic Projects
+3621,Plastic Raw Materials
+3622,ABS
+3623,EPS
+3624,EVA
+3625,HDPE
+3626,HIPS
+3627,LDPE
+3628,LLDPE
+3629,Other Plastic Raw Materials
+3630,PA
+3631,PBT
+3632,PC
+3633,PET
+3634,Plastic Masterbatches
+3635,PMMA
+3636,POM
+3637,PP
+3638,PPO
+3639,PPS
+3640,PS
+3641,PTFE
+3642,PVC
+3643,SBS
+3644,TPE
+3645,TPR
+3646,TPU
+3647,Plastic Stocks
+3648,Recycled Plastic
+3649,Recycled Rubber
+3650,Rubber Processing Service
+3651,Rubber Products
+3652,Agricultural Rubber
+3653,Automotive Rubber
+3654,Home Appliance Rubber
+3655,Household Rubber
+3656,Medical Rubber
+3657,Other Rubber Products
+3658,Rubber Belts
+3659,Rubber Hoses
+3660,Rubber Rollers
+3661,Rubber Sheets
+3662,Rubber Projects
+3663,Rubber Raw Materials
+3664,Butyl Rubber
+3665,Crepe Rubber
+3666,EPDM
+3667,Fluorocarbon Rubber
+3668,Latex Rubber
+3669,Natural Foam
+3670,Neoprene
+3671,Nitrile Rubber
+3672,Other Rubber Raw Materials
+3673,Polyurethane Rubber
+3674,Ribbed Smoked Sheets
+3675,Rubber Masterbatches
+3676,Silicone Rubber
+3677,Styrene Butadiene Rubber
+3678,Rubber Stocks
+3681,Security & Protection
+3682,Access Control Systems & Products
+3683,Access Control Card
+3684,Access Control Card Reader
+3685,Access Control Keypad
+3686,Access Control System
+3687,Audio Door Phone
+3688,EAS System
+3689,Facial Recognition System
+3690,Fingerprint Access Control
+3691,Other Access Control Products
+3692,Video Door Phone
+3693,Alarm
+3694,CCTV Products
+3695,CCTV Accessories
+3696,CCTV Camera
+3697,CCTV Camera Housing
+3698,CCTV DVR
+3699,CCTV Lens
+3700,CCTV Monitor
+3701,CCTV System
+3702,DVR Card
+3703,Other Surveillance Products
+3704,Firefighting Supplies
+3705,Fire Alarm
+3706,Fire Alarm Control Panel
+3707,Fire Blanket
+3708,Fire Extinguisher
+3709,Fire Extinguisher Powder
+3710,Fire Hose
+3711,Fire Hydrant
+3712,Fire Suit
+3713,Firefighting Equipment
+3714,Heat Detector
+3715,Lightning Rod
+3716,Other Firefighting Supplies
+3717,Smoke Detector
+3718,Key
+3719,Lock Parts
+3720,Locks
+3721,Locksmith Supplies
+3722,Other Security & Protection Products
+3723,Police & Military Supplies
+3724,Baton
+3725,Bullet Proof Helmet
+3726,Bullet Proof Vest
+3727,Gun Bag
+3728,Handcuff
+3729,Other Police & Military Supplies
+3730,Stun Gun
+3731,Warning Tape
+3732,Roadway Safety
+3733,Alcohol Tester
+3734,Convex Mirror
+3735,Other Roadway Products
+3736,Reflective Material
+3737,Reflective Safety Clothing
+3738,Road Stud
+3739,Speed Bump
+3740,Traffic Barrier
+3741,Traffic Cone
+3742,Traffic Light
+3743,Traffic Signal
+3744,Safes
+3745,Security Services
+3746,Self Defense Supplies
+3747,Water Safety Products
+3748,Life Buoy
+3749,Life Raft
+3750,Life Vest
+3751,Other Water Safety Products
+3752,Workplace Safety Supplies
+3753,Chemical Respirator
+3754,Ear Protector
+3755,Face Shield
+3756,Other Safety Products
+3757,Safety Belt & Accessories
+3758,Safety Clothing
+3759,Safety Gloves
+3760,Safety Goggles
+3761,Safety Harness
+3762,Safety Helmet
+3765,Service Equipment
+3766,Advertising Equipment
+3767,Advertising Boards
+3768,Advertising Inflatables
+3769,Advertising Light Boxes
+3770,Advertising Players
+3771,Advertising Screens
+3772,Billboards
+3773,Display Racks
+3774,Other Advertising Equipment
+3775,Poster Materials
+3776,Roll up Display
+3777,Cargo & Storage Equipment
+3778,Commercial Laundry Equipment
+3779,Financial Equipment
+3780,ATM
+3781,Bill Counters
+3782,Coin Counters & Sorters
+3783,Currency Binders
+3784,Currency Detectors
+3785,Other Financial Equipment
+3786,Payment Kiosks
+3787,POS Systems
+3788,Funeral Supplies
+3789,Other Service Equipment
+3790,Restaurant & Hotel Supplies
+3791,Cleaning Carts
+3792,Drink Dispensers
+3793,Hotel Amenities
+3794,Other Hotel & Restaurant Supplies
+3795,Serving Trays
+3796,Store & Supermarket Supplies
+3797,Checkout Counters
+3798,Display Hooks
+3799,Labelers
+3800,Lockers
+3801,Other Store & Supermarket Equipme nt
+3802,Promotion Table
+3803,Refrigeration Equipment
+3804,Shopping Basket
+3805,Shopping Trolleys & Carts
+3806,Showcase
+3807,Storage Cages
+3808,Supermarket Shelves
+3809,Trade Show Equipment
+3810,Banner Stands
+3811,Other Trade Show Equipment
+3812,Panel Display
+3813,Tabletop Display
+3814,Trade Show Tent
+3815,Truss Display
+3816,Vending Machines
+3817,Wedding Supplies
+3820,Shoes & Accessories
+3821,Baby Shoes
+3822,Boots
+3823,Casual Shoes
+3824,Clogs
+3825,Dance Shoes
+3826,Dress Shoes
+3827,Other Shoes
+3828,Sandals
+3829,Shoe Materials
+3830,Other Shoe Materials
+3831,Shoe Fabric
+3832,Shoe Leather
+3833,Shoe Plastic
+3834,Shoe Rubber
+3835,Shoe Parts & Accessories
+3836,Insoles
+3837,Other Shoe Parts & Accessories
+3838,Shoe Brush
+3839,Shoe Care Kit
+3840,Shoe Decorations
+3841,Shoe Deodorant
+3842,Shoe Dryer
+3843,Shoe Hanger
+3844,Shoe Heels
+3845,Shoe Hooks
+3846,Shoe Horns
+3847,Shoe Labels & Tags
+3848,Shoe Linings
+3849,Shoe Mesh
+3850,Shoe Polish
+3851,Shoe Polishing Equipment
+3852,Shoe Trees
+3853,Shoe Uppers
+3854,Shoe Zippers & Sliders
+3855,Shoelaces
+3856,Soles
+3857,Shoe Repairing Equipment
+3858,Shoes Design Services
+3859,Shoes Processing Services
+3860,Shoes Stock
+3861,Slippers
+3862,Special Purpose Shoes
+3863,Electrically Heated Shoes
+3864,Height Increasing Shoes
+3865,Massage Shoes
+3866,Other Special Purpose Shoes
+3867,Rain Boots
+3868,Safety Shoes
+3869,Sports Shoes
+3870,Used Shoes
+3873,Sports & Entertainment
+3874,Amusement Park
+3875,Bumper Cars
+3876,Climbing Walls
+3877,Other Amusement Park Products
+3878,Playground
+3879,Slides
+3880,Water Play Equipment
+3881,Artificial Grass & Sports Flooring
+3882,Fitness & Body Building
+3883,Boxing
+3884,Boxing Ring
+3885,Other Boxing Products
+3886,Punching Bag & Sand Bag
+3887,Punching Balls & Speed Balls
+3888,Gym Equipment
+3889,Gymnastics
+3890,Jump Ropes
+3891,Martial Arts
+3892,Other Fitness & Bodybuilding Product s
+3893,Outdoor Fitness Equipment
+3894,Pedometers
+3895,Trampolines
+3896,Weight Lifting
+3897,Gambling
+3898,Bingo
+3899,Dice
+3900,Gambling Tables
+3901,Other Gambling Products
+3902,Playing Cards
+3903,Poker Chips
+3904,Golf
+3905,Club-Making Products
+3906,Club Grips
+3907,Club Heads
+3908,Club Shafts
+3909,Golf Bags
+3910,Golf Balls
+3911,Golf Clubs
+3912,Golf Tees
+3913,Golf Training Aids
+3914,Golf Trolley
+3915,Other Golf Products
+3916,Indoor Sports
+3917,Air Hockey
+3918,Badminton
+3919,Badminton Rackets
+3920,Other Badminton Products
+3921,Shuttlecock
+3922,Board Game
+3923,Bowling
+3924,Chess Games
+3925,Coin Operated Games
+3926,Darts
+3927,Other Indoor Sports Products
+3928,Snooker & Billiard
+3929,Other Snooker & Billiard Products
+3930,Snooker & Billiard Balls
+3931,Snooker & Billiard Cues
+3932,Snooker & Billiard Tables
+3933,Soccer Tables
+3934,Table Tennis
+3935,Other Table Tennis Products
+3936,Table Tennis Balls
+3937,Table Tennis Rackets
+3938,Table Tennis Tables
+3939,Musical Instruments
+3940,Brass Instruments
+3941,Trombone
+3942,Trumpet
+3943,Keyboard Instruments
+3944,Accordion
+3945,Electronic Organ
+3946,Piano
+3947,Other Musical Instruments & Accesso ries
+3948,Percussion Instruments
+3949,Drum
+3950,Gong & Cymbals
+3951,Stringed Instruments
+3952,Cello
+3953,Guitar
+3954,Guitar Parts & Accessories
+3955,Violin
+3956,Woodwind Instruments
+3957,Clarinet
+3958,Flute
+3959,Harmonica
+3960,Saxophone
+3961,Other Sports & Entertainment Products
+3962,Outdoor Sports
+3963,Bungee
+3964,Camping & Hiking
+3965,Camping Mat
+3967,Other Camping & Hiking Products
+3968,Sleeping Bags
+3969,Sun Shelter
+3970,Tents
+3971,Travel Kits
+3972,Walking Sticks
+3973,Fishing
+3974,Fishhooks
+3975,Fishing Bags
+3976,Fishing Chairs
+3977,Fishing Lines
+3978,Fishing Lures
+3979,Fishing Reels
+3980,Fishing Rods
+3981,Fishing Tackle Boxes
+3982,Fishing Waders
+3983,Other Fishing Products
+3984,Flashing Roller
+3985,Go Karts
+3986,Horse Racing
+3987,Chaps
+3988,Halters
+3989,Horse Care Products
+3990,Horse Rugs
+3991,Horseshoes
+3992,Other Horse Products
+3993,Saddle Pads
+3994,Saddles
+3995,Hunting
+3996,Bow & Arrow
+3997,Hunting Cameras
+3998,Hunting Decoy
+3999,Hunting Gun Accessories
+4000,Other Hunting Products
+4001,Scopes & Accessories
+4002,Scooters
+4003,Electric Scooters
+4004,Gas Scooters
+4005,Handicapped Scooters
+4006,"Kick Scooters,Foot Scooters"
+4007,Other Scooters
+4008,Scooter Parts & Accessories
+4009,Shooting
+4010,Marker Parts & Accessories
+4011,Other Shooting Products
+4012,Paintball Markers
+4013,Paintballs
+4014,Skate Board
+4015,Souvenirs
+4016,Sports Gloves
+4017,Boxing Gloves
+4018,Golf Gloves
+4019,Other Sports Gloves
+4020,Racing Gloves
+4021,Riding Gloves
+4022,Ski Gloves
+4023,Swimming & Diving Gloves
+4024,Sports Safety
+4025,Ankle Support
+4026,Back Support
+4027,Elbow & Knee Pads
+4028,Helmets
+4029,Other Sports Safety
+4030,Shin Guard
+4031,Sweatband
+4032,Waist Support
+4033,Wrist Support
+4034,Team Sports
+4035,Baseball & Softball
+4036,Basketball
+4037,Cheerleading
+4038,Fan Horns
+4039,Other Cheerleading Products
+4040,Pom Poms
+4041,Whistle
+4042,Cricket
+4043,Football & Soccer
+4044,Ice Hockey & Field Hockey
+4045,Volleyball
+4046,Tennis
+4047,Other Tennis Products
+4048,Tennis Balls
+4049,Tennis Rackets
+4050,Water Sports
+4051,Racing Boats
+4052,Rowing Boats
+4053,Surfing
+4054,Swimming & Diving
+4055,Air Mattresses
+4056,Diving Masks
+4057,Other Swimming & Diving Products
+4058,Pool & Accessories
+4059,Snorkels
+4060,Swimming Caps
+4061,Swimming Fins
+4062,Swimming Rings
+4063,Winter Sports
+4064,Skiing
+4065,Other Ski Products
+4066,Ski Poles
+4067,Snowboards & Skis
+4068,Sleds & Snow Tubes
+4071,Telecommunications
+4072,Antenna
+4073,Antennas for Communications
+4074,Mobile Phone Antenna
+4075,Other Antennas
+4076,TV Antenna
+4077,Broadcasting Equipment & Services
+4078,Other Radio & TV Accessories
+4079,Radio & TV Broadcasting Equipment
+4080,Satellite TV Receiver
+4081,Set Top Box
+4082,Communication Equipment
+4083,Communication Cables
+4084,Fiber Optic Equipment
+4085,Fixed Wireless Terminals
+4086,Other Telecommunications Products
+4087,PBX
+4088,Repeater
+4089,Telecom Parts
+4090,Telecommunication Tower
+4091,VoIP Products
+4092,WiFi Finder
+4093,Wireless Networking Equipment
+4094,Telephones & Accessories
+4095,Answering Machines
+4096,Caller ID Boxes
+4097,Corded Telephones
+4098,Cordless Telephones
+4099,Other Telephone Accessories
+4100,Phone Cards
+4101,Telephone Cords
+4102,Telephone Headsets
+4103,Wireless Communication Terminals
+4104,Mobile Phone Adapters
+4106,Mobile Phone Cables
+4107,Mobile Phone Chargers
+4108,Mobile Phone Flex Cables
+4109,Mobile Phone Holders
+4110,Mobile Phone Housings
+4111,Mobile Phone Jammers
+4112,Mobile Phone Keypads
+4113,Mobile Phone LCDs
+4114,Mobile Phone SIM Cards
+4115,Mobile Phone Stickers
+4116,Mobile Phone Straps
+4118,Other Mobile Phone Accessories
+4119,Pagers
+4120,Walkie Talkie
+4123,Textiles & Leather Produc ts
+4124,Down & Feather
+4125,Down
+4126,Feather
+4127,Fabric
+4128,100% Acrylic Fabric
+4129,100% Cashmere Fabric
+4130,100% Cotton Fabric
+4131,100% Hemp Fabric
+4132,100% Jute Fabric
+4133,100% Linen Fabric
+4134,100% Modal Fabric
+4135,100% Nylon Fabric
+4136,100% Polyester Fabric
+4137,100% Polypropylene Fabric
+4138,100% Ramie Fabric
+4139,100% Rayon Fabric
+4140,100% Silk Fabric
+4141,100% Viscose Fabric
+4142,100% Wool Fabric
+4143,Aramid Fabric
+4144,Bamboo Fiber Fabric
+4145,Carbon Fiber Fabric
+4146,Linen/Cotton Fabric
+4147,Metallic Fabric
+4148,Modacrylic Fabric
+4149,Modal/Cotton Fabric
+4150,Nonwoven Fabric
+4151,Nylon/Cotton Fabric
+4152,Organic Fabric
+4153,Other Fabric
+4154,Polyester/Acrylic Fabric
+4155,Polyester/Cotton Fabric
+4156,Polyester/Nylon Fabric
+4157,Ramie/Cotton Fabric
+4158,Rayon/Cotton Fabric
+4159,Rayon/Linen Fabric
+4160,Rayon/Nylon Fabric
+4161,Rayon/Polyester Fabric
+4162,Silk/Cotton Fabric
+4163,Soybean Fiber Fabric
+4164,Spandex Fabric
+4165,Tencel Fabric
+4166,Viscose/Cotton Fabric
+4167,Viscose/Nylon Fabric
+4168,Viscose/Polyester Fabric
+4169,Viscose/Silk Fabric
+4170,Wool/Acrylic Fabric
+4171,Wool/Cashmere Fabric
+4172,Wool/Nylon Fabric
+4173,Wool/Polyester Fabric
+4174,Wool/Viscose Fabric
+4175,Fiber
+4176,Acrylic Fiber
+4177,Aramid Fiber
+4178,Bamboo Fiber
+4179,Hemp Fiber
+4180,Jute Fiber
+4181,Linen Fiber
+4182,Modacrylic Fiber
+4183,Nylon Fiber
+4184,Other Fiber
+4185,Polyester Fiber
+4186,Polypropylene Fiber
+4187,Raw Cotton
+4188,Silk Fiber
+4189,UHMWPE Fiber
+4190,Viscose Fiber
+4191,Wool Fiber
+4192,Fur
+4193,Animal Fur
+4194,Faux Fur
+4195,Grey Fabric
+4196,Home Textile
+4197,Bed Skirt
+4198,Bedding Set
+4199,Bedspread
+4200,Blanket
+4201,Carpet
+4202,Chair Cover
+4203,Comforter
+4204,Curtain
+4205,Cushion
+4206,Cushion Cover
+4207,Duvet Cover
+4208,Handkerchief
+4209,Mat
+4210,Mattress Cover
+4211,Mosquito Net
+4212,Other Home Textile
+4213,Pillow
+4214,Pillow Case
+4215,Quilt
+4216,Rug
+4217,Sheet
+4218,Sofa Cover
+4219,Table Cloth
+4220,Table Napkin
+4221,Table Runner
+4222,Table Skirt
+4223,Tapestry
+4224,Throw
+4225,Towel
+4226,Valance
+4227,Leather
+4228,Genuine Leather
+4229,Synthetic Leather
+4230,Leather Product
+4231,Other Textiles & Leather Products
+4232,Textile Accessories
+4233,Sashes
+4234,Tassel Fringe
+4235,Textile Processing
+4236,Textile Stock
+4237,Thread
+4238,Yarn
+4239,100% Acrylic Yarn
+4240,100% Bamboo Fiber Yarn
+4241,100% Cashmere Yarn
+4242,100% Cotton Yarn
+4243,100% Jute Yarn
+4244,100% Linen Yarn
+4245,100% Modal Yarn
+4246,100% Mohair Yarn
+4247,100% Nylon Yarn
+4248,100% Polyester Yarn
+4249,100% Polypropylene Yarn
+4250,100% Rayon Yarn
+4251,100% Silk Yarn
+4252,100% Viscose Yarn
+4253,100% Wool Yarn
+4254,Blended Yarn
+4255,Metallic Yarn
+4256,Organic Yarn
+4257,Other Yarn
+4258,Spandex Yarn
+4261,"Timepieces, Jewelry, Eyew ear"
+4262,Eyewear
+4263,Contact Lenses
+4264,Eyeglasses Frames
+4265,Eyeglasses Lenses
+4266,Eyeglasses Parts
+4267,Eyewear Accessories
+4268,Contact Lens Care Products
+4269,Contact Lens Cases
+4270,Eyeglasses Care Products
+4271,Eyeglasses Cases & Bags
+4272,Other Eyewear Accessories
+4273,Eyewear Displays
+4274,Other Eyewear
+4275,Reading Glasses
+4276,Sports Eyewear
+4277,Sunglasses
+4278,Jewelry
+4279,Body Jewelry
+4280,Bracelets & Bangles
+4281,Brooches
+4282,Cuff Links & Tie Clips
+4283,Earrings
+4284,Hair Jewelry
+4285,Jewelry Boxes
+4286,Jewelry Cleaners & Polish
+4287,Jewelry Findings & Components
+4288,Jewelry Packaging & Display
+4289,Jewelry Sets
+4290,Jewelry Tools & Equipment
+4291,Loose Beads
+4292,"Acrylic, Plastic & Lucite Beads"
+4293,"Ceramic, Clay & Porcelain Beads"
+4294,"Crystal, Lampwork & Glass Beads"
+4295,Metal Beads
+4296,Other Loose Beads
+4297,"Shell, Bone & Coral Beads"
+4298,Stone Beads
+4299,Wood Beads
+4300,Loose Diamonds
+4301,Loose Gemstone
+4302,Loose Pearls
+4303,Necklaces
+4304,Other Jewelry
+4305,Pendants & Charms
+4306,Rings
+4307,Watches
+4308,Pocket Watch Chain
+4309,Pocket Watches
+4310,Watch Accessories
+4311,Watch Bands
+4312,Watch Boxes & Cases
+4313,Wristwatch Tools & Parts
+4314,Wristwatches
+4317,Tools
+4318,Construction Tools
+4319,Caulking Gun
+4320,Glass Cutter
+4321,Other Construction Tools
+4322,Plaster Trowel
+4323,Putty Knife
+4324,Garden Tools
+4325,Chainsaws
+4326,Cleaning Tools
+4327,Digging Tools
+4328,Fork
+4329,Garden Blower & Vacuum
+4330,Garden Cultivator
+4331,Garden Shredder
+4332,Grass Trimmer
+4333,Hedge Trimmer
+4334,Hoe
+4335,Lawn Mower
+4336,Other Garden Tools
+4337,Pickaxe
+4338,Pruning Tools
+4339,Rake
+4340,Sickle
+4341,Spade & Shovel
+4342,Hand Tools
+4343,Axe
+4344,Brush
+4345,Chisel
+4346,Files
+4347,Hammer
+4348,Knife
+4349,Other Hand Tools
+4350,Pliers
+4351,Saw
+4352,Scissors
+4353,Screwdriver
+4354,Tap & Die
+4355,Wrench
+4356,Lifting Tools
+4357,Jacks
+4358,Lifting Sling
+4359,Other Lifting Tools
+4360,Other Tools
+4361,Power Tool Accessories
+4362,Power Tools
+4363,Blower
+4364,Drill Bit
+4365,Electric Drill
+4366,Electric Hammer
+4367,Electric Pipe Threader
+4368,Electric Planer
+4369,Electric Saw
+4370,Electric Screwdriver
+4371,Electric Trimmer
+4372,Electric Wrench
+4373,Glue Gun
+4374,Grinder
+4375,Grinding Wheel
+4376,Heat Gun
+4377,Hot Melt Glue Sticks
+4378,Hydraulic Tools
+4379,Nail Gun
+4380,Other Power Tools
+4381,Pneumatic Tools
+4382,Polisher
+4383,Polishing Pad
+4384,Sander
+4385,Sanding Disc
+4386,Saw Blade
+4387,Spray Gun
+4388,Tool Design Services
+4389,Tool Parts
+4390,Tool Processing Services
+4391,Tool Sets
+4392,Garden Tool Sets
+4393,Hand Tool Sets
+4394,Other Tool Sets
+4395,Paint Tool Sets
+4396,Power Tool Sets
+4397,Tool Stock
+4398,Tools Packaging
+4399,Other Tools Packaging
+4400,Tool Bag
+4401,Tool Box
+4402,Tool Cabinet
+4403,Tool Case
+4404,Used Tools
+4407,Toys & Hobbies
+4408,Action Figure
+4409,Baby Toys
+4410,Baby Mobiles
+4411,Baby Rattles
+4412,Baby Teethers
+4413,Other Baby Toys
+4414,Play Mats
+4415,Balloons
+4416,Blocks
+4417,Candy Toys
+4418,Classic Toys
+4419,Kaleidoscope
+4420,Magic Tricks
+4421,Other Classic Toys
+4422,Spinning Top
+4423,Windmill
+4424,Yoyo
+4425,Dolls
+4426,Educational Toys
+4427,Drawing Toys
+4428,Learning Machine
+4429,Math Toys
+4430,Other Educational Toys
+4431,Playdough
+4432,Toy Musical Instrument
+4433,Electronic Pets
+4434,Fishing Toys
+4435,Glass Marbles
+4436,Noise Maker
+4437,Other Toys & Hobbies
+4438,Outdoor Toys & Structures
+4439,Bubble Toys
+4440,Flying Disc
+4441,Inflatable Bouncer
+4442,Kites
+4443,Other Outdoor Toys & Structures
+4444,Toy Balls
+4445,Toy Swings
+4446,Toy Swords
+4447,Toy Tents
+4448,Pretend Play & Preschool
+4449,Doctor Toys
+4450,Furniture Toys
+4451,Kitchen Toys
+4452,Other Pretend Play & Preschool
+4453,Puppet
+4454,Tool Toys
+4455,Puzzle
+4456,Solar Toys
+4457,Toy Accessories
+4458,Toy Animal
+4459,Bath Toy Animal
+4460,Inflatable Animal Toy
+4461,Other Toy Animal
+4462,Ride On Animal Toy
+4463,Stuffed & Plush Toy Animal
+4464,Toy Guns
+4465,Toy Parts
+4466,Toy Robots
+4467,Toy Vehicle
+4468,Diecast Toys
+4469,Friction Toy Vehicle
+4470,Other Toy Vehicle
+4471,Radio Control Toys
+4472,Ride On Car
+4473,Slot Toys
+4474,Wind Up Toys
+4477,Transportation x x
+4478,Aircraft
+4479,Aviation Accessories
+4480,Aviation Parts
+4481,Bicycle
+4482,Bicycle Accessories
+4483,Bicycle Basket
+4484,Bicycle Bell
+4485,Bicycle Computer
+4486,Bicycle Helmet
+4487,Bicycle Light
+4488,Bicycle Lock
+4489,Bicycle Rack
+4490,Other Bicycle Accessories
+4491,Bicycle Parts
+4492,Bicycle Brake
+4493,Bicycle Chain
+4494,Bicycle Crank & Chainwheel
+4495,Bicycle Derailleur
+4496,Bicycle Fork
+4497,Bicycle Frame
+4498,Bicycle Freewheel
+4499,Bicycle Handlebar
+4500,Bicycle Hubs
+4501,Bicycle Pedal
+4502,Bicycle Saddle
+4503,Bicycle Seat Post
+4504,Bicycle Spoke
+4505,Bicycle Stem
+4506,Bicycle Tires
+4507,Bicycle Wheel
+4508,Other Bicycle Parts
+4509,Boats & Ships
+4510,Barge
+4511,Cabin Cruiser
+4512,Canoe/Kayak
+4513,Cargo Ship
+4514,Fishing Vessel
+4515,Other Boats
+4516,Passenger Ship
+4517,Raft
+4518,Sailboat
+4519,Tanker
+4520,Yacht
+4521,Bus
+4522,City Bus
+4523,Coach
+4524,Sightseeing Bus & Car
+4525,Bus Accessories
+4526,Bus Parts
+4527,Bus Body Kits
+4528,Bus Brakes
+4529,Bus Engines
+4530,Bus Lights
+4531,Bus Wheels & Tires
+4532,Other Bus Parts
+4533,Container
+4534,Electric Bicycle
+4535,Electric Bicycle Part
+4536,Electric Bicycle Battery
+4537,Electric Bicycle Motor
+4538,Other Electric Bicycle Parts
+4539,Emergence Vehicles
+4540,Ambulance
+4541,Fire Truck
+4542,Tow Truck & Wrecker
+4543,Golf Carts
+4544,Locomotive
+4545,Marine Supplies
+4546,Boat Anchor
+4547,Boat Cover
+4548,Boat Engine
+4549,Marine Hardware
+4550,Marine Propeller
+4551,Marine Pump
+4552,Other Marine Supplies
+4553,Personal Watercraft
+4554,Jetski
+4555,Railway Supplies
+4556,Snowmobile
+4557,Special Transportation
+4558,Trailers
+4559,ATV Trailer
+4560,Boat Trailer
+4561,Car Trailer
+4562,Other Trailers
+4563,Trailer Parts
+4564,Travel Trailer
+4565,Truck Trailer
+4566,Train Carriage
+4567,Train Parts
+4568,Truck
+4569,Cargo Truck
+4570,Cement Truck
+4571,Dump Truck
+4572,Garbage Truck
+4573,High-altitude Operation Truck
+4574,Other Trucks
+4575,Refrigerator Truck
+4576,Sewage Suction Truck
+4577,Tanker Truck
+4578,Tractor Truck
+4579,Watering Cart
+4580,Truck Accessories
+4581,Truck Parts
+4582,Other Truck Parts
+4583,Truck Body Parts
+4584,Truck Brake
+4585,Truck Drivetrain & Axles
+4586,Truck Electrical System
+4587,Truck Alternator
+4588,Truck Battery
+4589,Truck Light System
+4590,Truck Starter System
+4591,Truck Switch
+4592,Truck Engine
+4593,Truck Steering
+4594,Truck Suspension
+4595,Truck Tire
+4596,Truck Transmission
+4597,Truck Wheel
