@@ -11,8 +11,8 @@ def get_category_subcategory(df, index):
 def process_categories(df, start, end):
     queryList = []; non_int_cats = []; non_int_subcats = []
 
-    df_mapping = pd.read_excel("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/Map upload/map.xlsx")  # load map
-    category_mapping = sorted([(str(k), v) for k, v in zip(df_mapping['combined'], df_mapping['Ser'])])  # make map dict(ionary) - sort it by key's
+    df_mapping = pd.read_csv("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/liveMap.csv")  # load map
+    category_mapping = sorted([(str(k), v) for k, v in zip(df_mapping['cat'], df_mapping['ser'])])  # make map dict(ionary) - sort it by key's
     category_mapping_keys = [k for k, v in category_mapping]  # extract keys
     
     for i in range(start, end):  # O(n*n)
