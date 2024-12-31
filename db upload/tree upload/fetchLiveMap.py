@@ -18,3 +18,7 @@ con.close()
 map = pd.DataFrame(out, columns=["ser", "cat"])
 
 print(map)
+
+# save as a CSV file
+output_path = "c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/liveMap.csv"
+query_df = pd.DataFrame(map); query_df.to_csv(output_path, index=False) # oop type shenanigans - to df & to csv
