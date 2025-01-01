@@ -52,6 +52,10 @@ def process_categories(df, start, end):
                     closest_subcat_idx = bisect.bisect_left(category_mapping_keys, closest_subcat[0])
                     if closest_subcat_idx < len(category_mapping_keys): subcat = category_mapping[closest_subcat_idx][1]
         
+        if (cat=="Transportation"): cat = 4477 # manual case
+        if (cat==1071 and subcat=="e"): subcat = 1039
+        if (cat==1468 and subcat=="Supplies"): subcat = 1465
+        
                 # print if strings &n't ints
         if isinstance(cat, str) and cat != "-1":
             non_int_cats.append((cat)) # print(f"Non-int cat at index {i}: {cat} (type: {type(cat)})")
