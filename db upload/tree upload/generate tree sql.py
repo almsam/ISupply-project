@@ -45,8 +45,8 @@ def process_categories(df, start, end):
         if subcat_idx < len(category_mapping_keys) and category_mapping_keys[subcat_idx] == subcat:
             subcat = category_mapping[subcat_idx][1]
         else:  # partial for subcategory
-            if isinstance(cat, str):
-                potential_matches = [ key for key in category_mapping_keys if key[:20] == cat[:20] ]
+            if isinstance(subcat, str):
+                potential_matches = [ key for key in category_mapping_keys if key[:20] == subcat[:20] ]
                 closest_subcat = difflib.get_close_matches(subcat, potential_matches, n=1, cutoff=0.6)
                 if closest_subcat:
                     closest_subcat_idx = bisect.bisect_left(category_mapping_keys, closest_subcat[0])
