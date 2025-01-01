@@ -3,6 +3,7 @@ import numpy
 import csv
 import re
 import bisect
+import difflib
 
 def get_category_subcategory(df, index):
     cat = df.loc[index, "category"]; subcat = df.loc[index, "subcategory"]  # O( log(n) )
@@ -21,7 +22,7 @@ def process_categories(df, start, end):
         
         if(i % 100 == 0): print("map touched ", i)
         
-        if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): subcat = '-1' # turn the nan into leafs before the mapping to prevent tree becoming a graph
+        if (str(subcat) == "nan"): subcat = '-1' # turn the nan into leafs before the mapping to prevent tree becoming a graph
         
         cat = str(cat).replace("'", "").replace("\\", "").replace("//", "").replace("/", "")
         subcat = str(subcat).replace("'", "").replace("\\", "").replace("//", "").replace("/", "")
@@ -30,9 +31,20 @@ def process_categories(df, start, end):
         cat_idx = bisect.bisect_left(category_mapping_keys, str(cat))
         if cat_idx < len(category_mapping_keys) and category_mapping_keys[cat_idx] == cat:
             cat = category_mapping[cat_idx][1]
+        else:  # partial match if no full match
+            closest_cat = difflib.get_close_matches(cat, category_mapping_keys, n=1, cutoff=0.6)
+            if closest_cat:
+                closest_cat_idx = bisect.bisect_left(category_mapping_keys, closest_cat[0])
+                if closest_cat_idx < len(category_mapping_keys): cat = category_mapping[closest_cat_idx][1]
+        
         subcat_idx = bisect.bisect_left(category_mapping_keys, str(subcat))
         if subcat_idx < len(category_mapping_keys) and category_mapping_keys[subcat_idx] == subcat:
             subcat = category_mapping[subcat_idx][1]
+        else:  # partial for subcategory
+            closest_subcat = difflib.get_close_matches(subcat, category_mapping_keys, n=1, cutoff=0.6)
+            if closest_subcat:
+                closest_subcat_idx = bisect.bisect_left(category_mapping_keys, closest_subcat[0])
+                if closest_subcat_idx < len(category_mapping_keys): subcat = category_mapping[closest_subcat_idx][1]
         
                 # print if strings &n't ints
         if isinstance(cat, str) and cat != "-1":
