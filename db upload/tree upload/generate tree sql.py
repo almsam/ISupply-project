@@ -12,6 +12,7 @@ def process_categories(df, start, end):
     queryList = []; non_int_cats = []; non_int_subcats = []
 
     df_mapping = pd.read_csv("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/liveMap.csv")  # load map
+    df_mapping = df_mapping.replace({"'": "", r"\\": "", r"//": "", r"/": ""}, regex=True)
     category_mapping = sorted([(str(k), v) for k, v in zip(df_mapping['cat'], df_mapping['ser'])])  # make map dict(ionary) - sort it by key's
     category_mapping_keys = [k for k, v in category_mapping]  # extract keys
     
@@ -21,6 +22,9 @@ def process_categories(df, start, end):
         if(i % 100 == 0): print("map touched ", i)
         
         if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): subcat = '-1' # turn the nan into leafs before the mapping to prevent tree becoming a graph
+        
+        cat = str(cat).replace("'", "").replace("\\", "").replace("//", "").replace("/", "")
+        subcat = str(subcat).replace("'", "").replace("\\", "").replace("//", "").replace("/", "")
         
         # binary search for cat & subcat
         cat_idx = bisect.bisect_left(category_mapping_keys, str(cat))
