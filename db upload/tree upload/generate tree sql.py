@@ -63,9 +63,9 @@ def process_categories(df, start, end):
             non_int_subcats.append((subcat)) # print(f"Non-int subcat at index {i}: {subcat} (type: {type(subcat)})")
         
         
-        if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, -1);' # leaf
-        else: query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES (\'{cat}\', \'{subcat}\');' # non leaf
-        queryList.append(query)
+        if (str(subcat) == "nan") and (str(type(subcat)) =="<class 'float'>"): query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ({cat}, -1);'; queryList.append(query) # leaf
+        elif isinstance(cat, str) and cat != "-1": query = "" # non int
+        else: query = f'INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES (\'{cat}\', \'{subcat}\');'; queryList.append(query) # non leaf
     
     print("\n\n\n\n\n ERROR LIST: \n\n\n")
     non_int_cats = list(set(non_int_cats)); non_int_subcats = list(set(non_int_subcats))
