@@ -660,7 +660,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('338', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('153', '339');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('339', '338');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('342', 's');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('s', '338');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('342', '343');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('343', '338');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('342', '344');
@@ -1590,7 +1589,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('814', '819')
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('819', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('750', '820');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('820', 'ement');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('ement', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('820', '821');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('821', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('820', '822');
@@ -1603,7 +1601,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('820', '825')
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('825', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('750', '826');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('826', 'rvices');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('rvices', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('826', '827');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('827', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('826', '828');
@@ -1945,7 +1942,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1008', '-1')
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('928', '1009');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1009', '1008');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1012', 'ftware');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('ftware', '1008');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1012', '1013');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1013', '1008');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1012', '1014');
@@ -2059,7 +2055,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1067', '1039
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1012', '1068');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1068', '1039');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1071', '1039');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('e', '1039');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1071', '1072');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1072', '1039');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1071', '1073');
@@ -2625,7 +2620,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1381', '-1')
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1378', '1382');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1382', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1385', 'pplies');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('pplies', '1382');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1385', '1386');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1386', '1382');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1386', '1387');
@@ -2787,7 +2781,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1464', '-1')
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1455', '1465');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1465', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1468', '1465');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('Supplies', '1465');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1468', '1469');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1469', '1465');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1469', '1470');
@@ -2959,7 +2952,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1561', '1563
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1563', '1555');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1561', '1564');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1564', 'ks');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('ks', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1567', '1564');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1567', '1568');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1568', 'ks');
@@ -2999,7 +2991,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1567', '1585
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1585', '1584');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1567', '1586');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1586', 's');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('s', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1567', '1587');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1587', 's');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1567', '1588');
@@ -4825,7 +4816,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2670', '2678
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2678', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2634', '2679');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2679', 'ts');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('ts', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2634', '2680');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2680', 'ts');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2634', '2681');
@@ -5303,7 +5293,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2634', '2924
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2924', '2917');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2634', '2925');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2925', 'ent');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('ent', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2925', '2926');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2926', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2925', '2927');
@@ -5530,7 +5519,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3036', '-1')
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2634', '3037');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3037', '3036');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3040', 'nstruments');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('nstruments', '3036');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3040', '3041');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3041', '3036');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3041', '3042');
@@ -5602,10 +5590,8 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3040', '3075
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3075', '3073');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3040', '793');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('793', 'gn Services');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('gn Services', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3040', '1564');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('1564', 'essing Services');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('essing Services', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3040', '1564');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3040', '3079');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3079', 'ks');
@@ -5690,7 +5676,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3118', 'ts')
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3040', '3119');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3119', 'ts');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3122', 'ation Services');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('ation Services', 'ts');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3122', '3123');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3123', 'ts');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3122', '3124');
@@ -5768,7 +5753,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3122', '3165
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3165', '3162');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3122', '3166');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3166', 'n Services');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('n Services', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3122', '3167');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3167', 'n Services');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3122', '3168');
@@ -7499,7 +7483,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4119', '-1')
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4103', '4120');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4120', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4123', 'ts');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('ts', '4120');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4123', '4124');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4124', '4120');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4124', '4125');
@@ -7771,7 +7754,6 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4257', '-1')
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4238', '4258');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4258', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4261', 'ear');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('ear', '4258');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4261', '4262');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4262', '4258');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4262', '4263');
@@ -8177,10 +8159,8 @@ INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4407', '4474
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4474', '4473');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4477', '4474');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4474', 'x');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('x', 'x');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4477', '4478');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4478', 'x');
-INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('x', '-1');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4477', '4479');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4479', 'x');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4477', '4480');
