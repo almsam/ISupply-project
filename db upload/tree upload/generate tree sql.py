@@ -15,7 +15,7 @@ def process_categories(df, start, end):
     df_mapping = pd.read_csv("c:/Users/samia/OneDrive/Desktop/ISupply-project/db upload/tree upload/liveMap.csv")  # load map
     df_mapping = df_mapping.replace({"'": "", r"\\": "", r"//": "", r"/": ""}, regex=True)
     category_mapping = sorted([(str(k), v) for k, v in zip(df_mapping['cat'], df_mapping['ser'])])  # make map dict(ionary) - sort it by key's
-    category_mapping_keys = [k for k, v in category_mapping]  # extract keys
+    category_mapping_keys = [str(k) for k, v in category_mapping]  # extract keys
     
     for i in range(start, end):  # O(n*n)
         subcat, cat = get_category_subcategory(df, i); #num = str(num); cat = """ "Categories" """
@@ -28,23 +28,29 @@ def process_categories(df, start, end):
         subcat = str(subcat).replace("'", "").replace("\\", "").replace("//", "").replace("/", "")
         
         # binary search for cat & subcat
+        
+        
         cat_idx = bisect.bisect_left(category_mapping_keys, str(cat))
         if cat_idx < len(category_mapping_keys) and category_mapping_keys[cat_idx] == cat:
             cat = category_mapping[cat_idx][1]
         else:  # partial match if no full match
-            closest_cat = difflib.get_close_matches(cat, category_mapping_keys, n=1, cutoff=0.6)
-            if closest_cat:
-                closest_cat_idx = bisect.bisect_left(category_mapping_keys, closest_cat[0])
-                if closest_cat_idx < len(category_mapping_keys): cat = category_mapping[closest_cat_idx][1]
+            if isinstance(cat, str):
+                potential_matches = [ key for key in category_mapping_keys if key[:20] == cat[:20] ]
+                closest_cat = difflib.get_close_matches(cat, potential_matches, n=1, cutoff=0.6)
+                if closest_cat:
+                    closest_cat_idx = bisect.bisect_left(category_mapping_keys, closest_cat[0])
+                    if closest_cat_idx < len(category_mapping_keys): cat = category_mapping[closest_cat_idx][1]
         
         subcat_idx = bisect.bisect_left(category_mapping_keys, str(subcat))
         if subcat_idx < len(category_mapping_keys) and category_mapping_keys[subcat_idx] == subcat:
             subcat = category_mapping[subcat_idx][1]
         else:  # partial for subcategory
-            closest_subcat = difflib.get_close_matches(subcat, category_mapping_keys, n=1, cutoff=0.6)
-            if closest_subcat:
-                closest_subcat_idx = bisect.bisect_left(category_mapping_keys, closest_subcat[0])
-                if closest_subcat_idx < len(category_mapping_keys): subcat = category_mapping[closest_subcat_idx][1]
+            if isinstance(cat, str):
+                potential_matches = [ key for key in category_mapping_keys if key[:20] == cat[:20] ]
+                closest_subcat = difflib.get_close_matches(subcat, potential_matches, n=1, cutoff=0.6)
+                if closest_subcat:
+                    closest_subcat_idx = bisect.bisect_left(category_mapping_keys, closest_subcat[0])
+                    if closest_subcat_idx < len(category_mapping_keys): subcat = category_mapping[closest_subcat_idx][1]
         
                 # print if strings &n't ints
         if isinstance(cat, str) and cat != "-1":
