@@ -1,4 +1,11 @@
-0
+drop table "Category_Tree";
+
+CREATE TABLE "Category_Tree" (
+    id SERIAL PRIMARY KEY,
+    category_id int NOT NULL,
+    sub_category_id int NOT NULL
+);
+
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('2', '3');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('3', '4');
 INSERT INTO "Category_Tree" (category_id, sub_category_id) VALUES ('4', '-1');
