@@ -55,6 +55,7 @@ def process_categories(df, start, end):
         if (cat=="Transportation"): cat = 4477 # manual case
         if (cat==1071 and subcat=="e"): subcat = 1039
         if (cat==1468 and subcat=="Supplies"): subcat = 1465
+        if isinstance(subcat, str) and subcat != "-1": subcat = -1
         
                 # print if strings &n't ints
         if isinstance(cat, str) and cat != "-1":
