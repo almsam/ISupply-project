@@ -9,9 +9,7 @@ con = psycopg2.connect(
     password="deerRun",
     port="5432",
 )
-cursor = con.cursor()
-cursor.execute("""select * from "Categories" c""")
-out = cursor.fetchall()  # make a dictionary of what the db currently has
-cursor.close()
-con.close()
+cursor = con.cursor(); cursor.execute("""select * from "Categories" c""")
+out = cursor.fetchall(); cursor.close(); con.close()  # make a dictionary of what the db currently has; close
 
+map = pd.DataFrame(out, columns=["ser", "cat"]); print(map)
