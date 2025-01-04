@@ -15,8 +15,9 @@ def setup():
     cursor.execute("""select * from "Category_Tree" c"""); outTree = cursor.fetchall()  # repeat for tree
     cursor.close(); con.close() # n close
 
-    map = pd.DataFrame(outMap, columns=["ser", "cat"]); print(map); return map
+    map = pd.DataFrame(outMap, columns=["ser", "cat"]); print(map)
+    tree = pd.DataFrame(outTree, columns=["cat", "subcat"]); print(map); return map, tree
 
 #main:
 
-map = setup()
+map, tree = setup()
