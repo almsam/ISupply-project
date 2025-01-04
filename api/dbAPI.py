@@ -16,7 +16,7 @@ def setup():
     cursor.close(); con.close() # n close
 
     map = pd.DataFrame(outMap, columns=["ser", "cat"]); print(map)
-    tree = pd.DataFrame(outTree, columns=["cat", "subcat"]); print(map); return map, tree
+    tree = pd.DataFrame(outTree, columns=["id", "cat", "subcat"]); print(tree); return map, tree
 
 #main:
 
