@@ -10,10 +10,12 @@ def setup():
         password="deerRun",
         port="5432",
     )
-    cursor = con.cursor(); cursor.execute("""select * from "Categories" c""")
-    out = cursor.fetchall(); cursor.close(); con.close()  # make a dictionary of what the db currently has; close
+    cursor = con.cursor() #open
+    cursor.execute("""select * from "Categories" c""")   ; outMap  = cursor.fetchall()  # make a dictionary of what the db currently has
+    cursor.execute("""select * from "Category_Tree" c"""); outTree = cursor.fetchall()  # repeat for tree
+    cursor.close(); con.close() # n close
 
-    map = pd.DataFrame(out, columns=["ser", "cat"]); print(map); return map
+    map = pd.DataFrame(outMap, columns=["ser", "cat"]); print(map); return map
 
 #main:
 
