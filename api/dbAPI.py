@@ -21,16 +21,23 @@ def setup():
 #main:
 
 
-def isLeaf(c: str):
+def isLeafStr(c: str):
     id = map[map["cat"] == c]
     if id.empty: raise ValueError(f"Node name '{c}' not found in 'Categories'.")
-    return isLeaf(id.iloc[0]["ser"])
+    return isLeafInt(id.iloc[0]["ser"])
 
-def isLeaf(id: int):
+def isLeafInt(id: int):
     if id == 0: raise ValueError(f"ID myst be non zero.")
     if id == 1: return False
     children = tree[tree["cat"] == id]
     return children[children["subcat"] != -1].empty
+
+def isLeaf(node) -> bool:
+    if isinstance(node, str): isLeafStr(node)
+    elif isinstance(node, int): isLeafInt(node)
+    else:
+        raise TypeError("Node must be str or int")
+
 
 map, tree = setup()
 
