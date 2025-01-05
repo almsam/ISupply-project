@@ -25,6 +25,9 @@ def isLeaf(c: str):
     pass
 
 def isLeaf(id: int):
-    pass
+    children = tree[tree["id"] == id]
+    return children.empty
 
 map, tree = setup()
+
+print(isLeaf(10))
