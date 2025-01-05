@@ -3,7 +3,7 @@ import pandas as pd
 from unittest.mock import patch
 import psycopg2
 
-from dbAPI import setup
+from dbAPI import setup, isLeaf
 
 class TestSetupFunction(unittest.TestCase):
 
@@ -21,6 +21,19 @@ class TestSetupFunction(unittest.TestCase):
         # verify columns:
         self.assertListEqual(list(map.columns),  ["ser", "cat"],          "map df columns incorrect")
         self.assertListEqual(list(tree.columns), ["id", "cat", "subcat"], "tree df columns incorrect")
+
+    def test_isLeaf(self):
+        self.assertFalse(isLeaf("Agricultural Equipment"))
+        self.assertTrue(isLeaf("Agricultural Greenhouses"))
+        
+        self.assertFalse(isLeaf(99))
+        self.assertTrue(isLeaf(9))
+        
+        self.assertFalse(isLeaf(1))
+        self.assertFalse(isLeaf("all"))
+        
+        with self.assertRaises(ValueError) as context: isLeaf(0)
+        self.assertIn("ID myst be non zero.", str(context.exception))
 
 if __name__ == "__main__":
     unittest.main()
