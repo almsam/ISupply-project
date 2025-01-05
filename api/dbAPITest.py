@@ -23,8 +23,16 @@ class TestSetupFunction(unittest.TestCase):
         self.assertListEqual(list(tree.columns), ["id", "cat", "subcat"], "tree df columns incorrect")
 
     def test_isLeaf(self):
-        map, tree = setup() # call setup func
+        self.assertFalse(isLeaf("Agricultural Equipment"))
+        self.assertTrue(isLeaf("Agricultural Greenhouses"))
         
+        self.assertFalse(isLeaf(99))
+        self.assertTrue(isLeaf(9))
+        
+        self.assertFalse(isLeaf(1))
+        self.assertFalse(isLeaf("all"))
+        
+
 
 if __name__ == "__main__":
     unittest.main()
