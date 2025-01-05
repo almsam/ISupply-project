@@ -22,6 +22,7 @@ def setup():
 
 
 def isLeaf(c: str):
+    if c == "All": return False
     id = map[map["cat"] == c]
     if id.empty: raise ValueError(f"Node name '{c}' not found in 'Categories'.")
     return isLeaf(id.iloc[0]["ser"])
