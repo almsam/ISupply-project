@@ -27,7 +27,8 @@ def isLeaf(c: str):
     return isLeaf(id.iloc[0]["ser"])
 
 def isLeaf(id: int):
-
+    if id == 0: raise ValueError(f"ID myst be non zero.")
+    if id == 1: return False
     children = tree[tree["cat"] == id]
     return children[children["subcat"] != -1].empty
 
