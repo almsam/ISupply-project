@@ -28,7 +28,7 @@ def isLeaf(c: str):
 
 def isLeaf(id: int):
     children = tree[tree["id"] == id]
-    return children.empty
+    return children[children["subcat"] != -1].empty
 
 map, tree = setup()
 
