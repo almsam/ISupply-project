@@ -3,7 +3,7 @@ import pandas as pd
 from unittest.mock import patch
 import psycopg2
 
-from dbAPI import setup
+from dbAPI import setup, isLeaf
 
 class TestSetupFunction(unittest.TestCase):
 
@@ -21,6 +21,10 @@ class TestSetupFunction(unittest.TestCase):
         # verify columns:
         self.assertListEqual(list(map.columns),  ["ser", "cat"],          "map df columns incorrect")
         self.assertListEqual(list(tree.columns), ["id", "cat", "subcat"], "tree df columns incorrect")
+
+    def test_isLeaf(self):
+        map, tree = setup() # call setup func
+        
 
 if __name__ == "__main__":
     unittest.main()
