@@ -20,4 +20,11 @@ def setup():
 
 #main:
 
+
+def isLeaf(c: str):
+    pass
+
+def isLeaf(id: int):
+    pass
+
 map, tree = setup()
