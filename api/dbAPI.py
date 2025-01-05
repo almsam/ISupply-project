@@ -33,12 +33,15 @@ def isLeafInt(id: int):
     return children[children["subcat"] != -1].empty
 
 def isLeaf(node) -> bool:
-    if isinstance(node, str): isLeafStr(node)
-    elif isinstance(node, int): isLeafInt(node)
+    if isinstance(node, str): return isLeafStr(node)
+    elif isinstance(node, int): return isLeafInt(node)
     else:
         raise TypeError("Node must be str or int")
 
 
 map, tree = setup()
 
-
+print(isLeaf("Agricultural Equipment"))
+print(isLeaf("Agricultural Greenhouses"))
+print(isLeaf(99))
+print(isLeaf(9))
