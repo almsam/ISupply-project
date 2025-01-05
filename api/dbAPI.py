@@ -22,15 +22,15 @@ def setup():
 
 
 def isLeaf(c: str):
-    if c == "All": return False
     id = map[map["cat"] == c]
     if id.empty: raise ValueError(f"Node name '{c}' not found in 'Categories'.")
     return isLeaf(id.iloc[0]["ser"])
 
 def isLeaf(id: int):
-    children = tree[tree["id"] == id]
+
+    children = tree[tree["cat"] == id]
     return children[children["subcat"] != -1].empty
 
 map, tree = setup()
 
-print(isLeaf(10))
+
