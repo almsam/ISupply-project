@@ -43,7 +43,10 @@ def getAllLeaves() -> list:
     return leaves
 
 def isParentOfStr(subC: str, superC: str):
-    
+    sub_id = map[map["cat"] == subC]; super_id = map[map["cat"] == superC] #get ids
+    if sub_id.empty: raise ValueError(f"Category name '{subC}' not found in 'Categories' ")
+    if super_id.empty: raise ValueError(f"Category name '{superC}' not found in 'Categories' ")
+    return isParentOfInt(sub_id.iloc[0]["ser"], super_id.iloc[0]["ser"])
 def isParentOfInt(subId: int, superId: int):
 
     
