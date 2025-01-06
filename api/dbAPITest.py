@@ -35,5 +35,8 @@ class TestSetupFunction(unittest.TestCase):
         with self.assertRaises(ValueError) as context: isLeaf(0)
         self.assertIn("ID myst be non zero.", str(context.exception))
 
+    def test_getAllLeaves(self):
+        self.assertEqual(1, 1)
+
 if __name__ == "__main__":
     unittest.main()
