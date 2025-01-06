@@ -43,8 +43,15 @@ def getAllLeaves() -> list:
     return leaves
 
 def isParentOfStr(subC: str, superC: str):
+    
 def isParentOfInt(subId: int, superId: int):
+
+    
 def isParentOf(sub, super) -> bool:
+    if isinstance(sub, str) and isinstance(super, str): return isParentOfStr(sub, super)
+    elif isinstance(sub, str) and isinstance(super, str): return isParentOfStr(sub, super)
+    else: raise TypeError("Both inputs must be str or both must be int")
+
 
 map, tree = setup()
 
