@@ -37,6 +37,12 @@ def isLeaf(node) -> bool:
     elif isinstance(node, int): return isLeafInt(node) #int
     else: raise TypeError("Node must be str or int")   #????
 
+def getAllLeaves() -> list:
+    leaves = []    # all nodes in the tree that are leaves
+    for _, row in map.iterrows():  # for all categories
+        category_id = row["ser"]
+        if isLeaf(category_id): leaves.append(row["cat"])  # aff to the list
+    return leaves
 
 map, tree = setup()
 
