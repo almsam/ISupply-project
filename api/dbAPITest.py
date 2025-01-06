@@ -3,7 +3,7 @@ import pandas as pd
 from unittest.mock import patch
 import psycopg2
 
-from dbAPI import setup, isLeaf
+from dbAPI import setup, isLeaf, getAllLeaves
 
 class TestSetupFunction(unittest.TestCase):
 
@@ -36,7 +36,7 @@ class TestSetupFunction(unittest.TestCase):
         self.assertIn("ID myst be non zero.", str(context.exception))
 
     def test_getAllLeaves(self):
-        self.assertEqual(1, 1)
+        self.assertEqual(len(getAllLeaves()), 3536)
 
 if __name__ == "__main__":
     unittest.main()
