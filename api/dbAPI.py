@@ -25,13 +25,11 @@ def isLeafStr(c: str):
     id = map[map["cat"] == c] # change to an int
     if id.empty: raise ValueError(f"Node name '{c}' not found in 'Categories'.")
     return isLeafInt(id.iloc[0]["ser"]) #run int
-
 def isLeafInt(id: int):
     if id == 0: raise ValueError(f"ID myst be non zero.") #start at 1
     if id == 1: return False #all is not a leaf
     children = tree[tree["cat"] == id]
     return children[children["subcat"] != -1].empty #a leaf is childless
-
 def isLeaf(node) -> bool:
     if   isinstance(node, str): return isLeafStr(node) #str
     elif isinstance(node, int): return isLeafInt(node) #int
@@ -43,6 +41,10 @@ def getAllLeaves() -> list:
         category_id = row["ser"]
         if isLeaf(category_id): leaves.append(row["cat"])  # aff to the list
     return leaves
+
+def isParentOfStr(subC: str, superC: str):
+def isParentOfInt(subId: int, superId: int):
+def isParentOf(sub, super) -> bool:
 
 map, tree = setup()
 
