@@ -50,6 +50,7 @@ def isParentOfStr(subC: str, superC: str):
 def isParentOfInt(subId: int, superId: int):
     if subId == 0 or superId == 0: raise ValueError("IDs must be non zero")
     parent_row = tree[tree["subcat"] == subId]
+    if parent_row.empty and superId == 1: return True #all case
     return not parent_row.empty and parent_row.iloc[0]["cat"] == superId #non empty & parentFound=parentGiven
 def isParentOf(sub, super) -> bool:
     if isinstance(sub, str) and isinstance(super, str): return isParentOfStr(sub, super)
