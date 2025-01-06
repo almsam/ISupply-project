@@ -46,4 +46,5 @@ def getAllLeaves() -> list:
 
 map, tree = setup()
 
+print("Leaves:", len(getAllLeaves()))
 # print(isLeaf("Agricultural Equipment")); print(isLeaf("Agricultural Greenhouses")); print(isLeaf(99)); print(isLeaf(9)) #test for isLeaf
