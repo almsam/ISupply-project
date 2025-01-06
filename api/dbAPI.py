@@ -48,8 +48,9 @@ def isParentOfStr(subC: str, superC: str):
     if super_id.empty: raise ValueError(f"Category name '{superC}' not found in 'Categories' ")
     return isParentOfInt(sub_id.iloc[0]["ser"], super_id.iloc[0]["ser"])
 def isParentOfInt(subId: int, superId: int):
-
-    
+    if subId == 0 or superId == 0: raise ValueError("IDs must be non zero")
+    parent_row = tree[tree["subcat"] == subId]
+    return not parent_row.empty and parent_row.iloc[0]["cat"] == superId #non empty & parentFound=parentGiven
 def isParentOf(sub, super) -> bool:
     if isinstance(sub, str) and isinstance(super, str): return isParentOfStr(sub, super)
     elif isinstance(sub, str) and isinstance(super, str): return isParentOfStr(sub, super)
