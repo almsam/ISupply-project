@@ -78,6 +78,7 @@ def findParentOf(sub) -> tuple:
 
 map, tree = setup()
 
+# print(findParentOf(1)) print(findParentOf(2)) print(findParentOf(3)) print(findParentOf(4)) print(findParentOf(12))
 # print(isParentOf(2, 1)) #all        print(isParentOf(3, 2)) #norm true      print(isParentOf(2, 3)) #reverse norm true      print(isParentOf(19, 12)) #norm false
 # print("Leaves:", len(getAllLeaves()))
 # print(isLeaf("Agricultural Equipment")); print(isLeaf("Agricultural Greenhouses")); print(isLeaf(99)); print(isLeaf(9)) #test for isLeaf
