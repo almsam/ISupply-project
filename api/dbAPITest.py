@@ -39,7 +39,10 @@ class TestSetupFunction(unittest.TestCase):
         self.assertEqual(len(getAllLeaves()), 3536)
 
     def test_isParentof(self):
-        self.assertTrue()
+        self.assertTrue(isParentOf(2, 1)) #all
+        self.assertTrue(isParentOf(3, 2)) #norm true
+        self.assertFalse(isParentOf(2, 3)) #reverse norm true
+        self.assertFalse(isParentOf(19, 12)) #norm false
 
 if __name__ == "__main__":
     unittest.main()
