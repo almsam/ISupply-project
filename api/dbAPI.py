@@ -57,6 +57,16 @@ def isParentOf(sub, super) -> bool:
     elif isinstance(sub, int) and isinstance(super, int): return isParentOfInt(sub, super)
     else: raise TypeError("Both inputs must be str or both must be int")
 
+def findParentOfStr(sub: str) -> tuple:
+    sub_id = map[map["cat"] == sub]
+    if sub_id.empty: raise ValueError(f"Node name '{sub}' not found in 'Categories' ")
+    sub_id = sub_id.iloc[0]["ser"]; return findParentOfInt(sub_id)
+def findParentOfInt(sub_id: int) -> tuple:
+def findParentOf(sub) -> tuple:
+    if isinstance(sub, str): return findParentOfStr(sub)
+    elif isinstance(sub, int): return findParentOfInt(sub)
+    else: raise TypeError("Input must be of type str or int")
+
 
 map, tree = setup()
 
