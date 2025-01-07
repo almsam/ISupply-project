@@ -54,11 +54,11 @@ def isParentOfInt(subId: int, superId: int):
     return not parent_row.empty and parent_row.iloc[0]["cat"] == superId #non empty & parentFound=parentGiven
 def isParentOf(sub, super) -> bool:
     if isinstance(sub, str) and isinstance(super, str): return isParentOfStr(sub, super)
-    elif isinstance(sub, str) and isinstance(super, str): return isParentOfStr(sub, super)
+    elif isinstance(sub, int) and isinstance(super, int): return isParentOfInt(sub, super)
     else: raise TypeError("Both inputs must be str or both must be int")
 
 
 map, tree = setup()
 
-print("Leaves:", len(getAllLeaves()))
+# print("Leaves:", len(getAllLeaves()))
 # print(isLeaf("Agricultural Equipment")); print(isLeaf("Agricultural Greenhouses")); print(isLeaf(99)); print(isLeaf(9)) #test for isLeaf
