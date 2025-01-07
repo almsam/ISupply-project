@@ -62,6 +62,14 @@ def findParentOfStr(sub: str) -> tuple:
     if sub_id.empty: raise ValueError(f"Node name '{sub}' not found in 'Categories' ")
     sub_id = sub_id.iloc[0]["ser"]; return findParentOfInt(sub_id)
 def findParentOfInt(sub_id: int) -> tuple:
+    if sub_id == 0: raise ValueError("ID must be non-zero")
+    if sub_id == 1: return (1, "all") #all is parent of all
+
+    parent_row = tree[tree["subcat"] == sub_id] # find parent
+    if parent_row.empty: return (1, "all")
+
+    parent_id = parent_row.iloc[0]["cat"]; parent_name = map[map["ser"] == parent_id]["cat"].iloc[0]
+    return (parent_id, parent_name) # return ID & name
 def findParentOf(sub) -> tuple:
     if isinstance(sub, str): return findParentOfStr(sub)
     elif isinstance(sub, int): return findParentOfInt(sub)
