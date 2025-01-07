@@ -3,7 +3,7 @@ import pandas as pd
 from unittest.mock import patch
 import psycopg2
 
-from dbAPI import setup, isLeaf, getAllLeaves, isParentOf
+from dbAPI import setup, isLeaf, getAllLeaves, isParentOf, findParentOf
 
 class TestSetupFunction(unittest.TestCase):
 
@@ -43,6 +43,13 @@ class TestSetupFunction(unittest.TestCase):
         self.assertTrue(isParentOf(3, 2)) #norm true
         self.assertFalse(isParentOf(2, 3)) #reverse norm true
         self.assertFalse(isParentOf(19, 12)) #norm false
+
+    def test_findParentof(self):
+        self.assertEqual((findParentOf(1)),  (1, 'all'))
+        self.assertEqual((findParentOf(2)),  (1, 'all'))
+        self.assertEqual((findParentOf(3)),  (2, 'Agriculture'))
+        self.assertEqual((findParentOf(4)),  (3, 'Agricultural Equipment'))
+        self.assertEqual((findParentOf(12)), (2, 'Agriculture'))
 
 if __name__ == "__main__":
     unittest.main()

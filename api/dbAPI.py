@@ -57,9 +57,28 @@ def isParentOf(sub, super) -> bool:
     elif isinstance(sub, int) and isinstance(super, int): return isParentOfInt(sub, super)
     else: raise TypeError("Both inputs must be str or both must be int")
 
+def findParentOfStr(sub: str) -> tuple:
+    sub_id = map[map["cat"] == sub]
+    if sub_id.empty: raise ValueError(f"Node name '{sub}' not found in 'Categories' ")
+    sub_id = sub_id.iloc[0]["ser"]; return findParentOfInt(sub_id)
+def findParentOfInt(sub_id: int) -> tuple:
+    if sub_id == 0: raise ValueError("ID must be non-zero")
+    if sub_id == 1: return (1, "all") #all is parent of all
+
+    parent_row = tree[tree["subcat"] == sub_id] # find parent
+    if parent_row.empty: return (1, "all")
+
+    parent_id = parent_row.iloc[0]["cat"]; parent_name = map[map["ser"] == parent_id]["cat"].iloc[0]
+    return (parent_id, parent_name) # return ID & name
+def findParentOf(sub) -> tuple:
+    if isinstance(sub, str): return findParentOfStr(sub)
+    elif isinstance(sub, int): return findParentOfInt(sub)
+    else: raise TypeError("Input must be of type str or int")
+
 
 map, tree = setup()
 
+# print(findParentOf(1)) print(findParentOf(2)) print(findParentOf(3)) print(findParentOf(4)) print(findParentOf(12))
 # print(isParentOf(2, 1)) #all        print(isParentOf(3, 2)) #norm true      print(isParentOf(2, 3)) #reverse norm true      print(isParentOf(19, 12)) #norm false
 # print("Leaves:", len(getAllLeaves()))
 # print(isLeaf("Agricultural Equipment")); print(isLeaf("Agricultural Greenhouses")); print(isLeaf(99)); print(isLeaf(9)) #test for isLeaf
