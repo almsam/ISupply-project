@@ -3,7 +3,7 @@ import pandas as pd
 from unittest.mock import patch
 import psycopg2
 
-from dbAPI import setup, isLeaf, getAllLeaves
+from dbAPI import setup, isLeaf, getAllLeaves, isParentOf
 
 class TestSetupFunction(unittest.TestCase):
 
@@ -37,6 +37,9 @@ class TestSetupFunction(unittest.TestCase):
 
     def test_getAllLeaves(self):
         self.assertEqual(len(getAllLeaves()), 3536)
+
+    def test_isParentof(self):
+        self.assertTrue()
 
 if __name__ == "__main__":
     unittest.main()

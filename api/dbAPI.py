@@ -60,5 +60,6 @@ def isParentOf(sub, super) -> bool:
 
 map, tree = setup()
 
+# print(isParentOf(2, 1)) #all        print(isParentOf(3, 2)) #norm true      print(isParentOf(2, 3)) #reverse norm true      print(isParentOf(19, 12)) #norm false
 # print("Leaves:", len(getAllLeaves()))
 # print(isLeaf("Agricultural Equipment")); print(isLeaf("Agricultural Greenhouses")); print(isLeaf(99)); print(isLeaf(9)) #test for isLeaf
