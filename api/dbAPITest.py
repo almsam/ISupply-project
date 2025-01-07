@@ -45,7 +45,11 @@ class TestSetupFunction(unittest.TestCase):
         self.assertFalse(isParentOf(19, 12)) #norm false
 
     def test_findParentof(self):
-
+        self.assertEqual((findParentOf(1)),  (1, 'all'))
+        self.assertEqual((findParentOf(2)),  (1, 'all'))
+        self.assertEqual((findParentOf(3)),  (2, 'Agriculture'))
+        self.assertEqual((findParentOf(4)),  (3, 'Agricultural Equipment'))
+        self.assertEqual((findParentOf(12)), (2, 'Agriculture'))
 
 if __name__ == "__main__":
     unittest.main()
