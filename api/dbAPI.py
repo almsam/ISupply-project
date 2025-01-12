@@ -88,6 +88,12 @@ def findChildrenOfInt(super_id: int) -> list:
         if child_id != -1:  # checks for invalid kids
             child_name = map[map["ser"] == child_id]["cat"].iloc[0]; children.append((child_id, child_name))
     return children
+def findChildrenOfAll() -> list:
+    all_categories = set(map["ser"]);    all_subcategories = set(tree["subcat"])
+    # cats with no parents are in `all_categories` but not in `all_subcategories`
+    root_categories = all_categories - all_subcategories
+    # make (id, name) tuples    
+    return [(cat_id, map[map["ser"] == cat_id]["cat"].iloc[0]) for cat_id in root_categories if cat_id != -1]
 def findChildrenOf(super) -> list:
     if isinstance(super, str): return findChildrenOfStr(super)
     elif isinstance(super, int): return findChildrenOfInt(super)
