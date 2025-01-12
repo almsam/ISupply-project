@@ -66,10 +66,7 @@ class TestSetupFunction(unittest.TestCase):
             [], "clildless case failed"
         )
         
-        self.assertListEqual(
-            findChildrenOf("all"),
-            [], "'all' category should have children"
-        )
+        self.assertGreater(len(findChildrenOf("all")), 0, "'all' category should have children")
         
         # test invalid str, int, type
         
