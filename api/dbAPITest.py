@@ -3,7 +3,7 @@ import pandas as pd
 from unittest.mock import patch
 import psycopg2
 
-from dbAPI import setup, isLeaf, getAllLeaves, isParentOf, findParentOf, findChildrenOf
+from dbAPI import setup, isLeaf, getAllLeaves, isParentOf, findParentOf, findChildrenOf, getAllCategories
 
 class TestSetupFunction(unittest.TestCase):
 
@@ -81,6 +81,9 @@ class TestSetupFunction(unittest.TestCase):
         with self.assertRaises(TypeError) as context:
             findChildrenOf(2.5)  # Invalid type (float)
         self.assertIn("Input must be of type str or int", str(context.exception))
+
+    def test_getAllCategories(self):
+        
 
 if __name__ == "__main__":
     unittest.main()
