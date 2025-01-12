@@ -78,7 +78,7 @@ class TestSetupFunction(unittest.TestCase):
         self.assertIn("Category name 'Nonexistent Category' not found", str(context.exception))
         
         with self.assertRaises(ValueError) as context:
-            findChildrenOf(9999)
+            findChildrenOf(0)
         self.assertIn("ID must be non-zero", str(context.exception))
         
         with self.assertRaises(TypeError) as context:
