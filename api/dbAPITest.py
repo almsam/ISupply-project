@@ -3,7 +3,7 @@ import pandas as pd
 from unittest.mock import patch
 import psycopg2
 
-from dbAPI import setup, isLeaf, getAllLeaves, isParentOf, findParentOf
+from dbAPI import setup, isLeaf, getAllLeaves, isParentOf, findParentOf, findChildrenOf
 
 class TestSetupFunction(unittest.TestCase):
 
@@ -50,6 +50,37 @@ class TestSetupFunction(unittest.TestCase):
         self.assertEqual((findParentOf(3)),  (2, 'Agriculture'))
         self.assertEqual((findParentOf(4)),  (3, 'Agricultural Equipment'))
         self.assertEqual((findParentOf(12)), (2, 'Agriculture'))
+
+    def test_findChildrenof(self):
+        self.assertListEqual(
+            findChildrenOf("Agricultural Equipment"),
+            [(4, 'Agricultural Greenhouses'), (5, 'Aquaculture Equipment'), (11, 'Ear Tag')], "str failed"
+        )
+        self.assertListEqual(
+            findChildrenOf(3),
+            [(4, 'Agricultural Greenhouses'), (5, 'Aquaculture Equipment'), (11, 'Ear Tag')], "int failed"
+        )
+        
+        self.assertListEqual(
+            findChildrenOf("Agricultural Greenhouses"),
+            [], "clildless case failed"
+        )
+        
+        self.assertGreater(len(findChildrenOf("all")), 0, "'all' category should have children")
+        
+        # test invalid str, int, type
+        
+        with self.assertRaises(ValueError) as context:
+            findChildrenOf("Nonexistent Category")
+        self.assertIn("Category name 'Nonexistent Category' not found", str(context.exception))
+        
+        with self.assertRaises(ValueError) as context:
+            findChildrenOf(0)
+        self.assertIn("ID must be non-zero", str(context.exception))
+        
+        with self.assertRaises(TypeError) as context:
+            findChildrenOf(2.5)  # Invalid type (float)
+        self.assertIn("Input must be of type str or int", str(context.exception))
 
 if __name__ == "__main__":
     unittest.main()

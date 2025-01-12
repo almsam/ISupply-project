@@ -75,9 +75,35 @@ def findParentOf(sub) -> tuple:
     elif isinstance(sub, int): return findParentOfInt(sub)
     else: raise TypeError("Input must be of type str or int")
 
+def findChildrenOfStr(super: str) -> list:
+    super_id = map[map["cat"] == super] #to int
+    if super_id.empty: raise ValueError(f"Category name '{super}' not found in 'Categories'") # if invalid
+    return findChildrenOfInt(super_id.iloc[0]["ser"]) # run int side
+def findChildrenOfInt(super_id: int) -> list:
+    if super_id == 0: raise ValueError("ID must be non-zero")
+    children_rows = tree[tree["cat"] == super_id] # get rows where `cat` matches `super_id`
+    children = []
+    for _, row in children_rows.iterrows(): # extract IDs & their names
+        child_id = row["subcat"]
+        if child_id != -1:  # checks for invalid kids
+            child_name = map[map["ser"] == child_id]["cat"].iloc[0]; children.append((child_id, child_name))
+    return children
+def findChildrenOfAll() -> list:
+    all_categories = set(map["ser"]);    all_subcategories = set(tree["subcat"])
+    # cats with no parents are in `all_categories` but not in `all_subcategories`
+    root_categories = all_categories - all_subcategories
+    # make (id, name) tuples    
+    return [(cat_id, map[map["ser"] == cat_id]["cat"].iloc[0]) for cat_id in root_categories if cat_id != -1]
+def findChildrenOf(super) -> list:
+    if super == 1 or super == "all": return findChildrenOfAll()
+    if isinstance(super, str): return findChildrenOfStr(super)
+    elif isinstance(super, int): return findChildrenOfInt(super)
+    else: raise TypeError("Input must be of type str or int")
+
 
 map, tree = setup()
 
+# print(sorted(findChildrenOf('all'), key=lambda x: x[0]))
 # print(findParentOf(1)) print(findParentOf(2)) print(findParentOf(3)) print(findParentOf(4)) print(findParentOf(12))
 # print(isParentOf(2, 1)) #all        print(isParentOf(3, 2)) #norm true      print(isParentOf(2, 3)) #reverse norm true      print(isParentOf(19, 12)) #norm false
 # print("Leaves:", len(getAllLeaves()))
