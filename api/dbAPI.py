@@ -75,6 +75,16 @@ def findParentOf(sub) -> tuple:
     elif isinstance(sub, int): return findParentOfInt(sub)
     else: raise TypeError("Input must be of type str or int")
 
+def findChildrenOfStr(super: str) -> list:
+def findChildrenOfInt(super_id: int) -> list:
+def findChildrenOf(super) -> list:
+    if isinstance(super, str):
+        return findChildrenOfStr(super)
+    elif isinstance(super, int):
+        return findChildrenOfInt(super)
+    else:
+        raise TypeError("Input must be of type str or int")
+
 
 map, tree = setup()
 
