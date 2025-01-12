@@ -104,10 +104,23 @@ def getAllCategories() -> list: return sorted(findChildrenOf('all'))
 
 def getRoot(node) -> list:
     if isinstance(node, str):
-
+        node_id = map[map["cat"] == node]
+        if node_id.empty: raise ValueError(f"Category '{node}' not found in 'Categories'")
+        node_id = node_id.iloc[0]["ser"]
     elif isinstance(node, int):
-
+        node_id = node
+        if map[map["ser"] == node_id].empty: raise ValueError(f"Category ID '{node_id}' not found in 'Categories'")
     else:
+        raise TypeError("Input must be of type str or int")
+    
+    rootList = []; current_id = node_id
+
+    while current_id != 1:  # search until all is found
+        parent_id, parent_name = findParentOf(current_id)
+        rootList.append((parent_id, parent_name))
+        current_id = parent_id
+    
+    rootList.append((1, "all")); return rootList[::-1]
 
 map, tree = setup()
 
