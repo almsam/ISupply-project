@@ -61,5 +61,17 @@ class TestSetupFunction(unittest.TestCase):
             [(3, 'Agricultural Greenhouses'), (4, 'Farming Machinery')], "int failed"
         )
         
+        self.assertListEqual(
+            findChildrenOf("Agricultural Greenhouses"),
+            [], "clildless case failed"
+        )
+        
+        self.assertListEqual(
+            findChildrenOf("All"),
+            [], "'All' category should have children"
+        )
+        
+      
+
 if __name__ == "__main__":
     unittest.main()
