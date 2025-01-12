@@ -71,7 +71,19 @@ class TestSetupFunction(unittest.TestCase):
             [], "'All' category should have children"
         )
         
-      
+        # test invalid str, int, type
+        
+        with self.assertRaises(ValueError) as context:
+            findChildrenOf("Nonexistent Category")
+        self.assertIn("Category name 'Nonexistent Category' not found", str(context.exception))
+        
+        with self.assertRaises(ValueError) as context:
+            findChildrenOf(9999)
+        self.assertIn("ID must be non-zero", str(context.exception))
+        
+        with self.assertRaises(TypeError) as context:
+            findChildrenOf(2.5)  # Invalid type (float)
+        self.assertIn("Input must be of type str or int", str(context.exception))
 
 if __name__ == "__main__":
     unittest.main()
