@@ -52,7 +52,14 @@ class TestSetupFunction(unittest.TestCase):
         self.assertEqual((findParentOf(12)), (2, 'Agriculture'))
 
     def test_findChildrenof(self):
-
-
+        self.assertListEqual(
+            findChildrenOf("Agricultural Equipment"),
+            [(3, 'Agricultural Greenhouses'), (4, 'Farming Machinery')], "str failed"
+        )
+        self.assertListEqual(
+            findChildrenOf(2),
+            [(3, 'Agricultural Greenhouses'), (4, 'Farming Machinery')], "int failed"
+        )
+        
 if __name__ == "__main__":
     unittest.main()
