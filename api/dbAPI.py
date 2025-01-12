@@ -95,6 +95,7 @@ def findChildrenOfAll() -> list:
     # make (id, name) tuples    
     return [(cat_id, map[map["ser"] == cat_id]["cat"].iloc[0]) for cat_id in root_categories if cat_id != -1]
 def findChildrenOf(super) -> list:
+    if super == 1 or super == "all": return findChildrenOfAll()
     if isinstance(super, str): return findChildrenOfStr(super)
     elif isinstance(super, int): return findChildrenOfInt(super)
     else: raise TypeError("Input must be of type str or int")
