@@ -102,6 +102,13 @@ def findChildrenOf(super) -> list:
 
 def getAllCategories() -> list: return sorted(findChildrenOf('all'))
 
+def getRoot(node) -> list:
+    if isinstance(node, str):
+
+    elif isinstance(node, int):
+
+    else:
+
 map, tree = setup()
 
 # print(getAllCategories())
