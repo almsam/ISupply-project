@@ -100,9 +100,11 @@ def findChildrenOf(super) -> list:
     elif isinstance(super, int): return findChildrenOfInt(super)
     else: raise TypeError("Input must be of type str or int")
 
+def getAllCategories() -> list: return sorted(findChildrenOf('all'))
 
 map, tree = setup()
 
+# print(getAllCategories())
 # print(sorted(findChildrenOf('all'), key=lambda x: x[0]))
 # print(findParentOf(1)) print(findParentOf(2)) print(findParentOf(3)) print(findParentOf(4)) print(findParentOf(12))
 # print(isParentOf(2, 1)) #all        print(isParentOf(3, 2)) #norm true      print(isParentOf(2, 3)) #reverse norm true      print(isParentOf(19, 12)) #norm false
