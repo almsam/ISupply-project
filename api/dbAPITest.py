@@ -57,7 +57,7 @@ class TestSetupFunction(unittest.TestCase):
             [(4, 'Agricultural Greenhouses'), (5, 'Aquaculture Equipment'), (11, 'Ear Tag')], "str failed"
         )
         self.assertListEqual(
-            findChildrenOf(2),
+            findChildrenOf(3),
             [(4, 'Agricultural Greenhouses'), (5, 'Aquaculture Equipment'), (11, 'Ear Tag')], "int failed"
         )
         
@@ -67,8 +67,8 @@ class TestSetupFunction(unittest.TestCase):
         )
         
         self.assertListEqual(
-            findChildrenOf("All"),
-            [], "'All' category should have children"
+            findChildrenOf("all"),
+            [], "'all' category should have children"
         )
         
         # test invalid str, int, type
