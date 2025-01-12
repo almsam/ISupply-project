@@ -76,25 +76,22 @@ def findParentOf(sub) -> tuple:
     else: raise TypeError("Input must be of type str or int")
 
 def findChildrenOfStr(super: str) -> list:
+    super_id = map[map["cat"] == super] #to int
+    if super_id.empty: raise ValueError(f"Category name '{super}' not found in 'Categories'") # if invalid
+    return findChildrenOfInt(super_id.iloc[0]["ser"]) # run int side
 def findChildrenOfInt(super_id: int) -> list:
     if super_id == 0: raise ValueError("ID must be non-zero")
-
     children_rows = tree[tree["cat"] == super_id] # get rows where `cat` matches `super_id`
-
     children = []
     for _, row in children_rows.iterrows(): # extract IDs & their names
         child_id = row["subcat"]
         if child_id != -1:  # checks for invalid kids
             child_name = map[map["ser"] == child_id]["cat"].iloc[0]; children.append((child_id, child_name))
-
     return children
 def findChildrenOf(super) -> list:
-    if isinstance(super, str):
-        return findChildrenOfStr(super)
-    elif isinstance(super, int):
-        return findChildrenOfInt(super)
-    else:
-        raise TypeError("Input must be of type str or int")
+    if isinstance(super, str): return findChildrenOfStr(super)
+    elif isinstance(super, int): return findChildrenOfInt(super)
+    else: raise TypeError("Input must be of type str or int")
 
 
 map, tree = setup()
