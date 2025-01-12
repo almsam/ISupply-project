@@ -54,11 +54,11 @@ class TestSetupFunction(unittest.TestCase):
     def test_findChildrenof(self):
         self.assertListEqual(
             findChildrenOf("Agricultural Equipment"),
-            [(3, 'Agricultural Greenhouses'), (4, 'Farming Machinery')], "str failed"
+            [(4, 'Agricultural Greenhouses'), (5, 'Aquaculture Equipment'), (11, 'Ear Tag')], "str failed"
         )
         self.assertListEqual(
             findChildrenOf(2),
-            [(3, 'Agricultural Greenhouses'), (4, 'Farming Machinery')], "int failed"
+            [(4, 'Agricultural Greenhouses'), (5, 'Aquaculture Equipment'), (11, 'Ear Tag')], "int failed"
         )
         
         self.assertListEqual(
