@@ -77,6 +77,17 @@ def findParentOf(sub) -> tuple:
 
 def findChildrenOfStr(super: str) -> list:
 def findChildrenOfInt(super_id: int) -> list:
+    if super_id == 0: raise ValueError("ID must be non-zero")
+
+    children_rows = tree[tree["cat"] == super_id] # get rows where `cat` matches `super_id`
+
+    children = []
+    for _, row in children_rows.iterrows(): # extract IDs & their names
+        child_id = row["subcat"]
+        if child_id != -1:  # checks for invalid kids
+            child_name = map[map["ser"] == child_id]["cat"].iloc[0]; children.append((child_id, child_name))
+
+    return children
 def findChildrenOf(super) -> list:
     if isinstance(super, str):
         return findChildrenOfStr(super)
