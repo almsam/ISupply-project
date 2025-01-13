@@ -7,19 +7,19 @@ This document explains the purpose and functionality of the key methods provided
 
 ## 1. `isLeaf(Node)`
 
-### **Purpose**
+#### **Purpose**
 
 Determines whether a given node is a leaf node (i.e., has no children)
 
-### **Parameters**
+#### **Parameters**
 
 * `node` (*str* or *int*): The category name (*str*) or category ID (*int*)
 
-### **Returns**
+#### **Returns**
 
 * (*bool*): if the node is a leaf, otherwise
 
-### **Behavior**
+#### **Behavior**
 
 * O(n)
 * Converts string inputs into corresponding category IDs before processing
@@ -29,19 +29,19 @@ Determines whether a given node is a leaf node (i.e., has no children)
 
 ## 2. `getAllLeaves()`
 
-### **Purpose**
+#### **Purpose**
 
 Retrieves a list of all categories in the tree that are leaves.
 
-### **Parameters**
+#### **Parameters**
 
 None.
 
-### **Returns**
+#### **Returns**
 
 * (*list[str]*): A list of category names that are leaves.
 
-### **Key Behavior**
+#### **Key Behavior**
 
 * Iterates through all categories O(n^2)
 * Uses the `isLeaf()` method to check each
@@ -50,20 +50,20 @@ None.
 
 ## 3. `isParentOf(superNode, subNode)`
 
-### **Purpose**
+#### **Purpose**
 
 Checks if one category is the parent of another
 
-### **Parameters**
+#### **Parameters**
 
 * `sub` (*str* or *int*): The child category name (*str*) or ID (*int*)
 * `super` (*str* or *int*): The parent category name (*str*) or ID (*int*)
 
-### **Returns**
+#### **Returns**
 
 * (*bool*): `True` if `super` is the parent of `sub`, otherwise `False`
 
-### **Key Behavior**
+#### **Key Behavior**
 
 * O(n)
 * Allows checking parent-child relationships directly via IDs in the `Category_Tree` dataframe
@@ -72,19 +72,19 @@ Checks if one category is the parent of another
 
 ## 4. `findParentOf(Node)`
 
-### **Purpose**
+#### **Purpose**
 
 Finds the immediate parent of a given category
 
-### **Parameters**
+#### **Parameters**
 
 * `Node` (*str* or *int*): The category name (*str*) or ID (*int*)
 
-### **Returns**
+#### **Returns**
 
 * `(*tuple[int, str]*)`: A tuple containing the parent category ID and name
 
-### **Key Behavior**
+#### **Key Behavior**
 
 * Returns the parent of "all" as itself
 * Uses the `Category_Tree` dataframe to find paren
@@ -95,19 +95,19 @@ Finds the immediate parent of a given category
 
 ## 5. `findChildrenOf(Node)`
 
-### **Purpose**
+#### **Purpose**
 
 Finds all immediate children of a given category
 
-### **Parameters**
+#### **Parameters**
 
 * `Node` (*str* or *int*): The parent category name (*str*) or ID (*int*)
 
-### **Returns**
+#### **Returns**
 
 * `(*list[tuple[int, str]]*)`: A list of tuples, where each tuple contains the child category ID and name.
 
-### **Key Behavior**
+#### **Key Behavior**
 
 * For the root category - "all" - returns categories with no parents
 * Uses the `Category_Tree` dataframe to retrieve child nodes
@@ -116,3 +116,53 @@ Finds all immediate children of a given category
 
 ---
 
+## 6. `getAllCategories()`
+
+#### **Purpose**
+
+Retrieves all categories in the tree, starting from the root ('all')
+
+#### **Parameters**
+
+None
+
+#### **Returns**
+
+* `(*list[tuple[int, str]]*)`: A sorted list of all categories represented as tuples of their ID and name.
+
+#### **Key Behavior**
+
+* Calls `findChildrenOf('all')` to retrieve
+* Sorts the results by category ID for consistency
+* O(n)
+
+---
+
+## 7. `getRoot()`
+
+#### **Purpose**
+
+Traces the path from a given category to the root
+
+#### **Parameters**
+
+* `node` (*str* or *int*): The category name (*str*) or ID (*int*)
+
+#### **Returns**
+
+* `(*list[tuple[int, str]]*)`: A list of tuples representing the path from the given node to the root, including IDs and names
+
+#### **Key Behavior**
+
+* Iteratively finds the parent of the current node until the root category "all" is reached
+* Reverses the list to display the path from root to the given node
+* based on `findParentOf(Node)`
+* O(n*m)
+
+---
+
+# **General Notes:**
+
+* The methods heavily rely on two pandas DataFrames, `map` and `tree`, loaded from the `Categories` & `Category_Tree` tables respectively (from the db)
+* Proper error handling ensures that invalid categories or IDs should not cause unexpected behavior
+* The methods are modular and designed for reusability & scalability overr performance.
