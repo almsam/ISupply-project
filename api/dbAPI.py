@@ -107,16 +107,18 @@ def getRoot(node) -> list:
     if isinstance(node, str):
         node_id = map[map["cat"] == node] #make it an int
         if node_id.empty: raise ValueError(f"Category '{node}' not found in 'Categories'")
-        node_id = node_id.iloc[0]["ser"]
+        current_id = node_id.iloc[0]["ser"]
         
         while current_id != 1:  # search until all is found
-            parent_id, parent_name = findParentOf(current_id); rootList.append((parent_id, parent_name)); current_id = parent_id
+            parent_id, parent_name = findParentOf(int(current_id))
+            rootList.append((parent_id, parent_name)); current_id = parent_id
     elif isinstance(node, int):
         node_id = node
         if map[map["ser"] == node_id].empty: raise ValueError(f"Category ID '{node_id}' not found in 'Categories'")
         
         while current_id != 1:  # search until all is found
-            parent_id, parent_name = findParentOf(int(current_id)); rootList.append((parent_id, parent_name)); current_id = parent_id
+            parent_id, parent_name = findParentOf(int(current_id))
+            rootList.append((parent_id, parent_name)); current_id = parent_id
     else:
         raise TypeError("Input must be of type str or int")
     
@@ -124,10 +126,9 @@ def getRoot(node) -> list:
 
 map, tree = setup()
 
-# print(getRoot('all'))
-print(getRoot(5))
-# print(findParentOf(1))
+# print(getRoot('all')) # print(getRoot(5)) # print(findParentOf(1))
 
+print(getRoot("Agricultural Greenhouses"))
 # print(getAllCategories())
 # print(sorted(findChildrenOf('all'), key=lambda x: x[0]))
 # print(findParentOf(1)) print(findParentOf(2)) print(findParentOf(3)) print(findParentOf(4)) print(findParentOf(12))
