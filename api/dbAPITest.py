@@ -119,6 +119,15 @@ class TestSetupFunction(unittest.TestCase):
             [],
             "Failed to correctly trace hierarchy for all"
         )
+        
+        #test non-existent category
+        with self.assertRaises(ValueError) as context:
+            getRoot("Nonexistent cat")
+        self.assertIn("Category 'Nonexistent cat' not found", str(context.exception))
+        
+        #test invalid input ty
+        with self.assertRaises(TypeError) as context: getRoot(2.5)
+        self.assertIn("Input must be of type str or int", str(context.exception))
 
 
 
