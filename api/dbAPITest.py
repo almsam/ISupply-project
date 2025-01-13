@@ -88,6 +88,37 @@ class TestSetupFunction(unittest.TestCase):
 
     def test_getRoot(self):
         
+        # categories get a test each
+        
+        self.assertEqual(
+            getRoot("Agricultural Greenhouses"),
+            [(1, "all"), (2, "Agriculture"), (3, "Agricultural Equipment")],
+            "Failed to correctly get hierarchy for 'Agricultural Greenhouses'"
+        )
+        
+        self.assertEqual(
+            getRoot("Kidney Beans"),
+            [(1, "all"), (2, "Agriculture"), (26, "Beans")],
+            "Failed to correctly trace hierarchy for 'Farming' "
+        )
+        
+        self.assertEqual(
+            getRoot(4),
+            [(1, "all"), (2, "Agriculture"), (3, "Agricultural Equipment")],
+            "Failed to correctly trace hierarchy for cat ID 4"
+        )
+        
+        self.assertEqual(
+            getRoot(2),
+            [(1, "all")],
+            "Failed to correctly trace hierarchy for the prime category (child of'all')"
+        )
+        
+        self.assertEqual(
+            getRoot(1),
+            [],
+            "Failed to correctly trace hierarchy for all"
+        )
 
 
 

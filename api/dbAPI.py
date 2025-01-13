@@ -127,8 +127,6 @@ def getRoot(node) -> list:
 map, tree = setup()
 
 # print(getRoot('all')) # print(getRoot(5)) # print(findParentOf(1))
-
-print(getRoot("Agricultural Greenhouses"))
 # print(getAllCategories())
 # print(sorted(findChildrenOf('all'), key=lambda x: x[0]))
 # print(findParentOf(1)) print(findParentOf(2)) print(findParentOf(3)) print(findParentOf(4)) print(findParentOf(12))
