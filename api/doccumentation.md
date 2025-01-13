@@ -61,11 +61,58 @@ Checks if one category is the parent of another
 
 ### **Returns**
 
-* (*bool*): `True` if `super` is the parent of `sub`, otherwise `False`.
+* (*bool*): `True` if `super` is the parent of `sub`, otherwise `False`
 
 ### **Key Behavior**
 
 * O(n)
-* Allows checking parent-child relationships directly via IDs in the `Category_Tree` table.
+* Allows checking parent-child relationships directly via IDs in the `Category_Tree` dataframe
 
 ---
+
+## 4. `findParentOf(Node)`
+
+### **Purpose**
+
+Finds the immediate parent of a given category
+
+### **Parameters**
+
+* `Node` (*str* or *int*): The category name (*str*) or ID (*int*)
+
+### **Returns**
+
+* `(*tuple[int, str]*)`: A tuple containing the parent category ID and name
+
+### **Key Behavior**
+
+* Returns the parent of "all" as itself
+* Uses the `Category_Tree` dataframe to find paren
+* Handles cases where a category has no parent by returning self's root
+* O(n)
+
+---
+
+## 5. `findChildrenOf(Node)`
+
+### **Purpose**
+
+Finds all immediate children of a given category
+
+### **Parameters**
+
+* `Node` (*str* or *int*): The parent category name (*str*) or ID (*int*)
+
+### **Returns**
+
+* `(*list[tuple[int, str]]*)`: A list of tuples, where each tuple contains the child category ID and name.
+
+### **Key Behavior**
+
+* For the root category - "all" - returns categories with no parents
+* Uses the `Category_Tree` dataframe to retrieve child nodes
+* Filters out invalid children (e.g., `-1`)
+* O(n)
+
+---
+
