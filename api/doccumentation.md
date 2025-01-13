@@ -21,5 +21,51 @@ Determines whether a given node is a leaf node (i.e., has no children)
 
 ### **Behavior**
 
+* O(n)
 * Converts string inputs into corresponding category IDs before processing
 * Uses the absence of children in the tree to determine leaf status
+
+---
+
+## 2. `getAllLeaves()`
+
+### **Purpose**
+
+Retrieves a list of all categories in the tree that are leaves.
+
+### **Parameters**
+
+None.
+
+### **Returns**
+
+* (*list[str]*): A list of category names that are leaves.
+
+### **Key Behavior**
+
+* Iterates through all categories O(n^2)
+* Uses the `isLeaf()` method to check each
+
+---
+
+## 3. `isParentOf(superNode, subNode)`
+
+### **Purpose**
+
+Checks if one category is the parent of another
+
+### **Parameters**
+
+* `sub` (*str* or *int*): The child category name (*str*) or ID (*int*)
+* `super` (*str* or *int*): The parent category name (*str*) or ID (*int*)
+
+### **Returns**
+
+* (*bool*): `True` if `super` is the parent of `sub`, otherwise `False`.
+
+### **Key Behavior**
+
+* O(n)
+* Allows checking parent-child relationships directly via IDs in the `Category_Tree` table.
+
+---
