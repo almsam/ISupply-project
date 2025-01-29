@@ -5,9 +5,13 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import psycog2
 
 def add_to_blacklist(keyword, db info):
+
 def is_blacklisted(keyword, db info):
+
 def extract_keywords_gensim(text):
+
 def extract_keywords(text) :# extract keywords using scikit
+
 def process_rfq(text, db info):
 filtered_keywords = [kw for kw in keywords if not is_blacklisted(kw, cursor)]
 return filtered_keywords
