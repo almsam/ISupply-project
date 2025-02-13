@@ -17,3 +17,5 @@ Metoree: Lists global manufacturers and products in over 8,000 categories, suppo
 TradeKey: Free to use for basic supplier searches across 240+ countries1.
 ExportersIndia: Offers a free database of Indian suppliers for general merchandise1.
 LinkedIn: Useful for networking and finding suppliers directly through professional profiles6.
+
+penny souq: https://penny.co
